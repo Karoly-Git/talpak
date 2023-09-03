@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/talpak/static/css/main.2e6378c8.css",
+    "main.js": "/talpak/static/js/main.ba9ed15a.js",
+    "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
+    "static/media/logo.png": "/talpak/static/media/logo.dcdd7894562968d4056a.png",
+    "index.html": "/talpak/index.html",
+    "main.2e6378c8.css.map": "/talpak/static/css/main.2e6378c8.css.map",
+    "main.ba9ed15a.js.map": "/talpak/static/js/main.ba9ed15a.js.map",
+    "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e6378c8.css",
+    "static/js/main.ba9ed15a.js"
+  ]
+}
