@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.c7229c56.css",
-    "main.js": "/talpak/static/js/main.84e60cd0.js",
+    "main.css": "/talpak/static/css/main.ad92c143.css",
+    "main.js": "/talpak/static/js/main.18193ceb.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
     "static/media/main.jpg": "/talpak/static/media/main.594156983632cc5bccc5.jpg",
     "static/media/logo.png": "/talpak/static/media/logo.dcdd7894562968d4056a.png",
     "index.html": "/talpak/index.html",
-    "main.c7229c56.css.map": "/talpak/static/css/main.c7229c56.css.map",
-    "main.84e60cd0.js.map": "/talpak/static/js/main.84e60cd0.js.map",
+    "main.ad92c143.css.map": "/talpak/static/css/main.ad92c143.css.map",
+    "main.18193ceb.js.map": "/talpak/static/js/main.18193ceb.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7229c56.css",
-    "static/js/main.84e60cd0.js"
+    "static/css/main.ad92c143.css",
+    "static/js/main.18193ceb.js"
   ]
 }
