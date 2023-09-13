@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.95582053.css",
+    "main.css": "/talpak/static/css/main.4ebc81ce.css",
     "main.js": "/talpak/static/js/main.61b36e74.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
     "static/media/bg_arak.jpg": "/talpak/static/media/bg_arak.e496b02b355ba509116b.jpg",
@@ -23,12 +23,12 @@
     "static/media/slick.ttf": "/talpak/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/talpak/index.html",
-    "main.95582053.css.map": "/talpak/static/css/main.95582053.css.map",
+    "main.4ebc81ce.css.map": "/talpak/static/css/main.4ebc81ce.css.map",
     "main.61b36e74.js.map": "/talpak/static/js/main.61b36e74.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95582053.css",
+    "static/css/main.4ebc81ce.css",
     "static/js/main.61b36e74.js"
   ]
 }
