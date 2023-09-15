@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.d482529a.css",
-    "main.js": "/talpak/static/js/main.38f84115.js",
+    "main.css": "/talpak/static/css/main.dc3434a0.css",
+    "main.js": "/talpak/static/js/main.ff96adcd.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
     "static/media/bg_kapcsolat.png": "/talpak/static/media/bg_kapcsolat.5e033c74f0b36db7abd9.png",
     "static/media/bg_akciok.jpg": "/talpak/static/media/bg_akciok.be07011a48a0227145fe.jpg",
@@ -24,12 +24,12 @@
     "static/media/slick.ttf": "/talpak/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/talpak/index.html",
-    "main.d482529a.css.map": "/talpak/static/css/main.d482529a.css.map",
-    "main.38f84115.js.map": "/talpak/static/js/main.38f84115.js.map",
+    "main.dc3434a0.css.map": "/talpak/static/css/main.dc3434a0.css.map",
+    "main.ff96adcd.js.map": "/talpak/static/js/main.ff96adcd.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d482529a.css",
-    "static/js/main.38f84115.js"
+    "static/css/main.dc3434a0.css",
+    "static/js/main.ff96adcd.js"
   ]
 }
