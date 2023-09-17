@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.cc735c53.css",
-    "main.js": "/talpak/static/js/main.eee1940d.js",
+    "main.css": "/talpak/static/css/main.f5f4e56b.css",
+    "main.js": "/talpak/static/js/main.c3703352.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
-    "static/media/bg_kapcsolat.png": "/talpak/static/media/bg_kapcsolat.5e033c74f0b36db7abd9.png",
+    "static/media/kapcsolat4.png": "/talpak/static/media/kapcsolat4.58b5d2ff6bc0cf0534f7.png",
     "static/media/bg_akciok.jpg": "/talpak/static/media/bg_akciok.be07011a48a0227145fe.jpg",
-    "static/media/bg_kezdolap.jpg": "/talpak/static/media/bg_kezdolap.594156983632cc5bccc5.jpg",
-    "static/media/bg_arak.png": "/talpak/static/media/bg_arak.fc4202ae3306145a6a3e.png",
-    "static/media/bg_magamrol.jpg": "/talpak/static/media/bg_magamrol.389b5700273a61ea3dcc.jpg",
-    "static/media/me.jpg": "/talpak/static/media/me.42ab88df5fee2b1bbf5b.jpg",
-    "static/media/bg_szolgaltatasok.jpg": "/talpak/static/media/bg_szolgaltatasok.307cc30d027210a3de94.jpg",
-    "static/media/quality.png": "/talpak/static/media/quality.d0cf4ee9e16ef6e02451.png",
+    "static/media/kezdolap.jpg": "/talpak/static/media/kezdolap.594156983632cc5bccc5.jpg",
+    "static/media/arak2a.jpg": "/talpak/static/media/arak2a.af2188ec0c6b6d6a310b.jpg",
+    "static/media/bg_szolgaltatasok.jpg": "/talpak/static/media/bg_szolgaltatasok.e30b05d5265afbcb4abb.jpg",
+    "static/media/me.jpg": "/talpak/static/media/me.f49a71f2afef06ef89f6.jpg",
     "static/media/spa.png": "/talpak/static/media/spa.f58ca829f20ad9cd8d19.png",
     "static/media/logo.png": "/talpak/static/media/logo.1820d445d8a47f5b5aeb.png",
     "static/media/bg_gyik.jpg": "/talpak/static/media/bg_gyik.b38021f5df70ce869eb4.jpg",
@@ -24,12 +22,12 @@
     "static/media/slick.ttf": "/talpak/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/talpak/index.html",
-    "main.cc735c53.css.map": "/talpak/static/css/main.cc735c53.css.map",
-    "main.eee1940d.js.map": "/talpak/static/js/main.eee1940d.js.map",
+    "main.f5f4e56b.css.map": "/talpak/static/css/main.f5f4e56b.css.map",
+    "main.c3703352.js.map": "/talpak/static/js/main.c3703352.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc735c53.css",
-    "static/js/main.eee1940d.js"
+    "static/css/main.f5f4e56b.css",
+    "static/js/main.c3703352.js"
   ]
 }
