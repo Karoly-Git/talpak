@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.e7a92c1a.css",
-    "main.js": "/talpak/static/js/main.557aa846.js",
+    "main.css": "/talpak/static/css/main.c1e02027.css",
+    "main.js": "/talpak/static/js/main.9f28269e.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
     "static/media/kapcsolat4.png": "/talpak/static/media/kapcsolat4.668654b95257c11c2501.png",
-    "static/media/arak3.png": "/talpak/static/media/arak3.f984b2f9965001a03bda.png",
+    "static/media/arak3.png": "/talpak/static/media/arak3.e9a4faa3b1d87d23cbcf.png",
     "static/media/me2.png": "/talpak/static/media/me2.4236dce07c13eb90e558.png",
     "static/media/bg_akciok.jpg": "/talpak/static/media/bg_akciok.be07011a48a0227145fe.jpg",
     "static/media/kezdolap1.jpg": "/talpak/static/media/kezdolap1.8c8f51845846572a3e44.jpg",
+    "static/media/gyik.jpg": "/talpak/static/media/gyik.8131ce772b7e784ff347.jpg",
     "static/media/me.jpg": "/talpak/static/media/me.f49a71f2afef06ef89f6.jpg",
     "static/media/logo.png": "/talpak/static/media/logo.1820d445d8a47f5b5aeb.png",
     "static/media/bg_gyik.jpg": "/talpak/static/media/bg_gyik.b38021f5df70ce869eb4.jpg",
@@ -19,12 +20,12 @@
     "static/media/slick.ttf": "/talpak/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/talpak/index.html",
-    "main.e7a92c1a.css.map": "/talpak/static/css/main.e7a92c1a.css.map",
-    "main.557aa846.js.map": "/talpak/static/js/main.557aa846.js.map",
+    "main.c1e02027.css.map": "/talpak/static/css/main.c1e02027.css.map",
+    "main.9f28269e.js.map": "/talpak/static/js/main.9f28269e.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7a92c1a.css",
-    "static/js/main.557aa846.js"
+    "static/css/main.c1e02027.css",
+    "static/js/main.9f28269e.js"
   ]
 }
