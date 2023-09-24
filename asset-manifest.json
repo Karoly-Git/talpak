@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/talpak/static/css/main.e5be1829.css",
-    "main.js": "/talpak/static/js/main.0a34bf82.js",
+    "main.js": "/talpak/static/js/main.3e03bfe4.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
     "static/media/kapcsolat4.png": "/talpak/static/media/kapcsolat4.668654b95257c11c2501.png",
     "static/media/gyik4.png": "/talpak/static/media/gyik4.27cad29e68c1a083d032.png",
     "static/media/arak3.png": "/talpak/static/media/arak3.7e27a8e6b38951902aba.png",
     "static/media/me2.png": "/talpak/static/media/me2.4236dce07c13eb90e558.png",
-    "static/media/bg_akciok.jpg": "/talpak/static/media/bg_akciok.be07011a48a0227145fe.jpg",
     "static/media/kezdolap1.jpg": "/talpak/static/media/kezdolap1.8c8f51845846572a3e44.jpg",
     "static/media/galeria.jpg": "/talpak/static/media/galeria.8c76955d8cf65b12b94a.jpg",
     "static/media/baby_massage_005.jpg": "/talpak/static/media/baby_massage_005.e7a1dbfb0410c378517e.jpg",
@@ -58,11 +57,11 @@
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/talpak/index.html",
     "main.e5be1829.css.map": "/talpak/static/css/main.e5be1829.css.map",
-    "main.0a34bf82.js.map": "/talpak/static/js/main.0a34bf82.js.map",
+    "main.3e03bfe4.js.map": "/talpak/static/js/main.3e03bfe4.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5be1829.css",
-    "static/js/main.0a34bf82.js"
+    "static/js/main.3e03bfe4.js"
   ]
 }
