@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.fb18fb6c.css",
-    "main.js": "/talpak/static/js/main.24d2e99a.js",
+    "main.css": "/talpak/static/css/main.3270d307.css",
+    "main.js": "/talpak/static/js/main.c77bf1c6.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
-    "static/media/kapcsolat4.png": "/talpak/static/media/kapcsolat4.668654b95257c11c2501.png",
+    "static/media/me5.png": "/talpak/static/media/me5.e9971ae66175c82d9242.png",
     "static/media/gyik4.png": "/talpak/static/media/gyik4.64bc30e0dfab3edcf1e8.png",
-    "static/media/arak3.png": "/talpak/static/media/arak3.7e27a8e6b38951902aba.png",
-    "static/media/me2.png": "/talpak/static/media/me2.4236dce07c13eb90e558.png",
-    "static/media/jo_tudni2.png": "/talpak/static/media/jo_tudni2.117106218daf83df5428.png",
+    "static/media/kapcsolat1.jpg": "/talpak/static/media/kapcsolat1.fbb5f680df4186d01407.jpg",
+    "static/media/jo_tudni2.png": "/talpak/static/media/jo_tudni2.1fb824db281177a28812.png",
     "static/media/kezdolap1.jpg": "/talpak/static/media/kezdolap1.8c8f51845846572a3e44.jpg",
+    "static/media/arak2a.jpg": "/talpak/static/media/arak2a.6e494514a664438264f5.jpg",
     "static/media/hazhoz.png": "/talpak/static/media/hazhoz.0aea98c3b4f46a886878.png",
     "static/media/galeria.jpg": "/talpak/static/media/galeria.8c76955d8cf65b12b94a.jpg",
     "static/media/baby_massage_005.jpg": "/talpak/static/media/baby_massage_005.e7a1dbfb0410c378517e.jpg",
@@ -58,15 +58,18 @@
     "static/media/slick.eot": "/talpak/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/talpak/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/amoeba.svg": "/talpak/static/media/amoeba.07ae3149f8391a3c83fa.svg",
-    "static/media/amoeba2.svg": "/talpak/static/media/amoeba2.9689315385c78e114f24.svg",
+    "static/media/arak.svg": "/talpak/static/media/arak.9689315385c78e114f24.svg",
+    "static/media/galeria.svg": "/talpak/static/media/galeria.cd1c610983e722e16bab.svg",
+    "static/media/gyik.svg": "/talpak/static/media/gyik.9689315385c78e114f24.svg",
+    "static/media/jo_tudni.svg": "/talpak/static/media/jo_tudni.5b68509129f255b63f12.svg",
+    "static/media/kapcsolat.svg": "/talpak/static/media/kapcsolat.9689315385c78e114f24.svg",
     "index.html": "/talpak/index.html",
-    "main.fb18fb6c.css.map": "/talpak/static/css/main.fb18fb6c.css.map",
-    "main.24d2e99a.js.map": "/talpak/static/js/main.24d2e99a.js.map",
+    "main.3270d307.css.map": "/talpak/static/css/main.3270d307.css.map",
+    "main.c77bf1c6.js.map": "/talpak/static/js/main.c77bf1c6.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb18fb6c.css",
-    "static/js/main.24d2e99a.js"
+    "static/css/main.3270d307.css",
+    "static/js/main.c77bf1c6.js"
   ]
 }
