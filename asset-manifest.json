@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.ebd95018.css",
-    "main.js": "/talpak/static/js/main.c378e391.js",
+    "main.css": "/talpak/static/css/main.40c0fe70.css",
+    "main.js": "/talpak/static/js/main.3369651a.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
-    "static/media/me5.png": "/talpak/static/media/me5.e9971ae66175c82d9242.png",
+    "static/media/me7.png": "/talpak/static/media/me7.d9b4d9e55918370da38f.png",
     "static/media/gyik4.png": "/talpak/static/media/gyik4.64bc30e0dfab3edcf1e8.png",
     "static/media/kapcsolat1.jpg": "/talpak/static/media/kapcsolat1.fbb5f680df4186d01407.jpg",
     "static/media/jo_tudni2.png": "/talpak/static/media/jo_tudni2.1fb824db281177a28812.png",
@@ -59,10 +59,10 @@
     "static/media/massage_008.jpg": "/talpak/static/media/massage_008.82b4046bf58c49a7c245.jpg",
     "static/media/massage_001.jpg": "/talpak/static/media/massage_001.85f7160e9c6b790681b2.jpg",
     "static/media/massage_006.jpg": "/talpak/static/media/massage_006.ac26129ad4405a256b69.jpg",
-    "static/media/me.jpg": "/talpak/static/media/me.f49a71f2afef06ef89f6.jpg",
     "static/media/cert_008.jpg": "/talpak/static/media/cert_008.fb018a540ca590b1651c.jpg",
     "static/media/img.jpg": "/talpak/static/media/img.e7c4b7fa644e25042c1b.jpg",
     "static/media/cert_009.jpg": "/talpak/static/media/cert_009.fd9335a0adac4f3bd39a.jpg",
+    "static/media/ico-spa.png": "/talpak/static/media/ico-spa.1b53e8b7e35952fdd627.png",
     "static/media/cert_014.jpg": "/talpak/static/media/cert_014.fd891cfeebb03bd648bf.jpg",
     "static/media/cert_012.jpg": "/talpak/static/media/cert_012.97c96d2d23c5ce2a8c10.jpg",
     "static/media/cert_007.jpg": "/talpak/static/media/cert_007.3baee0b276e54333d5c2.jpg",
@@ -70,26 +70,20 @@
     "static/media/cert_011.jpg": "/talpak/static/media/cert_011.185217cb4736e7d54d46.jpg",
     "static/media/cert_010.jpg": "/talpak/static/media/cert_010.77de934202e3b23707cd.jpg",
     "static/media/logo.png": "/talpak/static/media/logo.01ccfd9b5d2661c1f833.png",
-    "static/media/bg_gyik.jpg": "/talpak/static/media/bg_gyik.b38021f5df70ce869eb4.jpg",
-    "static/media/child.svg": "/talpak/static/media/child.2e3a6e45dd260394f6a5a36a7c12acb7.svg",
-    "static/media/man.svg": "/talpak/static/media/man.af831f88f2d2e85712d2d739fef469eb.svg",
-    "static/media/pregnant.svg": "/talpak/static/media/pregnant.561597b006c971b06dad8ba37fefb3d3.svg",
+    "static/media/ico-kinesio.png": "/talpak/static/media/ico-kinesio.bdd44d49252225707194.png",
+    "static/media/ico-pedicure.png": "/talpak/static/media/ico-pedicure.1f1472e6a0f5f0ea99cd.png",
     "static/media/slick.svg": "/talpak/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/talpak/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/talpak/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/arak.svg": "/talpak/static/media/arak.9689315385c78e114f24.svg",
-    "static/media/galeria.svg": "/talpak/static/media/galeria.cd1c610983e722e16bab.svg",
-    "static/media/gyik.svg": "/talpak/static/media/gyik.9689315385c78e114f24.svg",
     "static/media/jo_tudni.svg": "/talpak/static/media/jo_tudni.5b68509129f255b63f12.svg",
-    "static/media/kapcsolat.svg": "/talpak/static/media/kapcsolat.9689315385c78e114f24.svg",
     "index.html": "/talpak/index.html",
-    "main.ebd95018.css.map": "/talpak/static/css/main.ebd95018.css.map",
-    "main.c378e391.js.map": "/talpak/static/js/main.c378e391.js.map",
+    "main.40c0fe70.css.map": "/talpak/static/css/main.40c0fe70.css.map",
+    "main.3369651a.js.map": "/talpak/static/js/main.3369651a.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebd95018.css",
-    "static/js/main.c378e391.js"
+    "static/css/main.40c0fe70.css",
+    "static/js/main.3369651a.js"
   ]
 }
