@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.40c0fe70.css",
-    "main.js": "/talpak/static/js/main.3369651a.js",
+    "main.css": "/talpak/static/css/main.bc76c250.css",
+    "main.js": "/talpak/static/js/main.ec20387e.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
-    "static/media/me7.png": "/talpak/static/media/me7.d9b4d9e55918370da38f.png",
     "static/media/gyik4.png": "/talpak/static/media/gyik4.64bc30e0dfab3edcf1e8.png",
+    "static/media/me8.png": "/talpak/static/media/me8.0a0e81459116a8d77e31.png",
     "static/media/kapcsolat1.jpg": "/talpak/static/media/kapcsolat1.fbb5f680df4186d01407.jpg",
     "static/media/jo_tudni2.png": "/talpak/static/media/jo_tudni2.1fb824db281177a28812.png",
     "static/media/kezdolap1.jpg": "/talpak/static/media/kezdolap1.8c8f51845846572a3e44.jpg",
@@ -78,12 +78,12 @@
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
     "static/media/jo_tudni.svg": "/talpak/static/media/jo_tudni.5b68509129f255b63f12.svg",
     "index.html": "/talpak/index.html",
-    "main.40c0fe70.css.map": "/talpak/static/css/main.40c0fe70.css.map",
-    "main.3369651a.js.map": "/talpak/static/js/main.3369651a.js.map",
+    "main.bc76c250.css.map": "/talpak/static/css/main.bc76c250.css.map",
+    "main.ec20387e.js.map": "/talpak/static/js/main.ec20387e.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40c0fe70.css",
-    "static/js/main.3369651a.js"
+    "static/css/main.bc76c250.css",
+    "static/js/main.ec20387e.js"
   ]
 }
