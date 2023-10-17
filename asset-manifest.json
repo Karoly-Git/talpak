@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.8f98fd9c.css",
-    "main.js": "/talpak/static/js/main.3b6c03ca.js",
+    "main.css": "/talpak/static/css/main.6b8009b2.css",
+    "main.js": "/talpak/static/js/main.c30eaeb3.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
     "static/media/me8.png": "/talpak/static/media/me8.0a0e81459116a8d77e31.png",
     "static/media/kapcsolat1.jpg": "/talpak/static/media/kapcsolat1.fbb5f680df4186d01407.jpg",
@@ -60,34 +60,35 @@
     "static/media/massage_001.jpg": "/talpak/static/media/massage_001.85f7160e9c6b790681b2.jpg",
     "static/media/massage_006.jpg": "/talpak/static/media/massage_006.ac26129ad4405a256b69.jpg",
     "static/media/kinesio.png": "/talpak/static/media/kinesio.85b30605394a6aca9b15.png",
+    "static/media/logo4.png": "/talpak/static/media/logo4.d5bc5726d136dffb3805.png",
     "static/media/cert_008.jpg": "/talpak/static/media/cert_008.fb018a540ca590b1651c.jpg",
     "static/media/cert_009.jpg": "/talpak/static/media/cert_009.fd9335a0adac4f3bd39a.jpg",
     "static/media/spa.png": "/talpak/static/media/spa.951dbc019908a8a56780.png",
     "static/media/ico-spa.png": "/talpak/static/media/ico-spa.1b53e8b7e35952fdd627.png",
     "static/media/pedicure.png": "/talpak/static/media/pedicure.a7713d71de2857edee96.png",
     "static/media/cert_014.jpg": "/talpak/static/media/cert_014.fd891cfeebb03bd648bf.jpg",
+    "static/media/logo.png": "/talpak/static/media/logo.522d631bfb3b9fb805e8.png",
     "static/media/cert_012.jpg": "/talpak/static/media/cert_012.97c96d2d23c5ce2a8c10.jpg",
     "static/media/cert_007.jpg": "/talpak/static/media/cert_007.3baee0b276e54333d5c2.jpg",
     "static/media/cert_013.jpg": "/talpak/static/media/cert_013.39abeb6c58184485f1ca.jpg",
     "static/media/cert_011.jpg": "/talpak/static/media/cert_011.185217cb4736e7d54d46.jpg",
     "static/media/cert_010.jpg": "/talpak/static/media/cert_010.77de934202e3b23707cd.jpg",
-    "static/media/logo.png": "/talpak/static/media/logo.01ccfd9b5d2661c1f833.png",
+    "static/media/logo3.png": "/talpak/static/media/logo3.9f3ffad8a8d552f94561.png",
     "static/media/massage.png": "/talpak/static/media/massage.b97c8bcd8cfbd0ab6e19.png",
     "static/media/ico-kinesio.png": "/talpak/static/media/ico-kinesio.5e33fbd3c3899ba11204.png",
     "static/media/ico-pedicure.png": "/talpak/static/media/ico-pedicure.1f1472e6a0f5f0ea99cd.png",
-    "static/media/logo_white.png": "/talpak/static/media/logo_white.11264da33e90393dd679.png",
     "static/media/faq.svg": "/talpak/static/media/faq.67e2b150f5353b5aa767773d58f6fb97.svg",
     "static/media/slick.svg": "/talpak/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/talpak/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/talpak/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/talpak/index.html",
-    "main.8f98fd9c.css.map": "/talpak/static/css/main.8f98fd9c.css.map",
-    "main.3b6c03ca.js.map": "/talpak/static/js/main.3b6c03ca.js.map",
+    "main.6b8009b2.css.map": "/talpak/static/css/main.6b8009b2.css.map",
+    "main.c30eaeb3.js.map": "/talpak/static/js/main.c30eaeb3.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f98fd9c.css",
-    "static/js/main.3b6c03ca.js"
+    "static/css/main.6b8009b2.css",
+    "static/js/main.c30eaeb3.js"
   ]
 }
