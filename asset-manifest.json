@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.814eaba3.css",
-    "main.js": "/talpak/static/js/main.0f0b3c26.js",
+    "main.css": "/talpak/static/css/main.5f353b80.css",
+    "main.js": "/talpak/static/js/main.bbc6c034.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
     "static/media/me10.png": "/talpak/static/media/me10.5ffe5c80dabefbe0d366.png",
     "static/media/jo_tudni2.png": "/talpak/static/media/jo_tudni2.1fb824db281177a28812.png",
-    "static/media/ab1.png": "/talpak/static/media/ab1.5b77340e551bbe2156ef.png",
     "static/media/kezdolap1.jpg": "/talpak/static/media/kezdolap1.8c8f51845846572a3e44.jpg",
     "static/media/cert_016.jpg": "/talpak/static/media/cert_016.c4d24b0338604ad5e4b3.jpg",
     "static/media/bg3.jpg": "/talpak/static/media/bg3.eea56fefd1fccbbcf813.jpg",
@@ -73,12 +72,10 @@
     "static/media/cert_011.jpg": "/talpak/static/media/cert_011.185217cb4736e7d54d46.jpg",
     "static/media/cert_010.jpg": "/talpak/static/media/cert_010.77de934202e3b23707cd.jpg",
     "static/media/logo.png": "/talpak/static/media/logo.2e9850eead0e920b0032.png",
+    "static/media/kontakt22.png": "/talpak/static/media/kontakt22.3b3ebd12eff4a0de7cfa.png",
     "static/media/logo3.png": "/talpak/static/media/logo3.9f3ffad8a8d552f94561.png",
     "static/media/massage.png": "/talpak/static/media/massage.eaa06dc6f1e1f0529952.png",
     "static/media/ico-kinesio.png": "/talpak/static/media/ico-kinesio.5e33fbd3c3899ba11204.png",
-    "static/media/k3.png": "/talpak/static/media/k3.91981b0ada7c44ebcc64.png",
-    "static/media/k1.png": "/talpak/static/media/k1.e0365a56de298421425a.png",
-    "static/media/k2.png": "/talpak/static/media/k2.ca5e487b3b7c4d420201.png",
     "static/media/ico-pedicure.png": "/talpak/static/media/ico-pedicure.1f1472e6a0f5f0ea99cd.png",
     "static/media/faq.svg": "/talpak/static/media/faq.67e2b150f5353b5aa767773d58f6fb97.svg",
     "static/media/slick.svg": "/talpak/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -86,12 +83,12 @@
     "static/media/slick.ttf": "/talpak/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/talpak/index.html",
-    "main.814eaba3.css.map": "/talpak/static/css/main.814eaba3.css.map",
-    "main.0f0b3c26.js.map": "/talpak/static/js/main.0f0b3c26.js.map",
+    "main.5f353b80.css.map": "/talpak/static/css/main.5f353b80.css.map",
+    "main.bbc6c034.js.map": "/talpak/static/js/main.bbc6c034.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.814eaba3.css",
-    "static/js/main.0f0b3c26.js"
+    "static/css/main.5f353b80.css",
+    "static/js/main.bbc6c034.js"
   ]
 }
