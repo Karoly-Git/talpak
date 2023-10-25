@@ -15,10 +15,6 @@ import config from '../../data/config.json';
 
 export default function Kapcsolat() {
 
-    useEffect(() => {
-        console.log(config.urls.local_message);
-    }, [])
-
     const URL = config.settings.isLocalServer ? config.urls.local_message : config.urls.heroku_message;
 
     const navigate = useNavigate();
@@ -51,16 +47,16 @@ export default function Kapcsolat() {
             //console.log(result);
 
             if (result.ok) {
-                //navigate('/success');
-                console.log('email sent');
+                navigate('/success');
+                //console.log('email sent');
             } else {
-                //navigate('/error');
-                console.log('ERROR');
+                navigate('/error');
+                //console.log('ERROR');
             }
 
         } catch (err) {
-            console.log(err.ok);
-            //navigate('/error');
+            //console.log(err.ok);
+            navigate('/error');
         }
     };
 
@@ -123,7 +119,7 @@ export default function Kapcsolat() {
                                 </li>
                             </ul>
 
-                            <form method="POST" action="/message" onSubmit={handleSubmit(onSubmit)}>
+                            <form onSubmit={handleSubmit(onSubmit)}>
                                 <h2 className='form-title'>Vedd fel velem a kapcsolatot</h2>
                                 <p>
                                     Hagyja üyenetet, és hamarosan fel fogom venni Veled a kapcsolatot. Minden megkeresésre igyekszek 1 munkanapon belül válaszolni.
