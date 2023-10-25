@@ -1,0 +1,77 @@
+@import './fonts-and-colors.scss';
+
+.jo-tudni {
+    .head-section {
+        background-image: url('../img/jo_tudni.png');
+        //background-size: 80% !important;
+        background-position: center !important;
+    }
+
+    .section h2 {
+        margin-bottom: 2rem;
+    }
+
+    #disabled-info,
+    #outcall-info {
+        display: flex;
+
+        p {
+            max-width: 500px;
+            padding: 2rem;
+            line-height: 1.25;
+            letter-spacing: 1px;
+
+            span:not(span:last-child) {
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+
+            span strong {
+                font-weight: 600;
+            }
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+            padding: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        .content-container {
+            .box {
+                width: 100% !important;
+
+                #disabled-info,
+                #outcall-info {
+
+                    p,
+                    img {
+                        padding: 0;
+                    }
+
+                    #img-disabled {
+                        margin-right: 1rem;
+                    }
+
+                    #img-outcall {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .content-container {
+
+            #disabled-info,
+            #outcall-info {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

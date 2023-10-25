@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=EB+Garamond:wght@400;500&family=Ubuntu:wght@300;400&display=swap");
+/*
+font-family: 'Cardo', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Ubuntu', sans-serif;
+$orange: rgb(255, 165, 0);
+$navy: rgb(0, 0, 128);
+*/
+.kapcsolat .head-section {
+  background-position: center 220px !important;
+  background-size: 20% !important;
+}
+.kapcsolat .head-section #amobea {
+  display: none !important;
+}
+.kapcsolat .head-section .box h1 {
+  position: relative;
+  z-index: 903;
+}
+.kapcsolat .section .box {
+  flex-direction: row !important;
+  justify-content: center;
+}
+.kapcsolat .section .box .contacts {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 500px;
+  padding: 3rem;
+  border-radius: 5px;
+  background-color: rgb(117, 189, 128);
+  position: relative;
+  transition: all 350ms ease-in-out;
+  margin-top: -11rem;
+}
+.kapcsolat .section .box .contacts li {
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.kapcsolat .section .box .contacts li h2,
+.kapcsolat .section .box .contacts li h3,
+.kapcsolat .section .box .contacts li a,
+.kapcsolat .section .box .contacts li p {
+  color: white;
+}
+.kapcsolat .section .box .contacts li .hover-color-swap:hover {
+  color: rgb(63, 97, 170);
+}
+.kapcsolat .section .box .contacts li h2 {
+  font-size: 2rem;
+}
+.kapcsolat .section .box form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 3rem 3rem 2rem;
+  background-color: rgb(63, 97, 170);
+  margin-top: -11rem;
+  position: relative;
+  z-index: 901;
+}
+.kapcsolat .section .box form .form-title,
+.kapcsolat .section .box form p,
+.kapcsolat .section .box form input,
+.kapcsolat .section .box form textarea,
+.kapcsolat .section .box form button {
+  color: white;
+  margin-bottom: 2rem;
+}
+.kapcsolat .section .box form p {
+  font-size: 1.1rem;
+  line-height: 1.35rem;
+}
+.kapcsolat .section .box form .form-title {
+  font-size: 2rem;
+}
+.kapcsolat .section .box form a {
+  transition: all 150ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kapcsolat .section .box form a h2,
+.kapcsolat .section .box form a .icon {
+  color: white;
+  font-size: 1.5rem;
+}
+.kapcsolat .section .box form a .icon {
+  margin-right: 1rem;
+  font-size: 1.75rem;
+}
+.kapcsolat .section .box form a:hover {
+  transform: scale(1.2);
+}
+.kapcsolat .section .box form input,
+.kapcsolat .section .box form textarea {
+  padding: 0.5rem 0;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 600;
+  border-bottom: 3px solid white;
+  background-color: rgb(63, 97, 170);
+}
+.kapcsolat .section .box form input::-moz-placeholder, .kapcsolat .section .box form textarea::-moz-placeholder {
+  color: white;
+}
+.kapcsolat .section .box form input:-ms-input-placeholder, .kapcsolat .section .box form textarea:-ms-input-placeholder {
+  color: white;
+}
+.kapcsolat .section .box form input::placeholder,
+.kapcsolat .section .box form textarea::placeholder {
+  color: white;
+}
+.kapcsolat .section .box form textarea {
+  resize: vertical;
+}
+.kapcsolat .section .box form button {
+  background-color: rgb(63, 97, 170);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 3px solid white;
+  font-size: 1.5rem;
+}
+.kapcsolat .section .box form button:hover {
+  color: rgb(74, 140, 194);
+  background-color: white;
+}
+.kapcsolat .section .box form span {
+  display: flex;
+}
+.kapcsolat .section .box form span .error {
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+  display: inline;
+}
+.kapcsolat .section .box .box-is-visible {
+  left: 0px;
+  opacity: 1;
+}
+@media screen and (max-width: 1200px) {
+  .kapcsolat .head-section {
+    background-size: 50% !important;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .kapcsolat .section .box {
+    width: 100% !important;
+  }
+  .kapcsolat .section .box .contacts {
+    width: 35%;
+  }
+  .kapcsolat .section .box form {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kapcsolat .section .box {
+    width: 100% !important;
+  }
+  .kapcsolat .section .box .contacts {
+    display: none;
+  }
+  .kapcsolat .section .box form {
+    margin-top: -9rem;
+    width: 90%;
+    max-width: unset;
+  }
+}
+@media screen and (max-width: 576px) {
+  .kapcsolat .head-section {
+    background: unset !important;
+    background: rgb(234, 241, 255) !important;
+  }
+  .kapcsolat .section .box form {
+    margin-top: -3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .kapcsolat .section .box form {
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=kapcsolat.css.map */

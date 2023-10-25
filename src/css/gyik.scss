@@ -1,0 +1,111 @@
+@import './fonts-and-colors.scss';
+
+.gyik {
+    .head-section {
+        background-image: url('../img/bg3.jpg');
+
+        .box {
+            position: relative;
+        }
+    }
+
+    #faq-img {
+        position: absolute;
+        top: 160px;
+        right: 100px;
+        width: 400px;
+        transform: rotate(-6deg);
+    }
+
+    .section {
+        .content-container {
+            .box {
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    max-width: 800px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+
+                    .question {
+                        background-color: $greenGlass50;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 1rem;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $green;
+
+                            h3,
+                            div .icon {
+                                color: white;
+                            }
+                        }
+
+                        .icon {
+                            color: $primary-font-color;
+                            margin-left: 2rem;
+                        }
+                    }
+
+                    .question,
+                    .question h3,
+                    .question div .icon {
+                        transition: all 150ms ease-in-out;
+                    }
+
+                    .answer {
+                        overflow: hidden;
+
+                        p {
+                            padding: 1rem;
+                            transition-property: all;
+                            transition-timing-function: ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        #faq-img {
+            width: 300px;
+            top: 200px;
+            right: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #faq-img {
+            top: 235px;
+            width: 250px;
+        }
+
+        .head-section {
+            background-size: 120% !important;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        #faq-img {
+            top: 150px;
+            width: 200px;
+        }
+
+        .head-section {
+            background-size: 150% !important;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .head-section {
+            background-size: 170% !important;
+        }
+    }
+}

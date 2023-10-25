@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=EB+Garamond:wght@400;500&family=Ubuntu:wght@300;400&display=swap");
+/*
+font-family: 'Cardo', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Ubuntu', sans-serif;
+$orange: rgb(255, 165, 0);
+$navy: rgb(0, 0, 128);
+*/
+.arak {
+  /* Style the table headers */
+  /* Style the table rows */
+}
+.arak .head-section {
+  background-image: url("../img/arak2a.jpg");
+  background-position: center !important;
+}
+.arak #scroll-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.arak #scroll-links a {
+  padding: 0.5rem;
+}
+.arak #scroll-links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.arak table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.arak table caption {
+  padding: 1rem 1rem 2rem;
+}
+.arak table tbody tr:not(tr:first-child) {
+  border-top: 1px solid rgb(204, 204, 204);
+}
+.arak table tbody tr td p {
+  margin-top: 0.5rem;
+}
+.arak table tbody .price {
+  font-weight: 600;
+  color: rgb(80, 80, 80);
+  text-align: right;
+  width: 8rem;
+  padding-right: 1rem;
+}
+.arak th {
+  background-color: rgba(242, 242, 242, 0.8);
+  text-align: left;
+  padding: 10px;
+}
+.arak td {
+  padding: 10px;
+}/*# sourceMappingURL=arak.css.map */

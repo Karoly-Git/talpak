@@ -1,0 +1,236 @@
+@import './fonts-and-colors.scss';
+
+.kapcsolat {
+    .head-section {
+        //background-image: url('../img/kontakt22.png');
+        //background: $backgroundColor  !important;
+        background-position: center 220px !important;
+        background-size: 20% !important;
+
+        #amobea {
+            display: none !important;
+        }
+
+        .box {
+            h1 {
+                position: relative;
+                z-index: 903;
+            }
+        }
+    }
+
+    .section {
+        .box {
+            flex-direction: row !important;
+            justify-content: center;
+
+            .contacts {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                max-width: 500px;
+                padding: 3rem;
+                border-radius: 5px;
+                background-color: $green;
+                position: relative;
+                transition: all 350ms ease-in-out;
+                margin-top: -11rem;
+
+                li {
+                    flex-direction: column;
+                    margin-bottom: 2rem;
+
+                    h2,
+                    h3,
+                    a,
+                    p {
+                        color: white;
+                    }
+
+                    .hover-color-swap:hover {
+                        color: $blue;
+                    }
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                max-width: 500px;
+                border-radius: 5px;
+                padding: 3rem 3rem 2rem;
+                background-color: $blue;
+                margin-top: -11rem;
+                position: relative;
+                z-index: 901;
+                //border: 2px solid rgb(234, 241, 255);
+
+                .form-title,
+                p,
+                input,
+                textarea,
+                button {
+                    color: white;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    line-height: 1.35rem;
+                }
+
+                .form-title {
+                    font-size: 2rem;
+                }
+
+                a {
+                    transition: all 150ms ease-in-out;
+
+                    h2,
+                    .icon {
+                        color: white;
+                        font-size: 1.5rem;
+                    }
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .icon {
+                        margin-right: 1rem;
+                        font-size: 1.75rem;
+                    }
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                input,
+                textarea {
+                    &::placeholder {
+                        color: white;
+                    }
+
+                    padding: 0.5rem 0;
+                    border: none;
+                    outline: none;
+                    font-size: 1.1rem;
+                    letter-spacing: 1px;
+                    color: white;
+                    font-weight: 600;
+                    border-bottom: 3px solid white;
+                    background-color: $blue;
+                }
+
+                textarea {
+                    resize: vertical;
+                }
+
+                button {
+                    background-color: $blue;
+                    padding: 1rem;
+                    border-radius: 5px;
+                    border: 3px solid white;
+                    font-size: 1.5rem;
+
+                    &:hover {
+                        color: rgb(74, 140, 194);
+                        background-color: white;
+                    }
+                }
+
+                span {
+                    display: flex;
+
+                    .error {
+                        color: rgb(255, 0, 0);
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        margin-bottom: 0.25rem;
+                        display: inline;
+                    }
+                }
+            }
+
+            .box-is-visible {
+                left: 0px;
+                opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .head-section {
+            background-size: 50% !important;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        .section {
+            .box {
+                width: 100% !important;
+
+                .contacts {
+                    width: 35%;
+                }
+
+                form {
+                    width: 65%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .section {
+            .box {
+                width: 100% !important;
+
+                .contacts {
+                    display: none;
+                }
+
+                form {
+                    margin-top: -9rem;
+                    width: 90%;
+                    max-width: unset;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .head-section {
+            background: unset !important;
+            background: $backgroundColor  !important;
+        }
+
+        .section {
+            .box {
+                form {
+                    margin-top: -3rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .section {
+            .box {
+                form {
+                    width: 100%;
+                    padding: 1.5rem;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

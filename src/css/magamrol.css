@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=EB+Garamond:wght@400;500&family=Ubuntu:wght@300;400&display=swap");
+/*
+font-family: 'Cardo', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Ubuntu', sans-serif;
+$orange: rgb(255, 165, 0);
+$navy: rgb(0, 0, 128);
+*/
+.magamrol .head-section {
+  background-image: url("../img/me10.png");
+  background-position: left;
+  background-position-y: -3vw !important;
+  background-size: 50% !important;
+  display: flex;
+  justify-content: flex-end;
+}
+.magamrol .head-section .box {
+  align-items: flex-end !important;
+  width: 100% !important;
+  max-width: unset !important;
+  margin: unset !important;
+}
+.magamrol .head-section .box h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  width: 40%;
+  margin-right: 5rem;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 0 !important;
+}
+.magamrol .section .content-container .box .title {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+.magamrol .section .content-container .box article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.magamrol .section .content-container .box article:not(article:last-child) {
+  margin-bottom: 4rem;
+}
+.magamrol .section .content-container .box article h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+.magamrol .section .content-container .box article p {
+  max-width: 1200px;
+  text-align: center;
+}
+.magamrol .section .content-container .cert-slider .wrapper img {
+  width: 100%;
+}
+.magamrol .section .content-container #certs {
+  max-width: 1000px;
+}
+@media screen and (max-width: 1400px) {
+  .magamrol .head-section {
+    background-size: 65% !important;
+    background-position: -150px center !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .magamrol .head-section {
+    background-size: 80% !important;
+    background-position-y: -6vw !important;
+  }
+  .magamrol .head-section .box h1 {
+    font-size: 1.5rem;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .magamrol .head-section {
+    background-size: 90% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .magamrol .head-section {
+    background-size: 100% !important;
+    background-position: -200px center !important;
+  }
+  .magamrol .section .content-container .box .title {
+    font-size: 2.25rem !important;
+    margin-bottom: 1.5rem;
+  }
+  .magamrol .section .content-container .box article {
+    margin-bottom: 2rem !important;
+  }
+  .magamrol .section .content-container .box article h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem !important;
+  }
+  .magamrol .section .content-container .box .wrapper h3 {
+    margin-bottom: 2rem;
+  }
+  .magamrol .slick-dots {
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .magamrol .head-section {
+    background-position: -150px center !important;
+    background-size: cover !important;
+  }
+  .magamrol .head-section .box {
+    justify-content: flex-end;
+  }
+  .magamrol .head-section .box h1 {
+    font-size: 1.1rem;
+    color: unset;
+    margin-bottom: 10vw !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .magamrol .head-section {
+    background-size: 100% !important;
+    background-position: -150px center !important;
+  }
+  .magamrol .section .content-container .box article p,
+.magamrol .section .content-container .box article h2 {
+    text-align: unset;
+  }
+}
+@media screen and (max-width: 430px) {
+  .magamrol .head-section {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .magamrol .head-section .box {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+  .magamrol .head-section .box h1 {
+    margin-bottom: 0 !important;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    font-size: 1rem !important;
+  }
+}/*# sourceMappingURL=magamrol.css.map */

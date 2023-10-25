@@ -1,0 +1,324 @@
+@import './fonts-and-colors.scss';
+
+.kezdolap {
+    .head-section {
+        background-image: url('../img/kezdolap1.jpg');
+        background-position: center;
+
+        //transition: all 2s ease-in-out;
+
+        #slogan {
+            align-items: center;
+            margin-bottom: 10vw;
+
+            h2,
+            h3 {
+                font-family: 'EB Garamond, serif';
+                text-align: center;
+                text-shadow: 0 0 15px black;
+            }
+
+            h2 {
+                font-size: 3rem;
+                text-transform: uppercase;
+                color: $box-font-color;
+
+            }
+
+            h3 {
+                font-size: 2rem;
+                color: $box-font-color;
+            }
+
+            img {
+                width: 8rem;
+                margin: 1rem 0;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.6);
+                box-shadow: 0 0 25px 15px rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+
+    .section {
+        #introduction {
+            h1 {
+                font-family: "Cardo", serif;
+                text-align: center;
+                font-size: 2.5rem;
+                letter-spacing: 1px;
+                width: 100%;
+                margin: 3rem 0;
+            }
+
+            p {
+                font-family: "Cardo", serif;
+                text-align: center;
+                max-width: 800px;
+                padding: 1rem;
+            }
+
+            h2 {
+                font-family: "Cardo", serif;
+                margin-top: 1rem;
+                font-size: 1.75rem;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+
+        #services {
+            h2 {
+                font-family: 'Cardo', serif;
+                font-size: 2.5rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .services-list {
+                width: 100%;
+                max-width: 800px;
+                margin: 0 0 2rem;
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    cursor: pointer;
+                    width: 25%;
+                    user-select: none;
+                    position: relative;
+                    left: -150px;
+                    transition: all 450ms ease-in-out;
+
+                    .icon {
+                        max-width: 6rem;
+                        width: 100%;
+                    }
+
+                    h3 {
+                        padding: 0.5rem;
+                        transition: all 150ms ease-in-out;
+                        text-align: center;
+                    }
+
+                    &:hover {
+                        h3 {
+                            color: $hover-color;
+                        }
+
+                        .icon {
+                            opacity: 1;
+                        }
+                    }
+
+                    .active {
+                        text-decoration: underline;
+                        text-underline-offset: 3px;
+                        text-decoration-color: $primary-font-color;
+                        text-decoration-thickness: 1px;
+                    }
+
+                    &:hover {
+                        h3 {
+                            background-color: $greenGlass20;
+                        }
+                    }
+
+                    opacity: 0;
+                }
+
+                .animated {
+                    left: 0;
+                    opacity: 1;
+                }
+
+                #animated-0 {
+                    transition-delay: 300ms;
+                }
+
+                #animated-1 {
+                    transition-delay: 200ms;
+                }
+
+                #animated-2 {
+                    transition-delay: 100ms;
+                }
+            }
+
+            p {
+                font-family: 'Cardo', serif;
+                text-align: center;
+                width: 100%;
+                max-width: 500px;
+                padding: 1rem;
+            }
+
+            button {
+                margin-top: 2rem;
+            }
+
+        }
+
+        #info {
+            flex-direction: row;
+            justify-content: center;
+            transition: all 500ms ease-in-out;
+
+            .shop-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 30%;
+                margin: 1rem;
+
+                h2 {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            #make-appointment {
+                a:not(a:last-child) {
+                    margin-bottom: 0.5rem;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    text-align: center;
+                    border-bottom: 2px solid transparent;
+                    transition: all 150ms ease-in-out;
+                    color: $primary-font-color;
+
+                    &:hover {
+                        border-color: $secondary-font-color;
+                    }
+                }
+            }
+
+            #opening-hours {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    list-style: none;
+                    width: 100%;
+
+                    li:not(li:last-child) {
+                        margin-bottom: 0.5rem;
+                    }
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        min-width: 250px;
+
+                        span:first-child {
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+
+            #address {
+                a {
+                    align-items: center;
+                    color: black;
+                    text-align: center;
+                    border-bottom: 2px solid transparent;
+                    transition: all 150ms ease-in-out;
+                    color: $primary-font-color;
+                    cursor: pointer;
+
+                    &:hover {
+                        border-color: $secondary-font-color;
+                    }
+
+                    div {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        #slogan {
+            width: 100%;
+        }
+
+        #info {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #slogan {
+            h2 {
+                font-size: 2.25rem !important;
+            }
+
+            img {
+                width: 6rem !important;
+            }
+        }
+
+        #introduction {
+            h1 {
+                font-size: 2rem !important;
+                margin: 1.5rem 0 !important;
+            }
+        }
+
+        #info {
+            flex-wrap: wrap;
+
+            .shop-info {
+                width: 50% !important;
+                margin: 0 0 2rem !important;
+            }
+
+            #address {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        #info {
+            flex-direction: column !important;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .services-list {
+            margin: 0 !important;
+
+            li {
+                width: 50% !important;
+            }
+        }
+
+        button {
+            margin: 0 !important;
+        }
+
+        #introduction {
+            padding: 0 !important;
+
+            h1 {
+                margin: 0 !important;
+                padding: 1rem;
+            }
+        }
+    }
+}

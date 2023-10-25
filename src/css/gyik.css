@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=EB+Garamond:wght@400;500&family=Ubuntu:wght@300;400&display=swap");
+/*
+font-family: 'Cardo', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Ubuntu', sans-serif;
+$orange: rgb(255, 165, 0);
+$navy: rgb(0, 0, 128);
+*/
+.gyik .head-section {
+  background-image: url("../img/bg3.jpg");
+}
+.gyik .head-section .box {
+  position: relative;
+}
+.gyik #faq-img {
+  position: absolute;
+  top: 160px;
+  right: 100px;
+  width: 400px;
+  transform: rotate(-6deg);
+}
+.gyik .section .content-container .box .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+.gyik .section .content-container .box .container:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.gyik .section .content-container .box .container .question {
+  background-color: rgb(186, 222, 191);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+}
+.gyik .section .content-container .box .container .question:hover {
+  background-color: rgb(117, 189, 128);
+}
+.gyik .section .content-container .box .container .question:hover h3,
+.gyik .section .content-container .box .container .question:hover div .icon {
+  color: white;
+}
+.gyik .section .content-container .box .container .question .icon {
+  color: rgb(80, 80, 80);
+  margin-left: 2rem;
+}
+.gyik .section .content-container .box .container .question,
+.gyik .section .content-container .box .container .question h3,
+.gyik .section .content-container .box .container .question div .icon {
+  transition: all 150ms ease-in-out;
+}
+.gyik .section .content-container .box .container .answer {
+  overflow: hidden;
+}
+.gyik .section .content-container .box .container .answer p {
+  padding: 1rem;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+@media screen and (max-width: 1000px) {
+  .gyik #faq-img {
+    width: 300px;
+    top: 200px;
+    right: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gyik #faq-img {
+    top: 235px;
+    width: 250px;
+  }
+  .gyik .head-section {
+    background-size: 120% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gyik #faq-img {
+    top: 150px;
+    width: 200px;
+  }
+  .gyik .head-section {
+    background-size: 150% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gyik .head-section {
+    background-size: 170% !important;
+  }
+}/*# sourceMappingURL=gyik.css.map */

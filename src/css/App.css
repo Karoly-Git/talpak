@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=EB+Garamond:wght@400;500&family=Ubuntu:wght@300;400&display=swap");
+/*
+font-family: 'Cardo', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Ubuntu', sans-serif;
+$orange: rgb(255, 165, 0);
+$navy: rgb(0, 0, 128);
+*/
+@import './kezdolap.css';
+@import './szolgaltatasok.css';
+@import './arak.css';
+@import './magamrol.css';
+@import './kapcsolat.css';
+@import './galeria.css';
+@import './jo_tudni.css';
+@import './akciok.css';
+@import './gyik.css';
+@import './felhasz_felt.css';
+@import './navigation.css';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+.App {
+  overflow: hidden;
+}
+
+.up {
+  position: fixed;
+  bottom: 8rem;
+  padding: 6px 3px;
+  border-radius: 25% 0 0 25%;
+  background-color: rgb(63, 97, 170);
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  z-index: 10000;
+}
+.up .icon {
+  font-size: 2rem;
+  transform: rotate(-90deg);
+  color: white;
+}
+
+h1 {
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: 400;
+  color: rgb(80, 80, 80);
+}
+
+h3 {
+  font-weight: 400;
+  color: rgb(80, 80, 80);
+}
+
+p {
+  font-size: 1.15rem;
+  color: rgb(100, 100, 100);
+}
+
+a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.link-set .icon {
+  transition: all 150ms ease-in-out;
+}
+.link-set .icon:hover {
+  scale: 1.25;
+  color: rgb(117, 189, 128);
+}
+
+button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: none;
+  background-color: rgb(186, 222, 191);
+  color: rgb(80, 80, 80);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+button:hover {
+  background-color: rgb(117, 189, 128);
+  color: white;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+footer {
+  margin-top: unset;
+  position: relative;
+  z-index: 901;
+}
+footer .sec-nav {
+  display: flex !important;
+  justify-content: center;
+  padding: 2rem 0;
+}
+footer .sec-nav .link-set {
+  display: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.page .head-section {
+  padding-top: 90px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+.page .head-section .box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1200px;
+  padding: 2rem;
+  margin: auto;
+}
+.page .head-section .box h1 {
+  margin-bottom: 2rem;
+}
+.page .head-section .box p {
+  max-width: 400px;
+  line-height: 1.3;
+}
+.page .head-section .box h1,
+.page .head-section .box p {
+  position: relative;
+  z-index: 901;
+}
+.page .head-section .box #amobea {
+  width: 500px;
+  height: 335px;
+  margin-top: -290px;
+  margin-left: -90px;
+  opacity: 70%;
+  transform: rotate(-8deg);
+}
+.page .section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  scroll-margin-top: 100px;
+}
+.page .section .content-container {
+  display: flex;
+  place-content: center;
+  width: 100%;
+}
+.page .section .content-container .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  padding: 2rem;
+  margin: auto;
+}
+.page .section .content-container .box .slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page .section .content-container .box .slider .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+.page .section .content-container .box .slider .button .icon {
+  font-size: 2.5rem;
+  border: 2px solid rgb(180, 180, 180);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.page .section .content-container .box .slider .button .icon:hover {
+  background-color: rgb(120, 120, 120);
+  color: white;
+}
+.page .section .content-container .box .slider #previous-button .icon {
+  transform: rotate(180deg);
+}
+.page .section .content-container .box .slider .wrapper p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+.page .section .content-container .box .slider .wrapper p i {
+  margin: unset;
+}
+.page .section .content-container .box .slider .wrapper h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .head-section {
+    background-position-y: top !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 1rem !important;
+    width: 100% !important;
+  }
+  .box .slider .button {
+    display: none !important;
+  }
+  .head-section {
+    min-height: 400px !important;
+  }
+  .head-section .box h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .head-section {
+    min-height: 300px !important;
+  }
+}/*# sourceMappingURL=App.css.map */
