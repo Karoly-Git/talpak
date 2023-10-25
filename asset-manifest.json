@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/talpak/static/css/main.fdbabd38.css",
-    "main.js": "/talpak/static/js/main.4f498d5a.js",
+    "main.css": "/talpak/static/css/main.9ec573cc.css",
+    "main.js": "/talpak/static/js/main.76ed5d81.js",
     "static/js/787.f1600cc0.chunk.js": "/talpak/static/js/787.f1600cc0.chunk.js",
     "static/media/me10.png": "/talpak/static/media/me10.5ffe5c80dabefbe0d366.png",
-    "static/media/jo_tudni2.png": "/talpak/static/media/jo_tudni2.1fb824db281177a28812.png",
+    "static/media/jo_tudni.png": "/talpak/static/media/jo_tudni.610a6a1d19026354a78b.png",
     "static/media/kezdolap1.jpg": "/talpak/static/media/kezdolap1.8c8f51845846572a3e44.jpg",
     "static/media/cert_016.jpg": "/talpak/static/media/cert_016.c4d24b0338604ad5e4b3.jpg",
     "static/media/bg3.jpg": "/talpak/static/media/bg3.eea56fefd1fccbbcf813.jpg",
@@ -72,7 +72,6 @@
     "static/media/cert_011.jpg": "/talpak/static/media/cert_011.185217cb4736e7d54d46.jpg",
     "static/media/cert_010.jpg": "/talpak/static/media/cert_010.77de934202e3b23707cd.jpg",
     "static/media/logo.png": "/talpak/static/media/logo.2e9850eead0e920b0032.png",
-    "static/media/kontakt22.png": "/talpak/static/media/kontakt22.3b3ebd12eff4a0de7cfa.png",
     "static/media/logo3.png": "/talpak/static/media/logo3.9f3ffad8a8d552f94561.png",
     "static/media/massage.png": "/talpak/static/media/massage.eaa06dc6f1e1f0529952.png",
     "static/media/ico-kinesio.png": "/talpak/static/media/ico-kinesio.5e33fbd3c3899ba11204.png",
@@ -83,12 +82,12 @@
     "static/media/slick.ttf": "/talpak/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/talpak/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/talpak/index.html",
-    "main.fdbabd38.css.map": "/talpak/static/css/main.fdbabd38.css.map",
-    "main.4f498d5a.js.map": "/talpak/static/js/main.4f498d5a.js.map",
+    "main.9ec573cc.css.map": "/talpak/static/css/main.9ec573cc.css.map",
+    "main.76ed5d81.js.map": "/talpak/static/js/main.76ed5d81.js.map",
     "787.f1600cc0.chunk.js.map": "/talpak/static/js/787.f1600cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdbabd38.css",
-    "static/js/main.4f498d5a.js"
+    "static/css/main.9ec573cc.css",
+    "static/js/main.76ed5d81.js"
   ]
 }
