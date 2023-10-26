@@ -1,6 +1,6 @@
 {
     "settings": {
-        "isLocalServer": false,
+        "isLocalServer": true,
         "isMaintenance": false
     },
     "urls": {

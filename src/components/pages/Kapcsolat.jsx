@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { contacts } from '../../data/data';
 import { FiPhone as Phone } from 'react-icons/fi';
 import { HeadSection, Section } from '../Sections';
-import amobea from '../../img/amobea.png';
 import AnimatedDiv from "../PageTransition";
 
 import { useNavigate } from 'react-router-dom';
@@ -77,7 +76,6 @@ export default function Kapcsolat() {
                                 az egyes szolgáltatásokról vagy konkrét árajánlatot kérni,
                                 kérlek, vedd fel a kapcsolatot velem.
                             </p>
-                            <img id='amobea' src={amobea} alt="" />
                         </div>
                     }
                 />
