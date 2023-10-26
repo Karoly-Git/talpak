@@ -146,6 +146,7 @@ export default function Kapcsolat() {
                                         {contacts.tel.text}
                                     </h2>
                                 </a>
+                                <span style={{ fontSize: '12px', color: 'white' }}>{config.settings.isLocalServer ? 'Local' : 'Heroku'}</span>
                             </form>
                         </div>
                     }
