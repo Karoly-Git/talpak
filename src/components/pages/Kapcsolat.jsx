@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { contacts } from '../../data/data';
 import { FiPhone as Phone } from 'react-icons/fi';
 import { HeadSection, Section } from '../Sections';
@@ -14,6 +14,8 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import config from '../../config.json';
 
 export default function Kapcsolat() {
+
+    const [sending, setSending] = useState(false);
 
     const URL = config.settings.isLocalServer ? config.urls.local_message_url : config.urls.heroku_message_url;
 
@@ -32,6 +34,7 @@ export default function Kapcsolat() {
 
     const onSubmit = async (data, event) => {
         event.preventDefault();
+        setSending(true);
         try {
             const result = await fetch(URL,
                 {
@@ -57,6 +60,8 @@ export default function Kapcsolat() {
         } catch (err) {
             //console.log(err.ok);
             navigate('/error');
+        } finally {
+            setSending(false); // Set the sending state back to false after the request is complete
         }
     };
 
@@ -137,7 +142,21 @@ export default function Kapcsolat() {
                                 {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
                                 <textarea placeholder="Ide írhatod az üzenetet*" {...register('text')}></textarea>
 
+                                {sending &&
+                                    <div id='sending-in-progress'>
+                                        <p>Küldés folyamatban...</p>
+
+                                        <svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="9" stroke="#000" stroke-width="2" fill="none" />
+                                            <circle cx="10" cy="10" r="9" stroke="#0073e6" stroke-width="2" fill="none">
+                                                <animate attributeName="stroke-dasharray" from="0 56.548667764616276" to="57 56.548667764616276" dur="1s" begin="0s" repeatCount="indefinite" />
+                                            </circle>
+                                        </svg>
+                                    </div>
+                                }
+
                                 <button>Küld</button>
+
                                 <a
                                     href={contacts.tel.link}
                                     rel="noopener noreferrer">
@@ -146,6 +165,7 @@ export default function Kapcsolat() {
                                         {contacts.tel.text}
                                     </h2>
                                 </a>
+
                                 <span style={{ fontSize: '12px', color: 'white' }}>{config.settings.isLocalServer ? 'Local' : 'Heroku'}</span>
                             </form>
                         </div>

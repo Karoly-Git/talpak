@@ -7,10 +7,6 @@
         background-position: center 220px !important;
         background-size: 20% !important;
 
-        #amobea {
-            display: none !important;
-        }
-
         .box {
             h1 {
                 position: relative;
@@ -20,6 +16,30 @@
     }
 
     .section {
+        #sending-in-progress {
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 50px;
+            height: 100px;
+            margin: -100px auto 0;
+            top: -5rem;
+            z-index: 902;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            border: 5px solid white;
+
+            //display: none;
+            p {
+                color: $blue;
+                font-weight: 600;
+                margin: 0 1rem 0 0;
+                font-size: 1.5rem;
+            }
+        }
+
         .box {
             flex-direction: row !important;
             justify-content: center;
@@ -125,7 +145,6 @@
                     font-size: 1.1rem;
                     letter-spacing: 1px;
                     color: white;
-                    font-weight: 600;
                     border-bottom: 3px solid white;
                     background-color: $blue;
                 }
@@ -152,10 +171,11 @@
 
                     .error {
                         color: rgb(255, 0, 0);
-                        font-weight: 600;
                         letter-spacing: 1px;
                         margin-bottom: 0.25rem;
                         display: inline;
+                        background-color: white;
+                        padding: 0.25rem;
                     }
                 }
             }
