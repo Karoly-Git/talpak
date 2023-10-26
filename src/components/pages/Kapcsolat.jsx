@@ -11,11 +11,11 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-import config from '../../data/config.json';
+import config from '../../config.json';
 
 export default function Kapcsolat() {
 
-    const URL = config.settings.isLocalServer ? config.urls.local_message : config.urls.heroku_message;
+    const URL = config.settings.isLocalServer ? config.urls.local_message_url : config.urls.heroku_message_url;
 
     const navigate = useNavigate();
 
