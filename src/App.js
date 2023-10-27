@@ -100,6 +100,7 @@ export default function App() {
               <Route path='/akciok' element={<Akciok />} />
               <Route path='/gyik' element={<Gyik />} />
 
+              <Route path='/' element={<Kezdolap />} />
               <Route path='/talpak' element={<Kezdolap />} />
               <Route path='/szolgaltatasok' element={<Szolgaltatasok />} />
               <Route path='/arak' element={<Arak />} />
