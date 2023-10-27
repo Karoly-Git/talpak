@@ -57,8 +57,8 @@ export default function Kapcsolat() {
             }
 
         } catch (err) {
-            //console.log(err.ok);
             navigate('/error');
+            //console.log(err.ok);
         } finally {
             setSending(false); // Set the sending state back to false after the request is complete
         }
