@@ -123,7 +123,7 @@ export default function Kapcsolat() {
                             </ul>
 
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <h2 className='form-title'>Vedd fel velem a kapcsolatot</h2>
+                                <h2 className='form-title'>Küldj üzenetet</h2>
                                 <p>
                                     Hagyja üyenetet, és hamarosan fel fogom venni Veled a kapcsolatot. Minden megkeresésre igyekszek 1 munkanapon belül válaszolni.
                                 </p>
@@ -138,7 +138,7 @@ export default function Kapcsolat() {
                                 <input placeholder="Telefonszám" {...register('senderPhone')}></input>
 
                                 {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
-                                <textarea placeholder="Ide írhatod az üzenetet*" {...register('text')}></textarea>
+                                <textarea placeholder="Ide írd az üzenetet*" {...register('text')}></textarea>
 
                                 {sending &&
                                     <div id='sending-in-progress'>
