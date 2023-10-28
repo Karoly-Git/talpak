@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeadSection, Section } from '../Sections';
 import { nameDays } from '../../data/name-days';
-import AnimatedDiv from "../PageTransition";
+import PageTransition from "../framer-animations/PageTransition";
 
 export default function Akciok() {
 
@@ -13,7 +13,7 @@ export default function Akciok() {
     //const namesToday = ['Alma', 'Viola'];
 
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className='page akciok'>
                 <HeadSection
                     content={
@@ -45,6 +45,6 @@ export default function Akciok() {
                 />
 
             </div>
-        </AnimatedDiv>
+        </PageTransition>
     )
 }

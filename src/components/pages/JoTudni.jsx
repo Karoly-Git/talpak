@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { HeadSection, Section } from '../Sections';
-import AnimatedDiv from "../PageTransition";
+
+import PageTransition from "../framer-animations/PageTransition";
+import AnimatedBox from "../framer-animations/AnimatedBox";
 
 import disabled from '../../img/disabled3.png'
 import hazhoz from '../../img/hazhoz.png'
@@ -9,17 +11,17 @@ import amobea from '../../img/amobea.png';
 
 export default function JoTudni() {
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className='page jo-tudni'>
                 <HeadSection
                     content={
-                        <div className='box'>
+                        <AnimatedBox>
                             <h1>Hasznos tudnivalók</h1>
                             <p>
                                 Kérlek olvasd el a lenti információkat, fontos dolgokat tartalmaznak
                                 a szolgáltatásokkal kapcsolatban.
                             </p>
-                        </div>
+                        </AnimatedBox>
                     }
                 />
 
@@ -82,6 +84,6 @@ export default function JoTudni() {
                     }
                 />
             </div>
-        </AnimatedDiv>
+        </PageTransition>
     )
 }

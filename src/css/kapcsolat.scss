@@ -6,6 +6,7 @@
         //background: $backgroundColor  !important;
         background-position: center 220px !important;
         background-size: 20% !important;
+        background-color: $backgroundColor;
 
         .box {
             h1 {
@@ -187,12 +188,6 @@
         }
     }
 
-    @media screen and (max-width: 1200px) {
-        .head-section {
-            background-size: 50% !important;
-        }
-    }
-
     @media screen and (max-width: 1050px) {
         .section {
             .box {
@@ -204,6 +199,7 @@
 
                 form {
                     width: 65%;
+                    margin-top: -8rem;
                 }
             }
         }
@@ -219,9 +215,9 @@
                 }
 
                 form {
-                    margin-top: -9rem;
                     width: 90%;
                     max-width: unset;
+                    margin-top: -3rem;
                 }
             }
         }
@@ -236,19 +232,9 @@
         .section {
             .box {
                 form {
-                    margin-top: -3rem;
-                }
-            }
-        }
-    }
-
-    @media screen and (max-width: 480px) {
-        .section {
-            .box {
-                form {
                     width: 100%;
                     padding: 1.5rem;
-                    margin-top: 0;
+                    //margin-top: 0;
                 }
             }
         }

@@ -3,10 +3,6 @@
 .gyik {
     .head-section {
         background-image: url('../img/bg3.jpg');
-
-        .box {
-            position: relative;
-        }
     }
 
     #faq-img {
@@ -15,6 +11,7 @@
         right: 100px;
         width: 400px;
         transform: rotate(-6deg);
+        z-index: 901;
     }
 
     .section {
@@ -83,6 +80,7 @@
 
     @media screen and (max-width: 768px) {
         #faq-img {
+            display: none;
             top: 235px;
             width: 250px;
         }

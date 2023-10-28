@@ -9,6 +9,7 @@ $navy: rgb(0, 0, 128);
 .kapcsolat .head-section {
   background-position: center 220px !important;
   background-size: 20% !important;
+  background-color: rgb(234, 241, 255);
 }
 .kapcsolat .head-section .box h1 {
   position: relative;
@@ -163,11 +164,6 @@ $navy: rgb(0, 0, 128);
   left: 0px;
   opacity: 1;
 }
-@media screen and (max-width: 1200px) {
-  .kapcsolat .head-section {
-    background-size: 50% !important;
-  }
-}
 @media screen and (max-width: 1050px) {
   .kapcsolat .section .box {
     width: 100% !important;
@@ -177,6 +173,7 @@ $navy: rgb(0, 0, 128);
   }
   .kapcsolat .section .box form {
     width: 65%;
+    margin-top: -8rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -187,9 +184,9 @@ $navy: rgb(0, 0, 128);
     display: none;
   }
   .kapcsolat .section .box form {
-    margin-top: -9rem;
     width: 90%;
     max-width: unset;
+    margin-top: -3rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -198,13 +195,7 @@ $navy: rgb(0, 0, 128);
     background: rgb(234, 241, 255) !important;
   }
   .kapcsolat .section .box form {
-    margin-top: -3rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .kapcsolat .section .box form {
     width: 100%;
     padding: 1.5rem;
-    margin-top: 0;
   }
 }/*# sourceMappingURL=kapcsolat.css.map */

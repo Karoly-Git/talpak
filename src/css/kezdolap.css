@@ -7,12 +7,22 @@ $orange: rgb(255, 165, 0);
 $navy: rgb(0, 0, 128);
 */
 .kezdolap .head-section {
+  display: flex;
+  justify-content: center;
   background-image: url("../img/kezdolap1.jpg");
   background-position: center;
 }
 .kezdolap .head-section #slogan {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
   margin-bottom: 10vw;
+  box-shadow: none !important;
+  background: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .kezdolap .head-section #slogan h2,
 .kezdolap .head-section #slogan h3 {
@@ -202,9 +212,6 @@ $navy: rgb(0, 0, 128);
   margin-bottom: 0.5rem;
 }
 @media screen and (max-width: 1050px) {
-  .kezdolap #slogan {
-    width: 100%;
-  }
   .kezdolap #info {
     width: 100%;
     padding: 1rem;

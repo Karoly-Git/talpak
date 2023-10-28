@@ -9,15 +9,13 @@ $navy: rgb(0, 0, 128);
 .gyik .head-section {
   background-image: url("../img/bg3.jpg");
 }
-.gyik .head-section .box {
-  position: relative;
-}
 .gyik #faq-img {
   position: absolute;
   top: 160px;
   right: 100px;
   width: 400px;
   transform: rotate(-6deg);
+  z-index: 901;
 }
 .gyik .section .content-container .box .container {
   display: flex;
@@ -69,6 +67,7 @@ $navy: rgb(0, 0, 128);
 }
 @media screen and (max-width: 768px) {
   .gyik #faq-img {
+    display: none;
     top: 235px;
     width: 250px;
   }

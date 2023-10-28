@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Bejelentkezes, Nyitvatartas, Cim } from "../ShopInfo";
 import { motion as m } from 'framer-motion';
-import AnimatedDiv from "../PageTransition";
+
+import PageTransition from "../framer-animations/PageTransition";
 
 import logo from "../../img/logo.png"
 import ServiceSnippets from "../ServiceSnippets"
@@ -28,7 +29,7 @@ export default function Kezdolap() {
     }, [])
 
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className="page kezdolap">
                 <HeadSection
                     content={
@@ -107,6 +108,6 @@ export default function Kezdolap() {
                     }
                 />
             </div>
-        </AnimatedDiv>
+        </PageTransition>
     )
 };

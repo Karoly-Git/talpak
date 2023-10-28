@@ -1,29 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { HeadSection, Section } from '../Sections';
 import { services } from '../../data/services';
 import { AiFillCaretRight as Arrow } from 'react-icons/ai';
 import { FaPlus as PlusIcon, FaMinus as MinusIcon } from 'react-icons/fa';
-import amobea from '../../img/amobea.png';
 
-import AnimatedDiv from "../PageTransition";
+import PageTransition from "../framer-animations/PageTransition";
+import AnimatedBox from "../framer-animations/AnimatedBox";
 
 export default function Szolgaltatasok() {
     const activeServices = services.filter((e) => e.isActive);
 
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className='page szolgaltatasok'>
                 <HeadSection
                     content={
-                        <div className='box'>
+                        <AnimatedBox>
                             <h1>Szolgáltatások</h1>
                             <p>
                                 Ha további részleteket szeretnél megtudni
                                 az egyes szolgáltatásokról vagy konkrét árajánlatot kérni,
                                 kérlek, vedd fel a kapcsolatot velem.
                             </p>
-                        </div>
+                        </AnimatedBox>
                     }
                 />
 
@@ -67,6 +66,6 @@ export default function Szolgaltatasok() {
                     />
                 )}
             </div>
-        </AnimatedDiv>
+        </PageTransition>
     )
 }

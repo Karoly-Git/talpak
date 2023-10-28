@@ -1,10 +1,11 @@
 import React from 'react'
 import { HeadSection, Section } from '../Sections';
-import AnimatedDiv from "../PageTransition";
+
+import PageTransition from "../framer-animations/PageTransition";
 
 export default function FelhasznalasiFeltetelek() {
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className='page felhasznalasi-feltetelek'>
                 <HeadSection
                     content={
@@ -22,6 +23,6 @@ export default function FelhasznalasiFeltetelek() {
                     }
                 />
             </div>
-        </AnimatedDiv>
+        </PageTransition>
     )
 }

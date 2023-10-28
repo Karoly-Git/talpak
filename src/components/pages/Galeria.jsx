@@ -1,12 +1,13 @@
 import React, { createRef, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { galleries } from '../../data/galleries';
-import AnimatedDiv from "../PageTransition";
+
+import PageTransition from "../framer-animations/PageTransition";
+import AnimatedBox from "../framer-animations/AnimatedBox";
 
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
 import { HeadSection, Section } from '../Sections';
-import amobea from '../../img/amobea.png';
 
 /*
 const images2 = [
@@ -53,17 +54,17 @@ export default function Galeria() {
     });
 
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className='page galeria'>
                 <HeadSection content={
-                    <div className='box'>
+                    <AnimatedBox>
                         <h1>Elkapott pillanatok</h1>
                         <p>
                             Üdvözöllek a Masszázs Galériában, ahol bepillantást nyerhetsz a relaxáció világába.
                             Az illatos aromaterápia, a nyugtató gyertyafény stresszt enyhítenek, feszültséget
                             csökkentenek és elősegítik a jó közérzetet.
                         </p>
-                    </div>
+                    </AnimatedBox>
                 }
                 />
 
@@ -107,6 +108,6 @@ export default function Galeria() {
                     )
                 }
             </div>
-        </AnimatedDiv>
+        </PageTransition>
     )
 }

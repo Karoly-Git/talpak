@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { contacts } from '../../data/data';
 import { FiPhone as Phone } from 'react-icons/fi';
 import { HeadSection, Section } from '../Sections';
-import AnimatedDiv from "../PageTransition";
+
+import PageTransition from "../framer-animations/PageTransition";
+import AnimatedBox from "../framer-animations/AnimatedBox";
 
 import { useNavigate } from 'react-router-dom';
 
@@ -65,18 +67,18 @@ export default function Kapcsolat() {
     };
 
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className='page kapcsolat'>
                 <HeadSection
                     content={
-                        <div className='box'>
+                        <AnimatedBox>
                             <h1>Elérhetőségeim</h1>
                             <p>
                                 Ha további részleteket szeretnél megtudni
                                 az egyes szolgáltatásokról vagy konkrét árajánlatot kérni,
                                 kérlek, vedd fel a kapcsolatot velem.
                             </p>
-                        </div>
+                        </AnimatedBox>
                     }
                 />
 
@@ -170,7 +172,7 @@ export default function Kapcsolat() {
                     }
                 />
             </div>
-        </AnimatedDiv>
+        </PageTransition>
     )
 }
 

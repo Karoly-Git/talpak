@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HeadSection, Section } from '../Sections';
-import AnimatedDiv from "../PageTransition";
+
+import PageTransition from "../framer-animations/PageTransition";
 
 import { about } from '../../data/data';
 import { CertsSlider } from '../Sliders';
@@ -9,7 +10,7 @@ export default function Magamrol() {
     const aboutActive = about.filter(e => e.isActive);
 
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className='page magamrol'>
                 <HeadSection
                     content={
@@ -81,6 +82,6 @@ export default function Magamrol() {
                     )
                 }
             </div >
-        </AnimatedDiv>
+        </PageTransition>
     )
 }

@@ -5,7 +5,9 @@ import { FaPlus as PlusIcon, FaMinus as MinusIcon } from 'react-icons/fa';
 import { HeadSection, Section } from '../Sections';
 import amobea from '../../img/amobea.png';
 import faq from '../../img/faq.svg';
-import AnimatedDiv from "../PageTransition";
+
+import PageTransition from "../framer-animations/PageTransition";
+import AnimatedBox from "../framer-animations/AnimatedBox";
 
 export default function Gyik() {
     const activeFAQs = faqs.filter((e) => e.isActive);
@@ -37,12 +39,12 @@ export default function Gyik() {
     }
 
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className="page gyik">
                 <img id='faq-img' src={faq} alt="Kérdőjelek" />
                 <HeadSection
                     content={
-                        <div className='box'>
+                        <AnimatedBox>
                             <h1>Gyakori Kérdések</h1>
                             <p>
                                 A leggyakoribb kérdéseket
@@ -51,7 +53,7 @@ export default function Gyik() {
                                 Ha nem találod a választ a kérdésedre, ne habozz felvenni velem
                                 a kapcsolatot.
                             </p>
-                        </div>
+                        </AnimatedBox>
                     }
                 />
 
@@ -87,6 +89,6 @@ export default function Gyik() {
                     }
                 />
             </div>
-        </AnimatedDiv>
+        </PageTransition>
     )
 }

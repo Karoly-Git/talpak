@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion as m } from 'framer-motion';
 
-export default function AnimatedDiv({ children }) {
+export default function PageTransition({ children }) {
 
     return (
         <m.div

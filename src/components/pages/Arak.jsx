@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { HeadSection, Section } from "../Sections";
 import PriceDetails from "../PriceDetails";
 import { prices } from "../../data/prices";
-import amobea from '../../img/amobea.png';
-import AnimatedDiv from "../PageTransition";
+
+import PageTransition from "../framer-animations/PageTransition";
+import AnimatedBox from "../framer-animations/AnimatedBox";
 
 export default function Arak() {
 
@@ -26,18 +27,18 @@ export default function Arak() {
     });
 
     return (
-        <AnimatedDiv>
+        <PageTransition>
             <div className="page arak">
                 <HeadSection
                     content={
-                        <div className="box">
+                        <AnimatedBox>
                             <h1>Árak</h1>
                             <p>
                                 Ha további részleteket szeretnél megtudni
                                 az egyes szolgáltatásokról vagy konkrét árajánlatot kérni,
                                 kérlek, vedd fel a kapcsolatot velem.
                             </p>
-                        </div>
+                        </AnimatedBox>
                     }
                 />
 
@@ -81,7 +82,7 @@ export default function Arak() {
                     )
                 }
             </div >
-        </AnimatedDiv>
+        </PageTransition>
     )
 }
 
