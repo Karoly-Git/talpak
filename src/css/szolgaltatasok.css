@@ -8,6 +8,7 @@ $navy: rgb(0, 0, 128);
 */
 .szolgaltatasok .head-section {
   background-image: url("../img/szolgaltatasok.jpg");
+  background-position: top !important;
 }
 .szolgaltatasok .section .content-container h2 {
   margin-bottom: 2rem;

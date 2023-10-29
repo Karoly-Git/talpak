@@ -10,7 +10,7 @@ $navy: rgb(0, 0, 128);
   display: flex;
   justify-content: center;
   background-image: url("../img/kezdolap1.jpg");
-  background-position: center;
+  background-position: top !important;
 }
 .kezdolap .head-section #slogan {
   display: flex;
