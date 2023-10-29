@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { services } from '../data/services';
 
+import { motion as m } from 'framer-motion';
+import { animations } from '../data/framer-animations';
+
 export default function ServiceSnippets() {
     const [iconAnimated, setIconAnimated] = useState(false)
 
@@ -48,7 +51,7 @@ export default function ServiceSnippets() {
                 <div key={i}
                     // This style to be moved to SCSS !!!
                     style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <p>{e.name} {activeServices[i].description.snippet}</p>
+                    <m.p {...animations.p}>{e.name} {activeServices[i].description.snippet}</m.p>
 
                     <Link to={`/szolgaltatasok#${activeServices[i].id}`}>
                         <button>Bővebben</button>

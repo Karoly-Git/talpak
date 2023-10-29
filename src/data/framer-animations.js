@@ -4,6 +4,11 @@ export const animations = {
         animate: { opacity: 1 },
         transition: { duration: 1.15, ease: "easeOut" }
     },
+    p: {
+        initial: { opacity: 0, position: 'relative', bottom: -40 },
+        animate: { opacity: 1, bottom: 0 },
+        transition: { duration: 0.75, ease: "easeOut" }
+    },
     page: {
         h1: {
             initial: { opacity: 0, position: 'relative', left: -80 },

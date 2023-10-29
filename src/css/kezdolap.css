@@ -143,6 +143,7 @@ $navy: rgb(0, 0, 128);
   text-align: center;
   width: 100%;
   max-width: 500px;
+  min-height: 160px;
   padding: 1rem;
 }
 .kezdolap .section #services button {

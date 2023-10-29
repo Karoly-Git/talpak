@@ -30,9 +30,9 @@ export default function Szolgaltatasok() {
 
             {activeServices.map((e, i) =>
                 <Section
-                    color={i % 2 === 0 ? true : false}
+                    color={i % 2 !== 0 ? true : false}
                     top
-                    bottom={i === activeServices.length - 1 ? true : false}
+                    //bottom={i === activeServices.length - 1 ? true : false}
                     key={i}
                     id={e.id}
                     content={

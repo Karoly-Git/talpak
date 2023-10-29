@@ -56,7 +56,7 @@ export default function Gyik() {
             />
 
             <Section
-                color
+                bottom
                 top
                 content={
                     <div className='box'>

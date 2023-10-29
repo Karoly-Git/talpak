@@ -55,7 +55,6 @@ export default function Kezdolap() {
             />
 
             <Section
-                color
                 top
                 content={
                     < div className="box" id="introduction" >
@@ -77,16 +76,16 @@ export default function Kezdolap() {
             />
 
             <Section
+                color
                 top
                 content={
-                    < div className="box" id="services" >
+                    < div className="box" id="services" style={{ transition: 'all 150ms ease' }}>
                         <ServiceSnippets />
                     </ div >
                 }
             />
 
             <Section
-                color
                 top
                 content={
                     < div className="box" id="reviews" >
@@ -96,8 +95,8 @@ export default function Kezdolap() {
             />
 
             <Section
+                color
                 top
-                bottom
                 content={
                     <div className="box" id="info" style={infoAnimated ? { opacity: 1 } : { opacity: 0 }} >
                         <Bejelentkezes />
