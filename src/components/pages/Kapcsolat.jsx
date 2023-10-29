@@ -126,7 +126,7 @@ export default function Kapcsolat() {
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <h2 className='form-title'>Küldj üzenetet</h2>
                             <p>
-                                Hagyja üyenetet, és hamarosan fel fogom venni Veled a kapcsolatot. Minden megkeresésre igyekszek 1 munkanapon belül válaszolni.
+                                Hagyja üyenetet, és hamarosan fel fogom venni Veled a kapcsolatot. Minden megkeresésre igyekszek 1 napon belül válaszolni.
                             </p>
 
                             {errors.senderName && <span><p className='error'>{errors.senderName?.message}</p></span>}

@@ -201,6 +201,10 @@
                     .icon {
                         font-size: 1.5rem;
                         color: $green;
+
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
             }
