@@ -7,9 +7,10 @@ $orange: rgb(255, 165, 0);
 $navy: rgb(0, 0, 128);
 */
 .kapcsolat .head-section {
-  background-position: center 220px !important;
-  background-size: 20% !important;
-  background-color: rgb(234, 241, 255);
+  background-image: url("../img/kapcsolat1.jpg");
+  background-size: 1600px !important;
+  background-position: right;
+  background-position-y: -100px !important;
 }
 .kapcsolat .head-section .box h1 {
   position: relative;
@@ -164,6 +165,18 @@ $navy: rgb(0, 0, 128);
   left: 0px;
   opacity: 1;
 }
+@media screen and (max-width: 1400px) {
+  .kapcsolat .head-section {
+    background-size: 1400px !important;
+    background-position-y: -50px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .kapcsolat .head-section {
+    background-size: 950px !important;
+    background-position-y: -30px !important;
+  }
+}
 @media screen and (max-width: 1050px) {
   .kapcsolat .section .box {
     width: 100% !important;
@@ -177,6 +190,10 @@ $navy: rgb(0, 0, 128);
   }
 }
 @media screen and (max-width: 768px) {
+  .kapcsolat .head-section {
+    background-size: 100% !important;
+    background-position-y: 0 !important;
+  }
   .kapcsolat .section .box {
     width: 100% !important;
   }
@@ -190,12 +207,20 @@ $navy: rgb(0, 0, 128);
   }
 }
 @media screen and (max-width: 576px) {
-  .kapcsolat .head-section {
-    background: unset !important;
-    background: rgb(234, 241, 255) !important;
+  .kapcsolat .head-section .box {
+    width: 100% !important;
   }
   .kapcsolat .section .box form {
     width: 100%;
     padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .kapcsolat .head-section {
+    background-image: none !important;
+    background-color: rgb(234, 241, 255) !important;
+  }
+  .kapcsolat .head-section .box {
+    background: none !important;
   }
 }/*# sourceMappingURL=kapcsolat.css.map */

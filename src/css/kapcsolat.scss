@@ -2,11 +2,12 @@
 
 .kapcsolat {
     .head-section {
-        //background-image: url('../img/kontakt22.png');
+        background-image: url('../img/kapcsolat1.jpg');
+        background-size: 1600px !important;
+        background-position: right;
+        background-position-y: -100px !important;
         //background: $backgroundColor  !important;
-        background-position: center 220px !important;
-        background-size: 20% !important;
-        background-color: $backgroundColor;
+        //background-color: $backgroundColor;
 
         .box {
             h1 {
@@ -188,6 +189,20 @@
         }
     }
 
+    @media screen and (max-width: 1400px) {
+        .head-section {
+            background-size: 1400px !important;
+            background-position-y: -50px !important;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .head-section {
+            background-size: 950px !important;
+            background-position-y: -30px !important;
+        }
+    }
+
     @media screen and (max-width: 1050px) {
         .section {
             .box {
@@ -206,6 +221,11 @@
     }
 
     @media screen and (max-width: 768px) {
+        .head-section {
+            background-size: 100% !important;
+            background-position-y: 0 !important;
+        }
+
         .section {
             .box {
                 width: 100% !important;
@@ -225,8 +245,9 @@
 
     @media screen and (max-width: 576px) {
         .head-section {
-            background: unset !important;
-            background: $backgroundColor  !important;
+            .box {
+                width: 100% !important;
+            }
         }
 
         .section {
@@ -234,9 +255,19 @@
                 form {
                     width: 100%;
                     padding: 1.5rem;
-                    //margin-top: 0;
                 }
             }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .head-section {
+            .box {
+                background: none !important;
+            }
+
+            background-image: none !important;
+            background-color: $backgroundColor  !important;
         }
     }
 }
