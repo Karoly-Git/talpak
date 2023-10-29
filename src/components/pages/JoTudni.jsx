@@ -5,7 +5,7 @@ import { motion as m } from 'framer-motion';
 import { animations } from '../../data/framer-animations';
 
 import disabled from '../../img/disabled3.png'
-import hazhoz from '../../img/hazhoz.png'
+import hazhoz from '../../img/hazhoz2.png'
 
 export default function JoTudni() {
     return (
@@ -23,7 +23,6 @@ export default function JoTudni() {
             />
 
             <Section
-                color
                 top
                 content={
                     <div className='box'>
@@ -52,8 +51,8 @@ export default function JoTudni() {
             />
 
             <Section
+                color
                 top
-                bottom
                 content={
                     <div className='box'>
                         <h2>Nem tudsz eljönni hozzám?</h2>
