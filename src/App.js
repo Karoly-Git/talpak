@@ -86,7 +86,7 @@ export default function App() {
           <m.header
             initial={{ opacity: 0, top: -150 }}
             animate={{ opacity: 1, top: 0 }}
-            transition={{ duration: 0.75, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "easeOut" }}
           >
             <SecondaryNavigation />
             <MainNavigation />

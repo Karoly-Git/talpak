@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import { faqs } from '../../data/data';
 import { FaPlus as PlusIcon, FaMinus as MinusIcon } from 'react-icons/fa';
 import { HeadSection, Section } from '../Sections';
-import amobea from '../../img/amobea.png';
 import faq from '../../img/faq.svg';
 
-import PageTransition from "../framer-animations/PageTransition";
-import AnimatedBox from "../framer-animations/AnimatedBox";
+import { motion as m } from 'framer-motion';
+import { animations } from '../../data/framer-animations';
 
 export default function Gyik() {
     const activeFAQs = faqs.filter((e) => e.isActive);
@@ -39,56 +38,54 @@ export default function Gyik() {
     }
 
     return (
-        <PageTransition>
-            <div className="page gyik">
-                <img id='faq-img' src={faq} alt="Kérdőjelek" />
-                <HeadSection
-                    content={
-                        <AnimatedBox>
-                            <h1>Gyakori Kérdések</h1>
-                            <p>
-                                A leggyakoribb kérdéseket
-                                gyűjtöttem össze az alábbiakban.
-                                Kérdés esetén, kérlek nézd meg őket.
-                                Ha nem találod a választ a kérdésedre, ne habozz felvenni velem
-                                a kapcsolatot.
-                            </p>
-                        </AnimatedBox>
-                    }
-                />
+        <m.div className="page gyik" {...animations.pageTransition}>
+            <img id='faq-img' src={faq} alt="Kérdőjelek" />
+            <HeadSection
+                content={
+                    <m.div className='box' {...animations.page.box}>
+                        <m.h1 {...animations.page.h1}>Gyakori Kérdések</m.h1>
+                        <m.p {...animations.page.p}>
+                            A leggyakoribb kérdéseket
+                            gyűjtöttem össze az alábbiakban.
+                            Kérdés esetén, kérlek nézd meg őket.
+                            Ha nem találod a választ a kérdésedre, ne habozz felvenni velem
+                            a kapcsolatot.
+                        </m.p>
+                    </m.div>
+                }
+            />
 
-                <Section
-                    color
-                    top
-                    content={
-                        <div className='box'>
-                            {faqs.map((element, index) =>
-                                element.isActive && (
-                                    <div className='container' key={index} >
-                                        <div className='question' onClick={() => toggleFAQ(index)} >
-                                            <h3>{element.question}</h3>
-                                            <div>
-                                                {!statuses[index] && <PlusIcon className='icon' />}
-                                                {statuses[index] && <MinusIcon className='icon' />}
-                                            </div>
-                                        </div>
-                                        <div className="answer">
-                                            <p
-                                                style={{
-                                                    marginTop: !statuses[index] ? `-${heights[index]}px` : '0px',
-                                                    transitionDuration: `${heights[index] * 2}ms`
-                                                }}
-                                            >
-                                                {element.answer}
-                                            </p>
+            <Section
+                color
+                top
+                content={
+                    <div className='box'>
+                        {faqs.map((element, index) =>
+                            element.isActive && (
+                                <div className='container' key={index} >
+                                    <div className='question' onClick={() => toggleFAQ(index)} >
+                                        <h3>{element.question}</h3>
+                                        <div>
+                                            {!statuses[index] && <PlusIcon className='icon' />}
+                                            {statuses[index] && <MinusIcon className='icon' />}
                                         </div>
                                     </div>
-                                )
-                            )}
-                        </div>
-                    }
-                />
-            </div>
-        </PageTransition>
+                                    <div className="answer">
+                                        <p
+                                            style={{
+                                                marginTop: !statuses[index] ? `-${heights[index]}px` : '0px',
+                                                transitionDuration: `${heights[index] * 2}ms`
+                                            }}
+                                        >
+                                            {element.answer}
+                                        </p>
+                                    </div>
+                                </div>
+                            )
+                        )}
+                    </div>
+                }
+            />
+        </m.div>
     )
 }

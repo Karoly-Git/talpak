@@ -1,28 +1,27 @@
 import React from 'react'
 import { HeadSection, Section } from '../Sections';
 
-import PageTransition from "../framer-animations/PageTransition";
+import { motion as m } from 'framer-motion';
+import { animations } from '../../data/framer-animations';
 
 export default function FelhasznalasiFeltetelek() {
     return (
-        <PageTransition>
-            <div className='page felhasznalasi-feltetelek'>
-                <HeadSection
-                    content={
-                        <div className='box'>
-                            <h1>Felhasználási Feltételek</h1>
-                        </div>
-                    }
-                />
-                <Section
-                    color
-                    top
-                    content={
-                        <div className='box'>
-                        </div>
-                    }
-                />
-            </div>
-        </PageTransition>
+        <div className='page felhasznalasi-feltetelek'>
+            <HeadSection
+                content={
+                    <m.div className='box' {...animations.pageTransition}>
+                        <h1>Felhasználási Feltételek</h1>
+                    </m.div>
+                }
+            />
+            <Section
+                color
+                top
+                content={
+                    <div className='box'>
+                    </div>
+                }
+            />
+        </div>
     )
 }

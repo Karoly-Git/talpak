@@ -4,24 +4,24 @@
     .head-section {
         background-image: url('../img/me10.png');
         background-position: left;
-        background-position-y: -3vw !important;
-        background-size: 50% !important;
+        background-position-y: -100px !important;
+        background-position-x: -100px !important;
+        background-size: 1000px !important;
         display: flex;
         justify-content: flex-end;
 
         .box {
-            align-items: flex-end !important;
-            width: 100% !important;
-            max-width: unset !important;
-            margin: unset !important;
+            width: 50%;
+            background: linear-gradient(to left, white, rgba(255, 255, 255, 0)) !important;
+            box-shadow: -30px 0 30px rgba(255, 255, 255, 0.6) !important;
+            box-shadow: none !important;
 
             h1 {
                 font-size: 2rem;
                 font-weight: 300;
-                width: 40%;
-                margin-right: 5rem;
+                width: 100%;
                 font-family: 'EB Garamond', serif;
-                margin-bottom: 0 !important;
+                margin: 0 !important;
             }
         }
     }
@@ -70,37 +70,30 @@
         }
     }
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1500px) {
         .head-section {
-            background-size: 65% !important;
-            background-position: -150px center !important;
+            background-position-x: -200px !important;
         }
     }
 
     @media screen and (max-width: 1200px) {
         .head-section {
-            background-size: 80% !important;
-            background-position-y: -6vw !important;
+            background-size: 800px !important;
+            background-position-y: -50px !important;
 
             .box {
                 h1 {
                     font-size: 1.5rem;
-                    margin-right: 0;
                 }
             }
         }
     }
 
-    @media screen and (max-width: 1050px) {
-        .head-section {
-            background-size: 90% !important;
-        }
-    }
-
     @media screen and (max-width: 768px) {
         .head-section {
-            background-size: 100% !important;
-            background-position: -200px center !important;
+            background-size: 600px !important;
+            background-position-y: -50px !important;
+            background-position-x: -200px !important;
         }
 
         .section {
@@ -136,16 +129,12 @@
 
     @media screen and (max-width: 576px) {
         .head-section {
-            background-position: -150px center !important;
-            background-size: cover !important;
-
             .box {
                 justify-content: flex-end;
 
                 h1 {
                     font-size: 1.1rem;
                     color: unset;
-                    margin-bottom: 10vw !important;
                 }
             }
         }
@@ -153,8 +142,9 @@
 
     @media screen and (max-width: 480px) {
         .head-section {
-            background-size: 100% !important;
-            background-position: -150px center !important;
+            background-size: 500px !important;
+            background-position-y: -20px !important;
+            background-position-x: -200px !important;
         }
 
         .section {
@@ -174,19 +164,19 @@
 
     @media screen and (max-width: 430px) {
         .head-section {
-            background-size: cover !important;
-            background-position: center !important;
-
             .box {
-                flex-direction: row !important;
-                align-items: center !important;
-                justify-content: flex-start !important;
-
                 h1 {
-                    margin-bottom: 0 !important;
-                    background-color: rgba(255, 255, 255, 0.7);
-                    padding: 0.5rem;
                     font-size: 1rem !important;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .head-section {
+            .box {
+                h1 {
+                    font-size: 0.9rem !important;
                 }
             }
         }
