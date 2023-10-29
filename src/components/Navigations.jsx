@@ -18,7 +18,7 @@ const mainMenuIitems = [
 
 const secMenuIitems = [
     { name: 'Jó tudni', to: '/jo-tudni', isDisplayed: true },
-    { name: 'Akciók', to: '/akciok', isDisplayed: false },
+    { name: 'Akciók', to: '/akciok', isDisplayed: true },
     { name: 'Gy.I.K', to: '/gyik', isDisplayed: true },
 ]
 

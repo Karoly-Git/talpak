@@ -18,7 +18,7 @@ export default function Magamrol() {
                         <m.h1
                             initial={{ opacity: 0, position: 'relative', top: 100 }}
                             animate={{ opacity: 1, top: 0 }}
-                            transition={{ duration: 0.75, ease: "easeOut", delay: 0.5 }}
+                            transition={{ duration: 0.75, ease: "easeOut", delay: 0.3 }}
                         >
                             "A masszőr az érintés erejével törekszik visszaállítani
                             az egyensúlyt, enyhíteni a fájdalmat, és táplálni a testet,
