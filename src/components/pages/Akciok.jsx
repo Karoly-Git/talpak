@@ -20,14 +20,16 @@ export default function Akciok() {
                 content={
                     <div className='box'>
                         <h1>Akciók</h1>
-                        <p>{namesToday.length > 1 ? 'Mai névnapok:' : 'Mai névnap:'}</p>
-                        <p>
-                            {namesToday?.map((name, index) =>
-                                <span key={index}>
-                                    {name}{index !== namesToday.length - 1 ? ', ' : ''}
-                                </span>
-                            )}
-                        </p>
+                        {false && <>
+                            <p>{namesToday.length > 1 ? 'Mai névnapok:' : 'Mai névnap:'}</p>
+                            <p>
+                                {namesToday?.map((name, index) =>
+                                    <span key={index}>
+                                        {name}{index !== namesToday.length - 1 ? ', ' : ''}
+                                    </span>
+                                )}
+                            </p>
+                        </>}
                         <br />
                         <h2>Hamarosan...</h2>
                         <br />

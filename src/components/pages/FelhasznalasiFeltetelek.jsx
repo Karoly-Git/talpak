@@ -10,7 +10,12 @@ export default function FelhasznalasiFeltetelek() {
             <HeadSection
                 content={
                     <m.div className='box' {...animations.pageTransition}>
-                        <h1>Felhasználási Feltételek</h1>
+                        <h1>Felhasználási feltételek</h1>
+                        <br />
+                        <h2>Hamarosan...</h2>
+                        <br />
+                        <p>Az oldal feltöltés alatt áll, kérlek látogass vissza holnap.</p>
+
                     </m.div>
                 }
             />

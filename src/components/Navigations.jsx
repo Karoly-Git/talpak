@@ -23,11 +23,12 @@ const secMenuIitems = [
 ]
 
 const bottomMenuIitems = [
-    { name: 'Kezdőlap', to: '/talpak', isDisplayed: true },
-    { name: 'Szolgáltatások', to: '/szolgaltatasok', isDisplayed: true },
-    { name: 'Kapcsolat', to: '/kapcsolat', isDisplayed: true },
+    { name: 'Kezdőlap', to: '/talpak', isDisplayed: false },
+    { name: 'Szolgáltatások', to: '/szolgaltatasok', isDisplayed: false },
+    { name: 'Kapcsolat', to: '/kapcsolat', isDisplayed: false },
     { name: 'Felhasználási feltételek', to: '/felhasznalasi-feltetelek', isDisplayed: true },
     { name: 'Gyakori kérdések', to: '/gyik', isDisplayed: true },
+    { name: 'Jó tudni', to: '/jo-tudni', isDisplayed: true },
 ]
 
 export function MainNavigation() {
