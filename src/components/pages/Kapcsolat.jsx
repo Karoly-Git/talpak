@@ -1,30 +1,37 @@
-import React, { useEffect, useState } from 'react';
-import { contacts } from '../../data/data';
-import { FiPhone as Phone } from 'react-icons/fi';
-import { HeadSection, Section } from '../Sections';
-
-import { motion as m } from 'framer-motion';
-import { animations } from '../../data/framer-animations';
-
+// React and React Router Imports
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+// Form Handling Imports
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
+// Animation Imports
+import { motion as m } from 'framer-motion';
+import { animations } from '../../data/framer-animations';
+
+// Data Imports
+import { contacts } from '../../data/data';
 import config from '../../config.json';
+
+// Icon Imports
+import { FiPhone as Phone } from 'react-icons/fi';
+
+// Custom Component Imports
+import { HeadSection, Section } from '../Sections';
 
 export default function Kapcsolat() {
 
     const [sending, setSending] = useState(false);
 
-    const URL = config.settings.isLocalServer ? config.urls.local_message_url : config.urls.heroku_message_url;
+    const messageURL = config.settings.isLocalServer ? config.urls.local + '/message' : config.urls.heroku + '/message';
 
     const navigate = useNavigate();
 
     const schema = yup.object().shape({
         senderName: yup.string().required("Név megadása szükséges!"),
-        senderEmail: yup.string().email("Nem tűnik érvényes email címnek!"),
+        senderEmail: yup.string().email("Nem tűnik érvényes email címnek!").required("Email cím megadása szükséges!"),
         senderPhone: yup.string(),
         text: yup.string().required("Elfelejtettél üzenetetet írni!"),
     })
@@ -37,7 +44,7 @@ export default function Kapcsolat() {
         event.preventDefault();
         setSending(true);
         try {
-            const result = await fetch(URL,
+            const result = await fetch(messageURL,
                 {
                     method: 'POST',
                     mode: 'cors',
@@ -133,7 +140,7 @@ export default function Kapcsolat() {
                             <input placeholder="Név*" {...register('senderName')}></input>
 
                             {errors.senderEmail && <span><p className='error'>{errors.senderEmail?.message}</p></span>}
-                            <input placeholder="Email" {...register('senderEmail')}></input>
+                            <input placeholder="Email*" {...register('senderEmail')}></input>
 
                             {errors.senderPhone && <span><p className='error'>{errors.senderPhone?.message}</p></span>}
                             <input placeholder="Telefonszám" {...register('senderPhone')}></input>

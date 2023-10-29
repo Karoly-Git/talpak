@@ -1,10 +1,10 @@
 {
     "settings": {
-        "isLocalServer": false,
+        "isLocalServer": true,
         "isMaintenance": false
     },
     "urls": {
-        "local_message_url": "http://localhost:8000/message",
-        "heroku_message_url": "https://talpak-31282c65b13d.herokuapp.com/message"
+        "local": "http://localhost:8000",
+        "heroku": "https://talpak-31282c65b13d.herokuapp.com"
     }
 }
