@@ -3,6 +3,14 @@ import React, { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
+// Form Handling Imports
+import { useForm } from 'react-hook-form';
+import * as yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
+
+// Data Imports
+import config from '../config.json';
+
 // Custom Component Imports
 import Links from './Links';
 
@@ -146,8 +154,54 @@ export function SecondaryNavigation() {
 }
 
 export function BottomNavigation() {
-
     const currentYear = useMemo(() => new Date().getFullYear(), []);
+
+    const [sending, setSending] = useState(false);
+
+    const subscribeURL = config.settings.isLocalServer ? config.urls.local + '/subscribe' : config.urls.heroku + '/subscribe';
+
+    const navigate = useNavigate();
+
+    const schema = yup.object().shape({
+        subscribeEmail: yup.string().email("Nem tűnik érvényes email címnek!").required("Email cím megadása szükséges!"),
+    })
+
+    const { register, handleSubmit, formState: { errors } } = useForm({
+        resolver: yupResolver(schema),
+    });
+
+    const onSubmit = async (data, event) => {
+        event.preventDefault();
+        setSending(true);
+        try {
+            const result = await fetch(subscribeURL,
+                {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: {
+                        'Content-type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                }
+            );
+
+            //console.log(result);
+
+            if (result.ok) {
+                navigate('/subscribe-success');
+                //console.log('subscribed');
+            } else {
+                navigate('/subscribe-error');
+                //console.log('ERROR');
+            }
+
+        } catch (err) {
+            navigate('/subscribe-error');
+            //console.log(err.ok);
+        } finally {
+            setSending(false);
+        }
+    };
 
     return (
         <nav className='bottom-nav'>
@@ -191,10 +245,15 @@ export function BottomNavigation() {
                 <li className='item subscribe-item'>
                     <h3>Ne maradj le</h3>
                     <p>Iratkozz fel most, ne maradj le a legfrissebbekről!</p>
-                    <div>
-                        <input id='subscribe-input' placeholder='minta@email.hu' type="text" />
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        {errors.subscribeEmail && <span><p className='error'>{errors.subscribeEmail?.message}</p></span>}
+                        <input id='subscribe-input' placeholder="minta@email.hu" {...register('subscribeEmail')}></input>
+
                         <button>Feliratkozom</button>
-                    </div>
+
+                        <br></br>
+                        <span style={{ fontSize: '12px', color: 'red' }}>{config.settings.isLocalServer ? 'Local' : 'Heroku'}</span>
+                    </form>
                 </li>
             </ul>
         </nav>

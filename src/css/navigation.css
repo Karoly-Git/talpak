@@ -259,13 +259,13 @@ $navy: rgb(0, 0, 128);
 .bottom-nav .item-list .follow-item .social-links {
   margin-bottom: 1.5rem;
 }
-.bottom-nav .item-list .subscribe-item div input {
+.bottom-nav .item-list .subscribe-item form input {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   width: 100%;
   border: 1px solid black;
 }
-.bottom-nav .item-list .subscribe-item div button {
+.bottom-nav .item-list .subscribe-item form button {
   font-size: 0.8rem;
 }
 

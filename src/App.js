@@ -14,8 +14,7 @@ import Magamrol from './components/pages/Magamrol';
 import Kapcsolat from './components/pages/Kapcsolat';
 import Galeria from './components/pages/Galeria';
 import FelhasznalasiFeltetelek from './components/pages/FelhasznalasiFeltetelek';
-import MessageError from './components/MessageError';
-import MessageSuccess from './components/MessageSuccess';
+import { MessageError, MessageSuccess, SubscribeError, SubscribeSuccess } from './components/ActionConfirmations';
 
 import ScrollToTop from './components/ScrollToTop';
 import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md';
@@ -108,9 +107,11 @@ export default function App() {
               <Route path='/kapcsolat' element={<Kapcsolat />} />
               <Route path='/galeria' element={<Galeria />} />
 
-              <Route path="/success" element={<MessageSuccess />}></Route>
+              <Route path="/sending-success" element={<MessageSuccess />}></Route>
+              <Route path="/subscribe-success" element={<SubscribeSuccess />}></Route>
 
-              <Route path="/error" element={<MessageError />}></Route>
+              <Route path="/sending-error" element={<MessageError />}></Route>
+              <Route path="/subscribe-error" element={<SubscribeError />}></Route>
 
               <Route path='/felhasznalasi-feltetelek' element={<FelhasznalasiFeltetelek />} />
             </Routes>

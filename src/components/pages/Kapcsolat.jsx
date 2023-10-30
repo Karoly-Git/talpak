@@ -58,18 +58,18 @@ export default function Kapcsolat() {
             //console.log(result);
 
             if (result.ok) {
-                navigate('/success');
+                navigate('/sending-success');
                 //console.log('email sent');
             } else {
-                navigate('/error');
+                navigate('/sending-error');
                 //console.log('ERROR');
             }
 
         } catch (err) {
-            navigate('/error');
+            navigate('/sending-error');
             //console.log(err.ok);
         } finally {
-            setSending(false); // Set the sending state back to false after the request is complete
+            setSending(false);
         }
     };
 
