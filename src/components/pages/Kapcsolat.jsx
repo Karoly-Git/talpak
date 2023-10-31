@@ -18,6 +18,7 @@ import config from '../../config.json';
 // Icon Imports
 import { FiPhone as Phone } from 'react-icons/fi';
 import { MdOutlineDoneOutline as OkIcon, MdMarkEmailRead as EnvelopOkIcon } from 'react-icons/md';
+import { FaExclamation as ErrorIcon } from 'react-icons/fa';
 import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
 
 // Custom Component Imports
@@ -27,16 +28,17 @@ export default function Kapcsolat() {
 
     const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
     const [sendingInProgress, setSendingInProgress] = useState(false);
+    const [isError, setIsError] = useState(false);
 
     const messageURL = config.settings.isLocalServer ? config.urls.local + '/message' : config.urls.heroku + '/message';
 
     const navigate = useNavigate();
 
     const schema = yup.object().shape({
-        senderName: yup.string().required("Név megadása szükséges!"),
-        senderEmail: yup.string().email("Nem tűnik érvényes email címnek!").required("Email cím megadása szükséges!"),
-        senderPhone: yup.string(),
-        text: yup.string().required("Elfelejtettél üzenetetet írni!"),
+        senderName: yup.string(),//.required("Név megadása szükséges!"),
+        senderEmail: yup.string(),//.email("Nem tűnik érvényes email címnek!").required("Email cím megadása szükséges!"),
+        senderPhone: yup.string(),//,
+        text: yup.string(),//.required("Elfelejtettél üzenetetet írni!"),
     })
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
@@ -67,11 +69,13 @@ export default function Kapcsolat() {
             } else {
                 //navigate('/message-error');
                 //console.log('ERROR');
+                setIsError(true);
             }
 
         } catch (err) {
             //navigate('/message-error');
             //console.log(err.ok);
+            setIsError(true);
         } finally {
             setSendingInProgress(false);
         }
@@ -94,8 +98,9 @@ export default function Kapcsolat() {
                             <animate attributeName="stroke-dasharray" from="0 56.548667764616276" to="57 56.548667764616276" dur="1s" begin="0s" repeatCount="indefinite" />
                         </circle>
                     </svg>
-                </div>}
-            {isStatusBoxOpen && !sendingInProgress &&
+                </div>
+            }
+            {isStatusBoxOpen && !sendingInProgress && !isError &&
                 <div className='status-box' id='is-sent'>
                     <CloseIcon
                         id='close-icon'
@@ -110,7 +115,7 @@ export default function Kapcsolat() {
                             closeStatusBox();
                         }}
                     />
-                    <OkIcon className='icon'
+                    <EnvelopOkIcon className='icon'
                     />
                     <h2 style={{ width: '100 %', textAlign: 'center' }}>
                         Üzenet elküldve!
@@ -119,8 +124,27 @@ export default function Kapcsolat() {
                     <h3 style={{ width: '100 %', textAlign: 'center' }}>
                         Köszönöm az üzenetet, hamarosan válszolok!
                     </h3>
-                </div>}
+                </div>
+            }
+            {isStatusBoxOpen && !sendingInProgress && isError &&
+                <div className='status-box' id='is-error'>
+                    <CloseIcon
+                        id='close-icon'
+                        onClick={() => {
+                            closeStatusBox();
+                        }}
+                    />
+                    <ErrorIcon className='icon'
+                    />
+                    <h2 style={{ width: '100 %', textAlign: 'center' }}>
+                        Sikertelen küldés!
+                    </h2>
 
+                    <h3 style={{ width: '100 %', textAlign: 'center' }}>
+                        Probáld újra később, vagy vedd fel velem a kapcsolatot a lent látható elérhetőségeim valamelyikén!
+                    </h3>
+                </div>
+            }
             <HeadSection
                 content={
                     <m.div className='box' {...animations.page.box}>

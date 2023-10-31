@@ -22,7 +22,8 @@
         }
     }
 
-    #is-sent {
+    #is-sent,
+    #is-error {
         padding-top: 0;
         flex-direction: column;
 
@@ -66,6 +67,20 @@
         h2 {
             color: green;
             font-weight: 600;
+        }
+
+    }
+
+    #is-error {
+        .icon {
+            color: red !important;
+            border-color: red;
+        }
+
+        h2,
+        h3,
+        p {
+            color: red;
         }
 
     }
@@ -319,7 +334,8 @@
             padding-right: 1rem;
         }
 
-        #is-sent {
+        #is-sent,
+        #is-error {
             #close-icon {
                 right: calc(-50%);
             }
