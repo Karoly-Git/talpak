@@ -18,7 +18,7 @@ $navy: rgb(0, 0, 128);
   padding: 2rem;
   border-radius: 0.5rem;
   background-color: white;
-  border: 3px solid rgb(63, 97, 170);
+  border: 3px solid rgb(150, 150, 150);
 }
 .kapcsolat #in-progress p {
   margin-right: 1rem;
@@ -39,6 +39,7 @@ $navy: rgb(0, 0, 128);
   padding: 0.15rem;
   cursor: pointer;
   transition: all 150ms ease-in-out;
+  color: rgb(80, 80, 80);
 }
 .kapcsolat #is-sent #close-icon:hover {
   background-color: red;
@@ -55,7 +56,6 @@ $navy: rgb(0, 0, 128);
 .kapcsolat #is-sent h3,
 .kapcsolat #is-sent p {
   margin-top: 1rem;
-  padding: 0 1rem;
 }
 .kapcsolat #is-sent h2 {
   color: green;
@@ -154,6 +154,7 @@ $navy: rgb(0, 0, 128);
 }
 .kapcsolat .section .box form a {
   transition: all 150ms ease-in-out;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,6 +242,9 @@ $navy: rgb(0, 0, 128);
   }
 }
 @media screen and (max-width: 768px) {
+  .kapcsolat .status-box {
+    width: 80%;
+  }
   .kapcsolat .head-section {
     background-size: 100% !important;
     background-position-y: 0 !important;
@@ -258,6 +262,14 @@ $navy: rgb(0, 0, 128);
   }
 }
 @media screen and (max-width: 576px) {
+  .kapcsolat .status-box {
+    width: calc(100% - 4rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .kapcsolat #is-sent #close-icon {
+    right: -50%;
+  }
   .kapcsolat .head-section .box {
     width: 100% !important;
   }
@@ -273,5 +285,31 @@ $navy: rgb(0, 0, 128);
   }
   .kapcsolat .head-section .box {
     background: none !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .kapcsolat .status-box {
+    width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .kapcsolat #is-sent #close-icon {
+    right: -50%;
+  }
+  .kapcsolat .section .box {
+    padding: 0 !important;
+  }
+  .kapcsolat .section .box form {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    margin-top: -10vw !important;
+    padding: 1rem !important;
+  }
+  .kapcsolat .section .box form a h2 {
+    font-size: 1.25rem !important;
+  }
+  .kapcsolat .section .box form a .icon {
+    display: none;
   }
 }/*# sourceMappingURL=kapcsolat.css.map */

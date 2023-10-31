@@ -13,7 +13,7 @@
         padding: 2rem;
         border-radius: 0.5rem;
         background-color: white;
-        border: 3px solid $blue;
+        border: 3px solid rgb(150, 150, 150);
     }
 
     #in-progress {
@@ -39,6 +39,7 @@
             padding: 0.15rem;
             cursor: pointer;
             transition: all 150ms ease-in-out;
+            color: $primary-font-color;
 
             &:hover {
                 background-color: red;
@@ -59,7 +60,7 @@
         h3,
         p {
             margin-top: 1rem;
-            padding: 0 1rem;
+            //padding: 0 1rem;
         }
 
         h2 {
@@ -182,6 +183,7 @@
 
                 a {
                     transition: all 150ms ease-in-out;
+                    text-align: center;
 
                     h2,
                     .icon {
@@ -284,6 +286,10 @@
     }
 
     @media screen and (max-width: 768px) {
+        .status-box {
+            width: 80%;
+        }
+
         .head-section {
             background-size: 100% !important;
             background-position-y: 0 !important;
@@ -307,6 +313,18 @@
     }
 
     @media screen and (max-width: 576px) {
+        .status-box {
+            width: calc(100% - 4rem);
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        #is-sent {
+            #close-icon {
+                right: calc(-50%);
+            }
+        }
+
         .head-section {
             .box {
                 width: 100% !important;
@@ -331,6 +349,45 @@
 
             background-image: none !important;
             background-color: $backgroundColor  !important;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .status-box {
+            width: 95%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        #is-sent {
+            #close-icon {
+                right: -50%;
+            }
+        }
+
+        .section {
+
+            .box {
+                padding: 0 !important;
+
+                form {
+                    width: 100%;
+                    border: none;
+                    border-radius: 0;
+                    margin-top: -10vw !important;
+                    padding: 1rem !important;
+
+                    a {
+                        h2 {
+                            font-size: 1.25rem !important;
+                        }
+
+                        .icon {
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
