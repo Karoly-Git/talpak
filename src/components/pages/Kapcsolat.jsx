@@ -35,10 +35,10 @@ export default function Kapcsolat() {
     const navigate = useNavigate();
 
     const schema = yup.object().shape({
-        senderName: yup.string(),//.required("Név megadása szükséges!"),
-        senderEmail: yup.string(),//.email("Nem tűnik érvényes email címnek!").required("Email cím megadása szükséges!"),
-        senderPhone: yup.string(),//,
-        text: yup.string(),//.required("Elfelejtettél üzenetetet írni!"),
+        senderName: yup.string().required("Név megadása szükséges!"),
+        senderEmail: yup.string().email("Nem tűnik érvényes email címnek!").required("Email cím megadása szükséges!"),
+        senderPhone: yup.string(),
+        text: yup.string().required("Elfelejtettél üzenetetet írni!"),
     })
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
