@@ -83,7 +83,15 @@ export default function Kapcsolat() {
 
     function closeStatusBox() {
         setIsStatusBoxOpen(false);
-        //reset();
+    }
+
+    function resetForm() {
+        reset({
+            senderName: '',
+            senderEmail: '',
+            senderPhone: '',
+            text: '',
+        });
     }
 
     return (
@@ -105,13 +113,7 @@ export default function Kapcsolat() {
                     <CloseIcon
                         id='close-icon'
                         onClick={() => {
-                            reset({
-                                senderName: '',
-                                senderEmail: '',
-                                senderPhone: '',
-                                text: '',
-                            });
-
+                            resetForm();
                             closeStatusBox();
                         }}
                     />
@@ -132,6 +134,7 @@ export default function Kapcsolat() {
                         id='close-icon'
                         onClick={() => {
                             closeStatusBox();
+                            setIsError(false);
                         }}
                     />
                     <ErrorIcon className='icon'
