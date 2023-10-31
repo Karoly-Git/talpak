@@ -6,7 +6,7 @@ import { MdOutlineDoneOutline as OkIcon, MdMarkEmailRead as EnvelopOkIcon } from
 
 export function MessageError() {
     return (
-        <div className='error-message-container'>
+        <div className='error-container'>
             <ErrorIcon className='icon' />
 
             <h1 style={{ width: '100 %', textAlign: 'center' }}>
@@ -24,7 +24,7 @@ export function MessageError() {
 
 export function MessageSuccess() {
     return (
-        <div className='success-message-container'>
+        <div className='success-container success-windowWWW'>
             <OkIcon className='icon' />
             <h1 style={{ width: '100 %', textAlign: 'center' }}>
                 Üzenet elküldve!
@@ -40,7 +40,7 @@ export function MessageSuccess() {
 }
 export function SubscribeError() {
     return (
-        <div className='error-message-container'>
+        <div className='error-container'>
             <ErrorIcon className='icon' />
 
             <h1 style={{ width: '100 %', textAlign: 'center' }}>
@@ -58,7 +58,7 @@ export function SubscribeError() {
 
 export function SubscribeSuccess() {
     return (
-        <div className='success-message-container'>
+        <div className='success-container'>
             <EnvelopOkIcon className='icon' />
             <h1 style={{ width: '100 %', textAlign: 'center' }}>
                 Feliratkozás sikeres!

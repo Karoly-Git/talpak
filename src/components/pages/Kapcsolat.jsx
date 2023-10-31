@@ -17,13 +17,16 @@ import config from '../../config.json';
 
 // Icon Imports
 import { FiPhone as Phone } from 'react-icons/fi';
+import { MdOutlineDoneOutline as OkIcon, MdMarkEmailRead as EnvelopOkIcon } from 'react-icons/md';
+import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
 
 // Custom Component Imports
 import { HeadSection, Section } from '../Sections';
 
 export default function Kapcsolat() {
 
-    const [sending, setSending] = useState(false);
+    const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
+    const [sendingInProgress, setSendingInProgress] = useState(false);
 
     const messageURL = config.settings.isLocalServer ? config.urls.local + '/message' : config.urls.heroku + '/message';
 
@@ -36,13 +39,14 @@ export default function Kapcsolat() {
         text: yup.string().required("Elfelejtettél üzenetetet írni!"),
     })
 
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(schema),
     });
 
     const onSubmit = async (data, event) => {
         event.preventDefault();
-        setSending(true);
+        setIsStatusBoxOpen(true);
+        setSendingInProgress(true);
         try {
             const result = await fetch(messageURL,
                 {
@@ -58,23 +62,65 @@ export default function Kapcsolat() {
             //console.log(result);
 
             if (result.ok) {
-                navigate('/sending-success');
+                //navigate('/message-success');
                 //console.log('email sent');
             } else {
-                navigate('/sending-error');
+                //navigate('/message-error');
                 //console.log('ERROR');
             }
 
         } catch (err) {
-            navigate('/sending-error');
+            //navigate('/message-error');
             //console.log(err.ok);
         } finally {
-            setSending(false);
+            setSendingInProgress(false);
         }
     };
 
+    function closeStatusBox() {
+        setIsStatusBoxOpen(false);
+        //reset();
+    }
+
     return (
         <m.div className='page kapcsolat' {...animations.pageTransition}>
+            {isStatusBoxOpen && sendingInProgress &&
+                <div className='status-box' id='in-progress'>
+                    <p>Küldés folyamatban...</p>
+
+                    <svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9" stroke="#000" strokeWidth="2" fill="none" />
+                        <circle cx="10" cy="10" r="9" stroke="#0073e6" strokeWidth="2" fill="none">
+                            <animate attributeName="stroke-dasharray" from="0 56.548667764616276" to="57 56.548667764616276" dur="1s" begin="0s" repeatCount="indefinite" />
+                        </circle>
+                    </svg>
+                </div>}
+            {isStatusBoxOpen && !sendingInProgress &&
+                <div className='status-box' id='is-sent'>
+                    <CloseIcon
+                        id='close-icon'
+                        onClick={() => {
+                            reset({
+                                senderName: '',
+                                senderEmail: '',
+                                senderPhone: '',
+                                text: '',
+                            });
+
+                            closeStatusBox();
+                        }}
+                    />
+                    <OkIcon className='icon'
+                    />
+                    <h2 style={{ width: '100 %', textAlign: 'center' }}>
+                        Üzenet elküldve!
+                    </h2>
+
+                    <h3 style={{ width: '100 %', textAlign: 'center' }}>
+                        Köszönöm az üzenetet, hamarosan válszolok!
+                    </h3>
+                </div>}
+
             <HeadSection
                 content={
                     <m.div className='box' {...animations.page.box}>
@@ -148,20 +194,7 @@ export default function Kapcsolat() {
                             {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
                             <textarea placeholder="Ide írd az üzenetet*" {...register('text')}></textarea>
 
-                            {sending &&
-                                <div id='sending-in-progress'>
-                                    <p>Küldés folyamatban...</p>
-
-                                    <svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="10" cy="10" r="9" stroke="#000" stroke-width="2" fill="none" />
-                                        <circle cx="10" cy="10" r="9" stroke="#0073e6" stroke-width="2" fill="none">
-                                            <animate attributeName="stroke-dasharray" from="0 56.548667764616276" to="57 56.548667764616276" dur="1s" begin="0s" repeatCount="indefinite" />
-                                        </circle>
-                                    </svg>
-                                </div>
-                            }
-
-                            <button>Küld</button>
+                            <button style={isStatusBoxOpen ? { pointerEvents: 'none' } : { pointerEvents: 'unset' }} >Küld</button>
 
                             <a
                                 href={contacts.tel.link}
@@ -172,7 +205,7 @@ export default function Kapcsolat() {
                                 </h2>
                             </a>
 
-                            <span style={{ fontSize: '12px', color: 'white' }}>{config.settings.isLocalServer ? 'Local' : 'Heroku'}</span>
+                            <div style={{ fontSize: '12px', color: 'white' }}>{config.settings.isLocalServer ? 'Local' : 'Heroku'}</div>
                         </form>
                     </div>
                 }

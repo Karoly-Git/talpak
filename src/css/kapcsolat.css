@@ -6,6 +6,61 @@ font-family: 'Ubuntu', sans-serif;
 $orange: rgb(255, 165, 0);
 $navy: rgb(0, 0, 128);
 */
+.kapcsolat .status-box {
+  display: flex;
+  z-index: 902;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 3px solid rgb(63, 97, 170);
+}
+.kapcsolat #in-progress p {
+  margin-right: 1rem;
+}
+.kapcsolat #is-sent {
+  padding-top: 0;
+  flex-direction: column;
+}
+.kapcsolat #is-sent #close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  right: calc(-50% - 1rem);
+  width: 2rem;
+  padding: 0.15rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.kapcsolat #is-sent #close-icon:hover {
+  background-color: red;
+  color: white;
+}
+.kapcsolat #is-sent .icon {
+  font-size: 4rem;
+  color: green;
+  border: 4px solid green;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.kapcsolat #is-sent h2,
+.kapcsolat #is-sent h3,
+.kapcsolat #is-sent p {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+.kapcsolat #is-sent h2 {
+  color: green;
+  font-weight: 600;
+}
 .kapcsolat .head-section {
   background-image: url("../img/kapcsolat1.jpg");
   background-size: 1600px !important;
@@ -160,10 +215,6 @@ $navy: rgb(0, 0, 128);
   display: inline;
   background-color: white;
   padding: 0.25rem;
-}
-.kapcsolat .section .box .box-is-visible {
-  left: 0px;
-  opacity: 1;
 }
 @media screen and (max-width: 1400px) {
   .kapcsolat .head-section {

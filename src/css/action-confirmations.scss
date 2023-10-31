@@ -1,5 +1,5 @@
-.success-message-container,
-.error-message-container {
+.success-container,
+.error-container {
     padding-top: 4em;
     display: flex;
     flex-direction: column;
@@ -26,13 +26,9 @@
         color: green;
         font-weight: 600;
     }
-
-    .contact-box {
-        margin-top: 2rem;
-    }
 }
 
-.error-message-container {
+.error-container {
     .icon:not(.contact-box .icon) {
         color: red;
         border-color: red;
@@ -42,10 +38,17 @@
     h2 {
         color: red;
     }
+}
 
-    .contact-box {
-        .icon {
-            color: rgb(191, 161, 107);
-        }
-    }
+.success-window {
+    display: flex;
+    z-index: 902;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
 }

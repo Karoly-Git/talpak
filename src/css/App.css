@@ -16,7 +16,7 @@ $navy: rgb(0, 0, 128);
 @import './akciok.css';
 @import './gyik.css';
 @import './felhasz_felt.css';
-@import './message-success-error.css';
+@import './action-confirmations.css';
 @import './navigation.css';
 * {
   padding: 0;
@@ -95,6 +95,10 @@ button {
   color: rgb(80, 80, 80);
   cursor: pointer;
   transition: all 150ms ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 button:hover {
   background-color: rgb(117, 189, 128);

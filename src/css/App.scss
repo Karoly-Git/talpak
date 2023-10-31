@@ -79,6 +79,7 @@ button {
     color: $primary-font-color;
     cursor: pointer;
     transition: all 150ms ease-in-out;
+    user-select: none;
 
     &:hover {
         background-color: $green;
@@ -241,7 +242,7 @@ footer {
 @import './akciok.css';
 @import './gyik.css';
 @import './felhasz_felt.css';
-@import './message-success-error.css';
+@import './action-confirmations.css';
 
 // Component styles
 @import './navigation.css';

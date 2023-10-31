@@ -1,0 +1,53 @@
+.success-container,
+.error-container {
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+.success-container .icon:not(.contact-box .icon),
+.error-container .icon:not(.contact-box .icon) {
+  font-size: 4rem;
+  color: green;
+  border: 4px solid green;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+.success-container h1,
+.success-container h2,
+.success-container h3,
+.error-container h1,
+.error-container h2,
+.error-container h3 {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+.success-container h1,
+.error-container h1 {
+  color: green;
+  font-weight: 600;
+}
+
+.error-container .icon:not(.contact-box .icon) {
+  color: red;
+  border-color: red;
+}
+.error-container h1,
+.error-container h2 {
+  color: red;
+}
+
+.success-window {
+  display: flex;
+  z-index: 902;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}/*# sourceMappingURL=action-confirmations.css.map */

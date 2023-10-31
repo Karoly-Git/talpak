@@ -1,9 +1,17 @@
+// React and React Router Imports
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Animation Imports
 import { motion as m } from 'framer-motion';
+
+// CSS Imports
 import './css/App.css';
+
+// Navigation Component Imports
 import { MainNavigation, MobileNavigation, SecondaryNavigation, BottomNavigation } from '../src/components/Navigations';
 
+// Page Component Imports
 import JoTudni from './components/pages/JoTudni';
 import Akciok from './components/pages/Akciok';
 import Gyik from './components/pages/Gyik';
@@ -14,8 +22,11 @@ import Magamrol from './components/pages/Magamrol';
 import Kapcsolat from './components/pages/Kapcsolat';
 import Galeria from './components/pages/Galeria';
 import FelhasznalasiFeltetelek from './components/pages/FelhasznalasiFeltetelek';
+
+// Action Confirmation Component Imports
 import { MessageError, MessageSuccess, SubscribeError, SubscribeSuccess } from './components/ActionConfirmations';
 
+// Other Component Imports
 import ScrollToTop from './components/ScrollToTop';
 import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md';
 
@@ -75,6 +86,7 @@ export default function App() {
       >
         <ScrollToTop />
         <div className='App'>
+          {!true && <MessageSuccess />}
           <div
             className='up'
             onClick={scrollToTop}
@@ -107,10 +119,10 @@ export default function App() {
               <Route path='/kapcsolat' element={<Kapcsolat />} />
               <Route path='/galeria' element={<Galeria />} />
 
-              <Route path="/sending-success" element={<MessageSuccess />}></Route>
+              <Route path="/message-success" element={<MessageSuccess />}></Route>
               <Route path="/subscribe-success" element={<SubscribeSuccess />}></Route>
 
-              <Route path="/sending-error" element={<MessageError />}></Route>
+              <Route path="/message-error" element={<MessageError />}></Route>
               <Route path="/subscribe-error" element={<SubscribeError />}></Route>
 
               <Route path='/felhasznalasi-feltetelek' element={<FelhasznalasiFeltetelek />} />
