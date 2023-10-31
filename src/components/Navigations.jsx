@@ -250,9 +250,9 @@ export function BottomNavigation() {
                         <input id='subscribe-input' placeholder="minta@email.hu" {...register('subscribeEmail')}></input>
 
                         <button>Feliratkozom</button>
-
-                        <br></br>
-                        <span style={{ fontSize: '12px', color: 'red' }}>{config.settings.isLocalServer ? 'Local' : 'Heroku'}</span>
+                        {config.settings.isLocalServer &&
+                            <div style={{ fontSize: '12px', color: 'red' }}>Local</div>
+                        }
                     </form>
                 </li>
             </ul>

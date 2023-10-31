@@ -232,7 +232,9 @@ export default function Kapcsolat() {
                                 </h2>
                             </a>
 
-                            <div style={{ fontSize: '12px', color: 'white' }}>{config.settings.isLocalServer ? 'Local' : 'Heroku'}</div>
+                            {config.settings.isLocalServer &&
+                                <div style={{ fontSize: '12px', color: 'white' }}>Local</div>
+                            }
                         </form>
                     </div>
                 }
