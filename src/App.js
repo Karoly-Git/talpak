@@ -8,6 +8,11 @@ import { motion as m } from 'framer-motion';
 // CSS Imports
 import './css/App.css';
 
+// Icon Imports
+import { MdMarkEmailRead as EnvelopOkIcon } from 'react-icons/md';
+import { FaExclamation as ErrorIcon } from 'react-icons/fa';
+import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
+
 // Navigation Component Imports
 import { MainNavigation, MobileNavigation, SecondaryNavigation, BottomNavigation } from '../src/components/Navigations';
 
@@ -23,20 +28,22 @@ import Kapcsolat from './components/pages/Kapcsolat';
 import Galeria from './components/pages/Galeria';
 import FelhasznalasiFeltetelek from './components/pages/FelhasznalasiFeltetelek';
 
-// Action Confirmation Component Imports
-import { MessageError, MessageSuccess, SubscribeError, SubscribeSuccess } from './components/ActionConfirmations';
-
 // Other Component Imports
 import ScrollToTop from './components/ScrollToTop';
 import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md';
 
 export default function App() {
-  const [isLoading, setIsLoading] = useState(!true);
+  const [isAppLoading, setIsAppLoading] = useState(false);
+
+  const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
+  const [subscribtionInProgress, setSubscribtionInProgress] = useState(false);
+  const [isSubscribtionError, setIsSubscribtionError] = useState(false);
+  const [isFormReset, setIsFormReset] = useState(false);
 
   useEffect(() => {
 
     function updateLoadingState() {
-      setIsLoading(false);
+      setIsAppLoading(false);
     }
 
     window.addEventListener('load', updateLoadingState);
@@ -48,7 +55,7 @@ export default function App() {
   }, []);
 
 
-  const [isBtnActive, setIsBtnActive] = useState(false);
+  const [isScrollBtnVisible, setIsScrollBtnVisible] = useState(false);
 
   function scrollToTop() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -56,7 +63,7 @@ export default function App() {
 
   useEffect(() => {
     function getScrollPosition() {
-      window.scrollY > 500 ? setIsBtnActive(true) : setIsBtnActive(false);
+      window.scrollY > 500 ? setIsScrollBtnVisible(true) : setIsScrollBtnVisible(false);
     }
 
     window.addEventListener('scroll', getScrollPosition);
@@ -66,7 +73,11 @@ export default function App() {
     }
   }, [])
 
-  return isLoading ? (
+  function closeStatusBox() {
+    setIsStatusBoxOpen(false);
+  }
+
+  return isAppLoading ? (
     <div
       style={{
         display: 'flex',
@@ -86,11 +97,58 @@ export default function App() {
       >
         <ScrollToTop />
         <div className='App'>
-          {!true && <MessageSuccess />}
+          {isStatusBoxOpen && subscribtionInProgress &&
+            <div className='status-box' id='in-progress'>
+              <p>Feliratkozás folyamatban...</p>
+
+              <svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="9" stroke="#000" strokeWidth="2" fill="none" />
+                <circle cx="10" cy="10" r="9" stroke="#0073e6" strokeWidth="2" fill="none">
+                  <animate attributeName="stroke-dasharray" from="0 56.548667764616276" to="57 56.548667764616276" dur="1s" begin="0s" repeatCount="indefinite" />
+                </circle>
+              </svg>
+            </div>
+          }
+          {isStatusBoxOpen && !subscribtionInProgress && !isSubscribtionError &&
+            <div className='status-box' id='is-sent'>
+              <CloseIcon
+                id='close-icon'
+                onClick={() => {
+                  closeStatusBox();
+                  setIsFormReset(true);
+                }}
+              />
+              <EnvelopOkIcon className='icon' />
+              <h2>Feliratkozás sikeres!</h2>
+              <h3>Köszönöm az feliratkozást!</h3>
+              <p>Mostantól rendeszeres értesítéseket kapsz eseményekről, akciókról és friss hírekről!</p>
+            </div>
+          }
+          {isStatusBoxOpen && !subscribtionInProgress && isSubscribtionError &&
+            <div className='status-box' id='is-error'>
+              <CloseIcon
+                id='close-icon'
+                onClick={() => {
+                  closeStatusBox();
+                  setIsSubscribtionError(false);
+                }}
+              />
+              <ErrorIcon className='icon'
+              />
+              <h2>
+                Sikertelen feliratkozás!
+              </h2>
+
+              <h3>
+                Probáld újra később, vagy vedd fel velem a kapcsolatot a lent látható elérhetőségeim valamelyikén!
+              </h3>
+            </div>
+          }
+
           <div
             className='up'
             onClick={scrollToTop}
-            style={isBtnActive ? { right: '0' } : { right: '-40px' }}
+            style={isScrollBtnVisible ? { right: '0' } : { right: '-40px' }}
           >
             <ArrowIcon className='icon' />
           </div>
@@ -119,18 +177,19 @@ export default function App() {
               <Route path='/kapcsolat' element={<Kapcsolat />} />
               <Route path='/galeria' element={<Galeria />} />
 
-              <Route path="/message-success" element={<MessageSuccess />}></Route>
-              <Route path="/subscribe-success" element={<SubscribeSuccess />}></Route>
-
-              <Route path="/message-error" element={<MessageError />}></Route>
-              <Route path="/subscribe-error" element={<SubscribeError />}></Route>
-
               <Route path='/felhasznalasi-feltetelek' element={<FelhasznalasiFeltetelek />} />
             </Routes>
           </main>
           <footer>
             <SecondaryNavigation />
-            <BottomNavigation />
+            <BottomNavigation
+              setIsStatusBoxOpen={setIsStatusBoxOpen}
+              setSubscribtionInProgress={setSubscribtionInProgress}
+              setIsSubscribtionError={setIsSubscribtionError}
+
+              isFormReset={isFormReset}
+              setIsFormReset={setIsFormReset}
+            />
           </footer>
         </div>
       </Router>

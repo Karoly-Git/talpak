@@ -1,90 +1,6 @@
 @import './fonts-and-colors.scss';
 
 .kapcsolat {
-    .status-box {
-        display: flex;
-        z-index: 902;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 2rem;
-        border-radius: 0.5rem;
-        background-color: white;
-        border: 3px solid rgb(150, 150, 150);
-    }
-
-    #in-progress {
-        p {
-            margin-right: 1rem;
-        }
-    }
-
-    #is-sent,
-    #is-error {
-        padding-top: 0;
-        flex-direction: column;
-
-        #close-icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 2rem;
-            width: 2rem;
-            position: relative;
-            right: calc(-50% - 1rem);
-            //background-color: red;
-            width: 2rem;
-            padding: 0.15rem;
-            cursor: pointer;
-            transition: all 150ms ease-in-out;
-            color: $primary-font-color;
-
-            &:hover {
-                background-color: red;
-                color: white;
-            }
-        }
-
-        .icon {
-            font-size: 4rem;
-            color: green;
-            border: 4px solid green;
-            border-radius: 50%;
-            padding: 0.5rem;
-            //margin-top: 2rem;
-        }
-
-        h2,
-        h3,
-        p {
-            margin-top: 1rem;
-            //padding: 0 1rem;
-        }
-
-        h2 {
-            color: green;
-            font-weight: 600;
-        }
-
-    }
-
-    #is-error {
-        .icon {
-            color: red !important;
-            border-color: red;
-        }
-
-        h2,
-        h3,
-        p {
-            color: red;
-        }
-
-    }
-
     .head-section {
         background-image: url('../img/kapcsolat1.jpg');
         background-size: 1600px !important;
@@ -176,7 +92,6 @@
                 margin-top: -11rem;
                 position: relative;
                 z-index: 901;
-                //border: 2px solid rgb(234, 241, 255);
 
                 .form-title,
                 p,
@@ -301,10 +216,6 @@
     }
 
     @media screen and (max-width: 768px) {
-        .status-box {
-            width: 80%;
-        }
-
         .head-section {
             background-size: 100% !important;
             background-position-y: 0 !important;
@@ -328,19 +239,6 @@
     }
 
     @media screen and (max-width: 576px) {
-        .status-box {
-            width: calc(100% - 4rem);
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        #is-sent,
-        #is-error {
-            #close-icon {
-                right: calc(-50%);
-            }
-        }
-
         .head-section {
             .box {
                 width: 100% !important;
@@ -369,18 +267,6 @@
     }
 
     @media screen and (max-width: 350px) {
-        .status-box {
-            width: 95%;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        #is-sent {
-            #close-icon {
-                right: -50%;
-            }
-        }
-
         .section {
 
             .box {

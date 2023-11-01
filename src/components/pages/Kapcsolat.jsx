@@ -1,6 +1,5 @@
 // React and React Router Imports
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 // Form Handling Imports
 import { useForm } from 'react-hook-form';
@@ -17,7 +16,7 @@ import config from '../../config.json';
 
 // Icon Imports
 import { FiPhone as Phone } from 'react-icons/fi';
-import { MdOutlineDoneOutline as OkIcon, MdMarkEmailRead as EnvelopOkIcon } from 'react-icons/md';
+import { MdMarkEmailRead as EnvelopOkIcon } from 'react-icons/md';
 import { FaExclamation as ErrorIcon } from 'react-icons/fa';
 import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
 
@@ -28,11 +27,9 @@ export default function Kapcsolat() {
 
     const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
     const [sendingInProgress, setSendingInProgress] = useState(false);
-    const [isError, setIsError] = useState(false);
+    const [isSendingError, setIsSendingError] = useState(false);
 
     const messageURL = config.settings.isLocalServer ? config.urls.local + '/message' : config.urls.heroku + '/message';
-
-    const navigate = useNavigate();
 
     const schema = yup.object().shape({
         senderName: yup.string().required("Név megadása szükséges!"),
@@ -63,19 +60,13 @@ export default function Kapcsolat() {
 
             //console.log(result);
 
-            if (result.ok) {
-                //navigate('/message-success');
-                //console.log('email sent');
-            } else {
-                //navigate('/message-error');
-                //console.log('ERROR');
-                setIsError(true);
+            if (!result.ok) {
+                setIsSendingError(true);
             }
 
         } catch (err) {
-            //navigate('/message-error');
             //console.log(err.ok);
-            setIsError(true);
+            setIsSendingError(true);
         } finally {
             setSendingInProgress(false);
         }
@@ -90,7 +81,7 @@ export default function Kapcsolat() {
             senderName: '',
             senderEmail: '',
             senderPhone: '',
-            text: '',
+            text: ''
         });
     }
 
@@ -108,7 +99,7 @@ export default function Kapcsolat() {
                     </svg>
                 </div>
             }
-            {isStatusBoxOpen && !sendingInProgress && !isError &&
+            {isStatusBoxOpen && !sendingInProgress && !isSendingError &&
                 <div className='status-box' id='is-sent'>
                     <CloseIcon
                         id='close-icon'
@@ -119,31 +110,31 @@ export default function Kapcsolat() {
                     />
                     <EnvelopOkIcon className='icon'
                     />
-                    <h2 style={{ width: '100 %', textAlign: 'center' }}>
+                    <h2>
                         Üzenet elküldve!
                     </h2>
 
-                    <h3 style={{ width: '100 %', textAlign: 'center' }}>
+                    <h3>
                         Köszönöm az üzenetet, hamarosan válszolok!
                     </h3>
                 </div>
             }
-            {isStatusBoxOpen && !sendingInProgress && isError &&
+            {isStatusBoxOpen && !sendingInProgress && isSendingError &&
                 <div className='status-box' id='is-error'>
                     <CloseIcon
                         id='close-icon'
                         onClick={() => {
                             closeStatusBox();
-                            setIsError(false);
+                            setIsSendingError(false);
                         }}
                     />
                     <ErrorIcon className='icon'
                     />
-                    <h2 style={{ width: '100 %', textAlign: 'center' }}>
+                    <h2>
                         Sikertelen küldés!
                     </h2>
 
-                    <h3 style={{ width: '100 %', textAlign: 'center' }}>
+                    <h3>
                         Probáld újra később, vagy vedd fel velem a kapcsolatot a lent látható elérhetőségeim valamelyikén!
                     </h3>
                 </div>

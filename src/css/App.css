@@ -16,7 +16,6 @@ $navy: rgb(0, 0, 128);
 @import './akciok.css';
 @import './gyik.css';
 @import './felhasz_felt.css';
-@import './action-confirmations.css';
 @import './navigation.css';
 * {
   padding: 0;
@@ -29,6 +28,84 @@ $navy: rgb(0, 0, 128);
 
 .App {
   overflow: hidden;
+}
+.App .status-box {
+  display: flex;
+  z-index: 902;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 3px solid rgb(150, 150, 150);
+  max-width: 500px;
+}
+.App #in-progress p {
+  margin-right: 1rem;
+}
+.App #is-sent,
+.App #is-error {
+  padding-top: 0;
+  flex-direction: column;
+}
+.App #is-sent #close-icon,
+.App #is-error #close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  right: calc(-50% - 1rem);
+  width: 2rem;
+  padding: 0.15rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  color: rgb(80, 80, 80);
+}
+.App #is-sent #close-icon:hover,
+.App #is-error #close-icon:hover {
+  background-color: red;
+  color: white;
+}
+.App #is-sent .icon,
+.App #is-error .icon {
+  font-size: 4rem;
+  color: green;
+  border: 4px solid green;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.App #is-sent h2,
+.App #is-sent h3,
+.App #is-sent p,
+.App #is-error h2,
+.App #is-error h3,
+.App #is-error p {
+  margin-top: 1rem;
+  text-align: center;
+}
+.App #is-sent h2,
+.App #is-error h2 {
+  color: green;
+  font-weight: 600;
+}
+.App #is-sent p,
+.App #is-error p {
+  text-align: center;
+}
+.App #is-error .icon {
+  color: red !important;
+  border-color: red;
+}
+.App #is-error h2,
+.App #is-error h3,
+.App #is-error p {
+  color: red;
 }
 
 .up {
@@ -243,6 +320,22 @@ footer .sec-nav .link-set {
   }
 }
 @media screen and (max-width: 576px) {
+  #is-sent,
+#is-error {
+    width: 90%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+  }
+  #is-sent p,
+#is-error p {
+    margin: 0 0 1rem !important;
+    text-align: center;
+  }
+  #is-sent #close-icon,
+#is-error #close-icon {
+    right: -50% !important;
+  }
   .head-section {
     min-height: 300px !important;
   }

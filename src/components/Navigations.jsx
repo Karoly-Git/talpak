@@ -1,6 +1,6 @@
 // React and React Router Imports
-import React, { useMemo, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useMemo, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 // Form Handling Imports
@@ -153,26 +153,23 @@ export function SecondaryNavigation() {
     )
 }
 
-export function BottomNavigation() {
+export function BottomNavigation(props) {
     const currentYear = useMemo(() => new Date().getFullYear(), []);
 
-    const [sending, setSending] = useState(false);
-
     const subscribeURL = config.settings.isLocalServer ? config.urls.local + '/subscribe' : config.urls.heroku + '/subscribe';
-
-    const navigate = useNavigate();
 
     const schema = yup.object().shape({
         subscribeEmail: yup.string().email("Nem tűnik érvényes email címnek!").required("Email cím megadása szükséges!"),
     })
 
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(schema),
     });
 
     const onSubmit = async (data, event) => {
         event.preventDefault();
-        setSending(true);
+        props.setIsStatusBoxOpen(true);
+        props.setSubscribtionInProgress(true);
         try {
             const result = await fetch(subscribeURL,
                 {
@@ -187,21 +184,27 @@ export function BottomNavigation() {
 
             //console.log(result);
 
-            if (result.ok) {
-                navigate('/subscribe-success');
-                //console.log('subscribed');
-            } else {
-                navigate('/subscribe-error');
-                //console.log('ERROR');
+            if (!result.ok) {
+                props.setIsSubscribtionError(true);
             }
 
         } catch (err) {
-            navigate('/subscribe-error');
             //console.log(err.ok);
+            props.setIsSubscribtionError(true);
         } finally {
-            setSending(false);
+            props.setSubscribtionInProgress(false);
         }
     };
+
+    useEffect(() => {
+        if (props.isFormReset) {
+            reset({
+                subscribeEmail: '',
+            });
+            props.setIsFormReset(false);
+        }
+    }, [props.isFormReset])
+
 
     return (
         <nav className='bottom-nav'>

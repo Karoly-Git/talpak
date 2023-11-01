@@ -26,11 +26,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //background-color: $secondary-bg-color;
     background-color: white;
     width: 100%;
     padding: 0.5rem 2rem;
-    //display: none;
 
     .other-links {
         display: flex;
@@ -69,13 +67,7 @@
     justify-content: center;
     width: 100%;
     padding: 1rem 2rem;
-    //background-color: rgba(180, 180, 180);
-    //background-color: rgba(0, 0, 0, 0.3);
-    //background-color: rgb(138, 131, 111);
-    //background-color: rgb(218, 200, 171);
     background-color: $blue;
-    //border-bottom: 1px solid white;
-    //display: none;
 
     ul {
         transform: scale(1.2);
@@ -97,7 +89,6 @@
                 &:hover {
                     color: black;
                     color: $green;
-                    //border-color: white !important;
                 }
             }
 
@@ -311,8 +302,6 @@
                 padding: 0;
 
                 li {
-                    //margin: 0;
-
                     a {
                         padding: 0;
                         width: 1.5rem;
@@ -352,7 +341,6 @@
         .item-list {
             .item {
                 width: 33.33%;
-                //background-color: red;
             }
         }
 
@@ -380,7 +368,6 @@
         .item-list {
             .item {
                 width: 50%;
-                //background-color: green;
             }
         }
 
@@ -396,7 +383,6 @@
 
                 .item {
                     width: 100%;
-                    //background-color: blue;
                 }
             }
         }
