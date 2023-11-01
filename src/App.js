@@ -9,7 +9,7 @@ import { motion as m } from 'framer-motion';
 import './css/App.css';
 
 // Icon Imports
-import { MdMarkEmailRead as EnvelopOkIcon } from 'react-icons/md';
+import { BsPencilSquare as PenIcon } from 'react-icons/bs';
 import { FaExclamation as ErrorIcon } from 'react-icons/fa';
 import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
 
@@ -33,12 +33,14 @@ import ScrollToTop from './components/ScrollToTop';
 import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md';
 
 export default function App() {
-  const [isAppLoading, setIsAppLoading] = useState(false);
+  const [isAppLoading, setIsAppLoading] = useState(true);
 
   const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
   const [subscribtionInProgress, setSubscribtionInProgress] = useState(false);
   const [isSubscribtionError, setIsSubscribtionError] = useState(false);
   const [isFormReset, setIsFormReset] = useState(false);
+
+  const [anyFormTriggered, setAnyFormTriggered] = useState(false);
 
   useEffect(() => {
 
@@ -88,7 +90,7 @@ export default function App() {
       }}
     >
       <h1>
-        Loading...
+        Töltés...
       </h1>
     </div>
   ) :
@@ -116,9 +118,10 @@ export default function App() {
                 onClick={() => {
                   closeStatusBox();
                   setIsFormReset(true);
+                  setAnyFormTriggered(false);
                 }}
               />
-              <EnvelopOkIcon className='icon' />
+              <PenIcon className='icon' />
               <h2>Feliratkozás sikeres!</h2>
               <h3>Köszönöm az feliratkozást!</h3>
               <p>Mostantól rendeszeres értesítéseket kapsz eseményekről, akciókról és friss hírekről!</p>
@@ -131,6 +134,7 @@ export default function App() {
                 onClick={() => {
                   closeStatusBox();
                   setIsSubscribtionError(false);
+                  setAnyFormTriggered(false);
                 }}
               />
               <ErrorIcon className='icon'
@@ -174,7 +178,10 @@ export default function App() {
               <Route path='/szolgaltatasok' element={<Szolgaltatasok />} />
               <Route path='/arak' element={<Arak />} />
               <Route path='/magamrol' element={<Magamrol />} />
-              <Route path='/kapcsolat' element={<Kapcsolat />} />
+              <Route path='/kapcsolat' element={<Kapcsolat
+                anyFormTriggered={anyFormTriggered}
+                setAnyFormTriggered={setAnyFormTriggered}
+              />} />
               <Route path='/galeria' element={<Galeria />} />
 
               <Route path='/felhasznalasi-feltetelek' element={<FelhasznalasiFeltetelek />} />
@@ -189,6 +196,9 @@ export default function App() {
 
               isFormReset={isFormReset}
               setIsFormReset={setIsFormReset}
+
+              anyFormTriggered={anyFormTriggered}
+              setAnyFormTriggered={setAnyFormTriggered}
             />
           </footer>
         </div>

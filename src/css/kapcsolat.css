@@ -161,6 +161,7 @@ $navy: rgb(0, 0, 128);
   display: inline;
   background-color: white;
   padding: 0.25rem;
+  font-weight: 600;
 }
 @media screen and (max-width: 1400px) {
   .kapcsolat .head-section {

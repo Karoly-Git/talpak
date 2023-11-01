@@ -23,8 +23,7 @@ import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
 // Custom Component Imports
 import { HeadSection, Section } from '../Sections';
 
-export default function Kapcsolat() {
-
+export default function Kapcsolat(props) {
     const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
     const [sendingInProgress, setSendingInProgress] = useState(false);
     const [isSendingError, setIsSendingError] = useState(false);
@@ -46,6 +45,7 @@ export default function Kapcsolat() {
         event.preventDefault();
         setIsStatusBoxOpen(true);
         setSendingInProgress(true);
+        props.setAnyFormTriggered(true);
         try {
             const result = await fetch(messageURL,
                 {
@@ -106,6 +106,7 @@ export default function Kapcsolat() {
                         onClick={() => {
                             resetForm();
                             closeStatusBox();
+                            props.setAnyFormTriggered(false);
                         }}
                     />
                     <EnvelopOkIcon className='icon'
@@ -126,6 +127,7 @@ export default function Kapcsolat() {
                         onClick={() => {
                             closeStatusBox();
                             setIsSendingError(false);
+                            props.setAnyFormTriggered(false);
                         }}
                     />
                     <ErrorIcon className='icon'
@@ -212,7 +214,7 @@ export default function Kapcsolat() {
                             {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
                             <textarea placeholder="Ide írd az üzenetet*" {...register('text')}></textarea>
 
-                            <button style={isStatusBoxOpen ? { pointerEvents: 'none' } : { pointerEvents: 'unset' }} >Küld</button>
+                            <button style={isStatusBoxOpen || props.anyFormTriggered ? { pointerEvents: 'none' } : { pointerEvents: 'unset' }}>Küld</button>
 
                             <a
                                 href={contacts.tel.link}
@@ -230,7 +232,7 @@ export default function Kapcsolat() {
                     </div>
                 }
             />
-        </m.div>
+        </m.div >
     )
 }
 

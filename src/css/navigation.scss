@@ -321,6 +321,13 @@
 
         .subscribe-item {
             form {
+                .error {
+                    color: red;
+                    //background-color: white;
+                    font-weight: 600;
+                    //padding: 0.25rem;
+                }
+
                 input {
                     padding: 0.75rem 1rem;
                     margin-bottom: 1rem;

@@ -170,6 +170,7 @@ export function BottomNavigation(props) {
         event.preventDefault();
         props.setIsStatusBoxOpen(true);
         props.setSubscribtionInProgress(true);
+        props.setAnyFormTriggered(true);
         try {
             const result = await fetch(subscribeURL,
                 {
@@ -252,7 +253,8 @@ export function BottomNavigation(props) {
                         {errors.subscribeEmail && <span><p className='error'>{errors.subscribeEmail?.message}</p></span>}
                         <input id='subscribe-input' placeholder="minta@email.hu" {...register('subscribeEmail')}></input>
 
-                        <button>Feliratkozom</button>
+                        <button style={props.isStatusBoxOpen || props.anyFormTriggered ? { pointerEvents: 'none' } : { pointerEvents: 'unset' }}>Feliratkozom</button>
+
                         {config.settings.isLocalServer &&
                             <div style={{ fontSize: '12px', color: 'red' }}>Local</div>
                         }
