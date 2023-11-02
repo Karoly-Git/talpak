@@ -6,21 +6,13 @@
         background-size: 1600px !important;
         background-position: right;
         background-position-y: -100px !important;
-        //background: $backgroundColor  !important;
-        //background-color: $backgroundColor;
-
-        .box {
-            h1 {
-                position: relative;
-                z-index: 903;
-            }
-        }
     }
 
     .section {
         #sending-in-progress {
             background-color: white;
             position: relative;
+            z-index: 902;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,7 +20,6 @@
             height: 100px;
             margin: -100px auto 0;
             top: -5rem;
-            z-index: 902;
             border-radius: 0.5rem;
             padding: 1rem;
             border: 5px solid white;

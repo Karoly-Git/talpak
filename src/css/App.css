@@ -31,10 +31,10 @@ $navy: rgb(0, 0, 128);
 }
 .App .status-box {
   display: flex;
-  z-index: 902;
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 1100;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

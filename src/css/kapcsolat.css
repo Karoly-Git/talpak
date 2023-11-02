@@ -12,13 +12,10 @@ $navy: rgb(0, 0, 128);
   background-position: right;
   background-position-y: -100px !important;
 }
-.kapcsolat .head-section .box h1 {
-  position: relative;
-  z-index: 903;
-}
 .kapcsolat .section #sending-in-progress {
   background-color: white;
   position: relative;
+  z-index: 902;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +23,6 @@ $navy: rgb(0, 0, 128);
   height: 100px;
   margin: -100px auto 0;
   top: -5rem;
-  z-index: 902;
   border-radius: 0.5rem;
   padding: 1rem;
   border: 5px solid white;
