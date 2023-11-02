@@ -249,14 +249,18 @@ export function BottomNavigation(props) {
                 <li className='item subscribe-item'>
                     <h3>Ne maradj le</h3>
                     <p>Iratkozz fel most, ne maradj le a legfrissebbekről!</p>
-                    <form onSubmit={handleSubmit(onSubmit)}>
+
+                    <form
+                        onSubmit={handleSubmit(onSubmit)}
+                        style={props.isStatusBoxOpen || props.anyFormTriggered ? { pointerEvents: 'none' } : { pointerEvents: 'unset' }}>
+
                         {errors.subscribeEmail && <span><p className='error'>{errors.subscribeEmail?.message}</p></span>}
                         <input id='subscribe-input' placeholder="minta@email.hu" {...register('subscribeEmail')}></input>
 
-                        <button style={props.isStatusBoxOpen || props.anyFormTriggered ? { pointerEvents: 'none' } : { pointerEvents: 'unset' }}>Feliratkozom</button>
+                        <button>Feliratkozom</button>
 
                         {config.settings.isLocalServer &&
-                            <div style={{ fontSize: '12px', color: 'red' }}>Local</div>
+                            <div style={{ fontSize: '12px', color: 'red' }}>Local Server</div>
                         }
                     </form>
                 </li>

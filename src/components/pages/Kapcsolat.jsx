@@ -188,11 +188,13 @@ export default function Kapcsolat(props) {
                             </li>
                         </ul>
 
-                        <form onSubmit={handleSubmit(onSubmit)}>
+                        <form
+                            onSubmit={handleSubmit(onSubmit)}
+                            style={isStatusBoxOpen || props.anyFormTriggered ? { pointerEvents: 'none' } : { pointerEvents: 'unset' }}>
+
                             <h2 className='form-title'>Küldj üzenetet</h2>
-                            <p>
-                                Hagyja üyenetet, és hamarosan fel fogom venni Veled a kapcsolatot. Minden megkeresésre igyekszek 1 napon belül válaszolni.
-                            </p>
+
+                            <p>Hagyja üyenetet, és hamarosan fel fogom venni Veled a kapcsolatot. Minden megkeresésre igyekszek 1 napon belül válaszolni.</p>
 
                             {errors.senderName && <span><p className='error'>{errors.senderName?.message}</p></span>}
                             <input placeholder="Név*" {...register('senderName')}></input>
@@ -206,19 +208,15 @@ export default function Kapcsolat(props) {
                             {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
                             <textarea placeholder="Ide írd az üzenetet*" {...register('text')}></textarea>
 
-                            <button style={isStatusBoxOpen || props.anyFormTriggered ? { pointerEvents: 'none' } : { pointerEvents: 'unset' }}>Küld</button>
+                            <button>Küld</button>
 
-                            <a
-                                href={contacts.tel.link}
-                                rel="noopener noreferrer">
+                            <a href={contacts.tel.link} rel="noopener noreferrer">
                                 <Phone className='icon' />
-                                <h2 className='hover-color-swap'>
-                                    {contacts.tel.text}
-                                </h2>
+                                <h2 className='hover-color-swap'>{contacts.tel.text}</h2>
                             </a>
 
                             {config.settings.isLocalServer &&
-                                <div style={{ fontSize: '12px', color: 'white' }}>Local</div>
+                                <div style={{ fontSize: '12px', color: 'white' }}>Local Server</div>
                             }
                         </form>
                     </div>
