@@ -111,13 +111,9 @@ export default function Kapcsolat(props) {
                     />
                     <EnvelopOkIcon className='icon'
                     />
-                    <h2>
-                        Üzenet elküldve!
-                    </h2>
+                    <h2>Üzenet elküldve!</h2>
 
-                    <h3>
-                        Köszönöm az üzenetet, hamarosan válszolok!
-                    </h3>
+                    <h3>Köszönöm az üzenetet, hamarosan válszolok!</h3>
                 </div>
             }
             {isStatusBoxOpen && !sendingInProgress && isSendingError &&
@@ -132,13 +128,9 @@ export default function Kapcsolat(props) {
                     />
                     <ErrorIcon className='icon'
                     />
-                    <h2>
-                        Sikertelen küldés!
-                    </h2>
+                    <h2>Sikertelen küldés!</h2>
 
-                    <h3>
-                        Probáld újra később, vagy vedd fel velem a kapcsolatot a lent látható elérhetőségeim valamelyikén!
-                    </h3>
+                    <h3>Probáld újra később, vagy vedd fel velem a kapcsolatot a lent látható elérhetőségeim valamelyikén!</h3>
                 </div>
             }
             <HeadSection

@@ -329,7 +329,6 @@ footer .sec-nav .link-set {
   }
   #is-sent p,
 #is-error p {
-    margin: 0 0 1rem !important;
     text-align: center;
   }
   #is-sent #close-icon,
