@@ -29,47 +29,27 @@ $navy: rgb(0, 0, 128);
   width: 100%;
   margin: 0 2rem;
 }
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3 .div4a {
+.szolgaltatasok .section .content-container .box .div1 .div2 .div3 {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
   cursor: pointer;
   transition: all 150ms ease-in-out;
 }
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3 .div4a h3 {
+.szolgaltatasok .section .content-container .box .div1 .div2 .div3 h3 {
   transition: all 150ms ease-in-out;
 }
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3 .div4a span {
+.szolgaltatasok .section .content-container .box .div1 .div2 .div3 span {
   margin-left: 2rem;
 }
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3 .div4a:hover {
+.szolgaltatasok .section .content-container .box .div1 .div2 .div3:hover {
   background-color: rgb(63, 97, 170);
   color: white;
 }
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3 .div4a:hover h3 {
+.szolgaltatasok .section .content-container .box .div1 .div2 .div3:hover h3 {
   color: white;
 }
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3 .div4b {
-  display: flex;
-  overflow: hidden;
-  height: 100px;
-  display: none;
-}
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3 .div4b p {
-  width: 100%;
-}
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3 .div4c {
-  display: flex;
-  justify-content: space-between;
-  display: none;
-}
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3 .div4c .points-to-left {
-  transform: rotate(180deg);
-}
-.szolgaltatasok .section .content-container .box .div1 .div2 .div3:first-child .div4a {
-  margin-top: 0;
-}
-.szolgaltatasok .section:nth-child(2n) .content-container .box .div1 .div2 .div3 .div4a:hover {
+.szolgaltatasok .section:nth-child(2n) .content-container .box .div1 .div2 .div3:hover {
   background-color: rgb(117, 189, 128);
 }
 @media screen and (max-width: 1050px) {

@@ -1,10 +1,14 @@
+// React Imports
 import React from 'react';
 
+// Custom Components and Data Imports
 import { HeadSection, Section } from '../Sections';
 import { services } from '../../data/services';
-import { AiFillCaretRight as Arrow } from 'react-icons/ai';
+
+// Icon Imports
 import { FaPlus as PlusIcon, FaMinus as MinusIcon } from 'react-icons/fa';
 
+// Animation Imports
 import { motion as m } from 'framer-motion';
 import { animations } from '../../data/framer-animations';
 
@@ -32,7 +36,6 @@ export default function Szolgaltatasok() {
                 <Section
                     color={i % 2 !== 0 ? true : false}
                     top
-                    //bottom={i === activeServices.length - 1 ? true : false}
                     key={i}
                     id={e.id}
                     content={
@@ -46,19 +49,8 @@ export default function Szolgaltatasok() {
                                 <div className='div2'>
                                     {e.description.main.map((element, eIndex) =>
                                         <div className='div3' key={eIndex}>
-                                            <div className='div4a'>
-                                                <h3>{element.name}</h3>
-                                                <span>{<PlusIcon className='icon' />}</span>
-                                            </div>
-                                            <div className='div4b'>
-                                                {element.description.map((paragraph, pIndex) =>
-                                                    <p key={pIndex}>{paragraph}</p>
-                                                )}
-                                            </div>
-                                            <div className="div4c">
-                                                <Arrow className='icon points-to-left' />
-                                                <Arrow className='icon' />
-                                            </div>
+                                            <h3>{element.name}</h3>
+                                            <span>{<PlusIcon className='icon' />}</span>
                                         </div>
                                     )}
                                 </div>

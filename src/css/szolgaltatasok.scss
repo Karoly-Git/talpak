@@ -31,59 +31,27 @@
                         margin: 0 2rem;
 
                         .div3 {
+                            display: flex;
+                            justify-content: space-between;
+                            //margin-top: 0.5rem;
+                            padding: 0.5rem;
+                            cursor: pointer;
+                            transition: all 150ms ease-in-out;
 
-                            .div4a {
-                                display: flex;
-                                justify-content: space-between;
-                                //margin-top: 0.5rem;
-                                padding: 0.5rem;
-                                cursor: pointer;
-                                //background-color: red;
+                            h3 {
                                 transition: all 150ms ease-in-out;
+                            }
+
+                            span {
+                                margin-left: 2rem;
+                            }
+
+                            &:hover {
+                                background-color: $blue;
+                                color: white;
 
                                 h3 {
-                                    transition: all 150ms ease-in-out;
-                                }
-
-                                span {
-                                    margin-left: 2rem;
-                                }
-
-                                &:hover {
-                                    background-color: $blue;
                                     color: white;
-
-                                    h3 {
-                                        color: white;
-                                    }
-                                }
-                            }
-
-                            .div4b {
-                                display: flex;
-                                overflow: hidden;
-                                height: 100px;
-
-                                p {
-                                    width: 100%;
-                                }
-
-                                display: none;
-                            }
-
-                            .div4c {
-                                display: flex;
-                                justify-content: space-between;
-                                display: none;
-
-                                .points-to-left {
-                                    transform: rotate(180deg);
-                                }
-                            }
-
-                            &:first-child {
-                                .div4a {
-                                    margin-top: 0;
                                 }
                             }
                         }
@@ -99,10 +67,8 @@
                 .div1 {
                     .div2 {
                         .div3 {
-                            .div4a {
-                                &:hover {
-                                    background-color: $green;
-                                }
+                            &:hover {
+                                background-color: $green;
                             }
                         }
                     }
