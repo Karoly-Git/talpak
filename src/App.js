@@ -43,17 +43,7 @@ export default function App() {
   const [anyFormTriggered, setAnyFormTriggered] = useState(false);
 
   useEffect(() => {
-
-    function updateLoadingState() {
-      setIsAppLoading(false);
-    }
-
-    window.addEventListener('load', updateLoadingState);
-
-    return () => {
-      window.removeEventListener('load', updateLoadingState);
-    };
-
+    setIsAppLoading(false);
   }, []);
 
 
