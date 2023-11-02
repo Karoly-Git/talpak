@@ -10,6 +10,71 @@ $navy: rgb(0, 0, 128);
   background-image: url("../img/szolgaltatasok.jpg");
   background-position: top !important;
 }
+.szolgaltatasok .detail-container {
+  position: fixed;
+  z-index: 1100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(63, 97, 170);
+  border: 3px solid rgb(200, 200, 200);
+  max-width: 1000px;
+  width: 80%;
+  height: 60%;
+  transition: opacity 150ms ease-in-out;
+}
+.szolgaltatasok .detail-container #close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.15rem;
+  cursor: pointer;
+  color: rgb(80, 80, 80);
+  color: white;
+  margin-left: auto;
+}
+.szolgaltatasok .detail-container #close-icon:hover {
+  background-color: red;
+  color: white;
+}
+.szolgaltatasok .detail-container .detail-box {
+  height: calc(100% - 2rem);
+  overflow: auto;
+  scrollbar-width: thin;
+  background-color: white;
+  /* For Firefox (recent versions) */
+  /* Define the styling for the scrollbar track in WebKit-based browsers */
+  /* Define the styling for the scrollbar thumb in WebKit-based browsers */
+  /* Define the styling for the scrollbar thumb on hover in WebKit-based browsers */
+  /* Define the styling for the scrollbar track in WebKit-based browsers */
+}
+.szolgaltatasok .detail-container .detail-box::-webkit-scrollbar {
+  width: 8px;
+  /* Adjust the width as needed */
+}
+.szolgaltatasok .detail-container .detail-box::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Color of the thumb */
+  border-radius: 5px;
+  /* Rounded corners */
+}
+.szolgaltatasok .detail-container .detail-box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Color on hover */
+}
+.szolgaltatasok .detail-container .detail-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Color of the track */
+  border-radius: 5px;
+  /* Rounded corners */
+}
+.szolgaltatasok .detail-container .detail-box h2,
+.szolgaltatasok .detail-container .detail-box h3,
+.szolgaltatasok .detail-container .detail-box p {
+  padding: 1rem;
+}
 .szolgaltatasok .section .content-container h2 {
   margin-bottom: 2rem;
 }
@@ -68,6 +133,10 @@ $navy: rgb(0, 0, 128);
   }
 }
 @media screen and (max-width: 1050px) and (max-width: 768px) {
+  .szolgaltatasok .detail-container {
+    width: 95%;
+    top: 38%;
+  }
   .szolgaltatasok .content-container .box .div1 img {
     display: none;
   }

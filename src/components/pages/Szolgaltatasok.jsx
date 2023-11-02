@@ -1,5 +1,5 @@
 // React Imports
-import React from 'react';
+import React, { useState } from 'react';
 
 // Custom Components and Data Imports
 import { HeadSection, Section } from '../Sections';
@@ -7,6 +7,7 @@ import { services } from '../../data/services';
 
 // Icon Imports
 import { FaPlus as PlusIcon, FaMinus as MinusIcon } from 'react-icons/fa';
+import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
 
 // Animation Imports
 import { motion as m } from 'framer-motion';
@@ -15,8 +16,37 @@ import { animations } from '../../data/framer-animations';
 export default function Szolgaltatasok() {
     const activeServices = services.filter((e) => e.isActive);
 
+    const [isBoxVisible, setIsBoxVisible] = useState(false);
+
+    const [serviceGroup, setServiceGroup] = useState('');
+    const [serviceName, setServiceName] = useState('');
+    const [description, setDescription] = useState([]);
+
+    function setBoxContent(i, eIndex) {
+        setServiceGroup(activeServices[i].name);
+        setServiceName(activeServices[i].description.main[eIndex].name);
+        setDescription(activeServices[i].description.main[eIndex].description);
+    };
+
     return (
         <m.div className='page szolgaltatasok' {...animations.pageTransition}>
+            {
+                <div className='detail-container' style={isBoxVisible ? { display: '' } : { display: 'none' }}>
+                    <CloseIcon
+                        id='close-icon'
+                        onClick={() => {
+                            setIsBoxVisible(false);
+                        }}
+                    />
+                    <div className='detail-box'>
+                        <h2>{serviceGroup}</h2>
+                        <h3>{serviceName}</h3>
+                        {description.map((p, pIndex) => <p key={pIndex}>{p}</p>)}
+                    </div>
+                </div>
+            }
+
+
             <HeadSection
                 content={
                     <m.div className='box' {...animations.page.box}>
@@ -48,7 +78,14 @@ export default function Szolgaltatasok() {
                                 />
                                 <div className='div2'>
                                     {e.description.main.map((element, eIndex) =>
-                                        <div className='div3' key={eIndex}>
+                                        <div
+                                            className='div3'
+                                            key={eIndex}
+                                            onClick={() => {
+                                                setIsBoxVisible(true);
+                                                setBoxContent(i, eIndex);
+                                            }}>
+
                                             <h3>{element.name}</h3>
                                             <span>{<PlusIcon className='icon' />}</span>
                                         </div>

@@ -6,6 +6,87 @@
         background-position: top !important;
     }
 
+    .detail-container {
+        position: fixed;
+        z-index: 1100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $blue;
+        //border-radius: 0.5rem;
+        border: 3px solid rgb(200, 200, 200);
+        max-width: 1000px;
+        width: 80%;
+        height: 60%;
+        transition: opacity 150ms ease-in-out;
+        //padding: 0.75rem;
+
+        #close-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2rem;
+            width: 2rem;
+            padding: 0.15rem;
+            cursor: pointer;
+            //transition: all 150ms ease-in-out;
+            color: $primary-font-color;
+            color: white;
+            margin-left: auto;
+            //margin-right: 1rem;
+            //margin-bottom: 1rem;
+
+            &:hover {
+                background-color: red;
+                color: white;
+            }
+
+        }
+
+        .detail-box {
+            height: calc(100% - 2rem);
+            overflow: auto;
+            scrollbar-width: thin;
+            background-color: white;
+            /* For Firefox (recent versions) */
+
+            /* Define the styling for the scrollbar track in WebKit-based browsers */
+            &::-webkit-scrollbar {
+                width: 8px;
+                /* Adjust the width as needed */
+            }
+
+            /* Define the styling for the scrollbar thumb in WebKit-based browsers */
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+                /* Color of the thumb */
+                border-radius: 5px;
+                /* Rounded corners */
+            }
+
+            /* Define the styling for the scrollbar thumb on hover in WebKit-based browsers */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+                /* Color on hover */
+            }
+
+            /* Define the styling for the scrollbar track in WebKit-based browsers */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                /* Color of the track */
+                border-radius: 5px;
+                /* Rounded corners */
+            }
+
+            h2,
+            h3,
+            p {
+                padding: 1rem;
+            }
+        }
+    }
+
+
     .section {
         .content-container {
             h2 {
@@ -109,6 +190,11 @@
         }
 
         @media screen and (max-width: 768px) {
+            .detail-container {
+                width: 95%;
+                top: 38%;
+            }
+
             .content-container {
                 .box {
                     .div1 {
