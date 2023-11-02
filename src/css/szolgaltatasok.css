@@ -134,8 +134,8 @@ $navy: rgb(0, 0, 128);
 }
 @media screen and (max-width: 1050px) and (max-width: 768px) {
   .szolgaltatasok .detail-container {
-    width: 95%;
-    top: 38%;
+    width: 90%;
+    top: 40%;
   }
   .szolgaltatasok .content-container .box .div1 img {
     display: none;
