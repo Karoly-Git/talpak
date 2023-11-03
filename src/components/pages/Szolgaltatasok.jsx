@@ -36,16 +36,17 @@ export default function Szolgaltatasok() {
         <m.div className='page szolgaltatasok' {...animations.pageTransition}>
             {
                 <div className='detail-container' style={isBoxVisible ? { display: '' } : { display: 'none' }}>
-                    <CloseIcon
-                        id='close-icon'
-                        onClick={() => {
-                            setIsBoxVisible(false);
-                        }}
-                    />
-                    <div className='detail-box'>
-                        <h2>{serviceGroup}</h2>
+                    <div className="head-box">
                         <h3>{serviceName}</h3>
-                        {description.map((p, pIndex) => <p key={pIndex}>{p}</p>)}
+                        <CloseIcon
+                            id='close-icon'
+                            onClick={() => {
+                                setIsBoxVisible(false);
+                            }}
+                        />
+                    </div>
+                    <div className='detail-box'>
+                        {description.map((element, elementIndex) => <div key={elementIndex}>{element}</div>)}
                     </div>
                 </div>
             }

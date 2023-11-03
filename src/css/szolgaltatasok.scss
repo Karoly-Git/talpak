@@ -12,7 +12,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: $green;
         border: 3px solid rgb(200, 200, 200);
         max-width: 1000px;
         width: 80%;
@@ -20,30 +19,37 @@
         transition: opacity 150ms ease-in-out;
         //padding: 0.75rem;
 
-        #close-icon {
+        .head-box {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            height: 2rem;
-            width: 2rem;
-            padding: 0.15rem;
-            cursor: pointer;
-            //transition: all 150ms ease-in-out;
-            color: $primary-font-color;
-            color: white;
-            margin-left: auto;
-            //margin-right: 1rem;
-            //margin-bottom: 1rem;
+            padding-left: 1rem;
+            background-color: $green;
 
-            &:hover {
-                background-color: red;
+            h3 {
                 color: white;
             }
 
+            #close-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 2.5rem;
+                width: 2.5rem;
+                padding: 0.5rem;
+                cursor: pointer;
+                color: $primary-font-color;
+                color: white;
+
+                &:hover {
+                    background-color: red;
+                    color: white;
+                }
+            }
         }
 
         .detail-box {
-            height: calc(100% - 2rem);
+            height: calc(100% - 3rem);
             overflow: auto;
             scrollbar-width: thin;
             background-color: white;
@@ -79,8 +85,17 @@
 
             h2,
             h3,
-            p {
+            p,
+            ul {
                 padding: 1rem;
+            }
+
+            ul {
+                li {
+                    margin-left: 1rem;
+                    list-style-type: '- ';
+                    margin-bottom: 0.25rem;
+                }
             }
         }
     }

@@ -16,31 +16,39 @@ $navy: rgb(0, 0, 128);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(117, 189, 128);
   border: 3px solid rgb(200, 200, 200);
   max-width: 1000px;
   width: 80%;
   height: 60%;
   transition: opacity 150ms ease-in-out;
 }
-.szolgaltatasok .detail-container #close-icon {
+.szolgaltatasok .detail-container .head-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  background-color: rgb(117, 189, 128);
+}
+.szolgaltatasok .detail-container .head-box h3 {
+  color: white;
+}
+.szolgaltatasok .detail-container .head-box #close-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2rem;
-  width: 2rem;
-  padding: 0.15rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0.5rem;
   cursor: pointer;
   color: rgb(80, 80, 80);
   color: white;
-  margin-left: auto;
 }
-.szolgaltatasok .detail-container #close-icon:hover {
+.szolgaltatasok .detail-container .head-box #close-icon:hover {
   background-color: red;
   color: white;
 }
 .szolgaltatasok .detail-container .detail-box {
-  height: calc(100% - 2rem);
+  height: calc(100% - 3rem);
   overflow: auto;
   scrollbar-width: thin;
   background-color: white;
@@ -72,8 +80,14 @@ $navy: rgb(0, 0, 128);
 }
 .szolgaltatasok .detail-container .detail-box h2,
 .szolgaltatasok .detail-container .detail-box h3,
-.szolgaltatasok .detail-container .detail-box p {
+.szolgaltatasok .detail-container .detail-box p,
+.szolgaltatasok .detail-container .detail-box ul {
   padding: 1rem;
+}
+.szolgaltatasok .detail-container .detail-box ul li {
+  margin-left: 1rem;
+  list-style-type: "- ";
+  margin-bottom: 0.25rem;
 }
 .szolgaltatasok .section .content-container h2 {
   margin-bottom: 2rem;
