@@ -1,5 +1,5 @@
 // React Imports
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Custom Components and Data Imports
 import { HeadSection, Section } from '../Sections';
@@ -27,6 +27,10 @@ export default function Szolgaltatasok() {
         setServiceName(activeServices[i].description.main[eIndex].name);
         setDescription(activeServices[i].description.main[eIndex].description);
     };
+
+    useEffect(() => {
+        document.querySelector('.detail-box').scrollTop = 0;
+    }, [isBoxVisible]);
 
     return (
         <m.div className='page szolgaltatasok' {...animations.pageTransition}>

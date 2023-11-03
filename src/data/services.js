@@ -24,7 +24,7 @@ export const services = [
             },
         },
         description: {
-            snippet: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, dolorum sunt? Impedit laborum illo nostrum. Qui inventore dolorem, quam odio ullam molestiae ut excepturi dolores doloribus provident atque iure laborum.",
+            snippet: "A masszázs számos előnnyel jár a test és az elme számára. Segíti a stressz csökkentését, javítja a vérkeringést, lazítja az izmokat, és növeli a relaxációt. Emellett segít a fájdalomcsillapításban és a test teljesítőképességének javításában. A masszázs egy hatékony módja a test és az elme harmóniájának megteremtésének.",
             main: [
                 {
                     name: 'Talp és arc diagnosztika',
@@ -406,7 +406,7 @@ export const services = [
             },
         },
         description: {
-            snippet: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, dolorum sunt? Impedit laborum illo nostrum. Qui inventore dolorem, quam odio ullam molestiae ut excepturi dolores doloribus provident atque iure laborum.",
+            snippet: "A lábápolás és pedikűr fontosak a lábak egészségének és szépségének fenntartásához. A gondoskodó pedikűr segít megszabadulni az elhalt bőrrétegektől, körömcsontról és körömápolásról gondoskodik. Emellett a lábmasszázs felfrissíti a fáradt lábakat, növeli a vérkeringést, és csökkenti a stresszt. Az egészséges és ápolt lábak nemcsak jól néznek ki, hanem növelik a komfortérzetet is.",
             main: [
                 {
                     name: 'Körömápolás',
@@ -690,7 +690,7 @@ export const services = [
             },
         },
         description: {
-            snippet: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, dolorum sunt? Impedit laborum illo nostrum. Qui inventore dolorem, quam odio ullam molestiae ut excepturi dolores doloribus provident atque iure laborum.",
+            snippet: "A lábfürdő és kényeztető lábápolás kiváló módja a lábak feltöltésének és ellazításának. A forró víz, masszázs és aromaterápia összjátéka segít enyhíteni a feszültséget, javítja a vérkeringést, és pihentető élményt nyújt. A lábfürdő segít megszüntetni a fáradtságot, hidratálja a bőrt, és frissességet ad a lábaknak. Ez egy kiváló módja annak, hogy kikapcsolódjunk és gondoskodjunk lábaink egészségéről és szépségéről.",
             main: [
                 {
                     name: 'Vizes talpmasszázs',
@@ -724,7 +724,7 @@ export const services = [
             },
         },
         description: {
-            snippet: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, dolorum sunt? Impedit laborum illo nostrum. Qui inventore dolorem, quam odio ullam molestiae ut excepturi dolores doloribus provident atque iure laborum.",
+            snippet: "A kinezio tapasz rendkívül hasznos segítség a sérülések és fájdalmak kezelésében. Rugalmas kialakítása lehetővé teszi, hogy könnyen alkalmazható legyen a bőrön anélkül, hogy mozgásunkat korlátozná. A tapasz támogatja az izmokat és szalagokat, javítja a vérkeringést, és enyhíti a fájdalmat. Használata segít az izomfeszültség csökkentésében, sérülések utáni gyorsabb regenerációban, és javítja a sportteljesítményt. A kinezio tapasz egy kiváló eszköz a gyógyuláshoz és a mozgás szabadságának visszaszerzéséhez.",
             main: [
                 {
                     name: 'Kinezio Tape',

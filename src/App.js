@@ -12,6 +12,7 @@ import './css/App.css';
 import { BsPencilSquare as PenIcon } from 'react-icons/bs';
 import { FaExclamation as ErrorIcon } from 'react-icons/fa';
 import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
+import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md';
 
 // Navigation Component Imports
 import { MainNavigation, MobileNavigation, SecondaryNavigation, BottomNavigation } from '../src/components/Navigations';
@@ -30,7 +31,6 @@ import FelhasznalasiFeltetelek from './components/pages/FelhasznalasiFeltetelek'
 
 // Other Component Imports
 import ScrollToTop from './components/ScrollToTop';
-import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md';
 
 export default function App() {
   const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);

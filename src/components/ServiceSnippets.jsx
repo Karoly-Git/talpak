@@ -51,7 +51,7 @@ export default function ServiceSnippets() {
                 <div key={i}
                     // This style to be moved to SCSS !!!
                     style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <m.p {...animations.p}>{e.name} {activeServices[i].description.snippet}</m.p>
+                    <m.p {...animations.p}>{activeServices[i].description.snippet}</m.p>
 
                     <Link to={`/szolgaltatasok#${activeServices[i].id}`}>
                         <button>Bővebben</button>
