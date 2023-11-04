@@ -48,7 +48,7 @@ $navy: rgb(0, 0, 128);
   color: white;
 }
 .szolgaltatasok .detail-container .detail-box {
-  height: calc(100% - 3rem);
+  height: calc(100% - 2.5rem);
   overflow: auto;
   scrollbar-width: thin;
   background-color: white;
