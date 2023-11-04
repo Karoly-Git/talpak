@@ -129,10 +129,10 @@
                         .div3 {
                             display: flex;
                             justify-content: space-between;
-                            //margin-top: 0.5rem;
                             padding: 0.5rem;
                             cursor: pointer;
                             transition: all 150ms ease-in-out;
+                            max-width: 350px;
 
                             h3 {
                                 transition: all 150ms ease-in-out;

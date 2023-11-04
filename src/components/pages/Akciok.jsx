@@ -33,7 +33,7 @@ export default function Akciok() {
                         <br />
                         <h2>Hamarosan...</h2>
                         <br />
-                        <p>Az oldal feltöltés alatt áll, kérlek látogass vissza holnap.</p>
+                        <p>Az oldal feltöltés alatt áll, kérlek látogass vissza kicsit később.</p>
                     </div>
                 }
             />
