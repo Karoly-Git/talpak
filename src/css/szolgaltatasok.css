@@ -86,8 +86,8 @@ $navy: rgb(0, 0, 128);
 }
 .szolgaltatasok .detail-container .detail-box ul li {
   margin-left: 1rem;
-  list-style-type: "- ";
   margin-bottom: 0.25rem;
+  font-size: 1.15rem;
 }
 .szolgaltatasok .section .content-container h2 {
   margin-bottom: 2rem;

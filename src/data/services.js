@@ -65,7 +65,7 @@ export const services = [
                                 Az izomzat teljesítő képessége nő.
                                 Az izmokban létrejött fáradság, feszültség, fokozott tónus is megszűnik.
                                 A frissítő masszázs technika hozzájárul a mozgásszervrendszer épségének megőrzéséhez.
-                                Heti 1-2 kezelés javasolt
+                                Heti 1-2 kezelés javasolt.
                             </p>
                         </>,
                         <>
@@ -94,230 +94,285 @@ export const services = [
                 {
                     name: 'Reflexológiai talp masszázs',
                     description: [
-                        `Érintett területek: Vizelet kiválasztórendszer, emésztésirendszer, légzőrendszer, nyirokrendszer; keringés szervrendszere, agy,- idegrendszer, hormonrendszer, érzékszervek, mozgásszervek, nemiszervek. (97 reflexzónás pontot érint)`,
-                        `Reflexzónás masszázs:
-
-                        A masszázs segíti beindítani az öngyógyítási folyamatokat.
-                        A masszázst célszerű több alkalommal igénybe venni az elején, hogy az öngyógyítási folyamatok elkezdődjenek.Ha teheted, heti 2x vagy 3x, ahogy az időd engedi és utána havi 1x legalább érdemes megismételni.
-                        Sok betegség megelőzésére, illetve meglévő betegség javulására, – szinten tartására, alkalmazhatóak.Az egész testre jótékony hatással van.`,
-                        `Alkalmazását tekintve: 1, 5 - 2 éves kortól az egészen idős emberekig, figyelembe véve a tiltó körülményeket.`,
-                        `Ellenjavallatok - tilos a talpreflexológia az alábbi esetekben:
-
-                Kérlek vedd ezeket figyelembe a magad egészséged érdekében.
-                        Bármi kérdés merül fel benned, bizonytalan vagy hívj nyugodtan.
-                        
-                        - várandóság időszakában(kivéve néhány zónában)
-                - veszélyeztetett terhesség esetén tilos
-                - nagyfokú érelmeszesedés, trombózis esetén
-                - kezeletlen magas vérnyomás(ha kezelt lehet)
-                - súlyos szív és keringési problémával küzdő, pacemakert használóknak
-                - súlyos cukorbetegség fennállásakor
-                - erősen visszeres, gyulladt, ödémás láb esetén
-                - magas láz esetén
-                - fertőző betegségeknél
-                - nyílt seb, gombásodás a lábon
-                - sérülések, törés, ficam, üszkösödés a lábon
-                - vérzéses betegségek, beleértve a menstruációt is. (tekintettel a masszázs keringést fokozó voltára előidézhet egy erős menzeszt, mely kapcsán a kezelt személy sok vért veszíthet)
-                - nem javaslom epe -, illetve vesekövesség esetén sem - mivel a távolhatás kapcsán a mozgások fokozódnak – a kő elmozdulhat a helyéről, majd szűkebb szakaszba kerülve beékelődhet, és erős görcsöket okozhat.
-                        - erős idegkimerültség esetén`,
+                        <>
+                            <h3>Érintett területek:</h3>
+                            <p>
+                                Vizelet kiválasztórendszer, emésztésirendszer, légzőrendszer, nyirokrendszer, keringés szervrendszere,
+                                agy, idegrendszer, hormonrendszer, érzékszervek, mozgásszervek, nemiszervek.
+                                97 reflexzónás pontot érint.
+                            </p>
+                        </>,
+                        <>
+                            <h3>Reflexzónás masszázs:</h3>
+                            <p>
+                                A masszázs segíti beindítani az öngyógyítási folyamatokat.
+                                A masszázst célszerű több alkalommal igénybe venni az elején, hogy az öngyógyítási folyamatok elkezdődjenek.
+                                Ha teheted, heti 2x vagy 3x, ahogy az időd engedi és utána havi 1x legalább érdemes megismételni.
+                                Sok betegség megelőzésére, illetve meglévő betegség javulására, szinten tartására alkalmazhatóak.
+                                Az egész testre jótékony hatással van.
+                            </p>
+                        </>,
+                        <>
+                            <h3>Alkalmazását tekintve:</h3>
+                            <p>
+                                1, 5 - 2 éves kortól az egészen idős emberekig, figyelembe véve a tiltó körülményeket.
+                            </p>
+                        </>,
+                        <>
+                            <h3>Tilos a talpreflexológia az alábbi esetekben:</h3>
+                            <ul>
+                                <li>várandóság időszakában (kivéve néhány zónában)</li>
+                                <li>veszélyeztetett terhesség esetén tilos</li>
+                                <li>nagyfokú érelmeszesedés, trombózis esetén</li>
+                                <li>kezeletlen magas vérnyomás (ha kezelt lehet)</li>
+                                <li>súlyos szív és keringési problémával küzdő, pacemakert használóknak</li>
+                                <li>súlyos cukorbetegség fennállásakor</li>
+                                <li>erősen visszeres, gyulladt, ödémás láb esetén</li>
+                                <li>magas láz esetén</li>
+                                <li>fertőző betegségeknél</li>
+                                <li>nyílt seb, gombásodás a lábon</li>
+                                <li>sérülések, törés, ficam, üszkösödés a lábon</li>
+                                <li>vérzéses betegségek, beleértve a menstruációt is (tekintettel a masszázs keringést fokozó voltára előidézhet egy erős menzeszt, mely kapcsán a kezelt személy sok vért veszíthet)</li>
+                                <li>nem javaslom epe, illetve vesekövesség esetén sem, mivel a távolhatás kapcsán a mozgások fokozódnak, a kő elmozdulhat a helyéről, majd szűkebb szakaszba kerülve beékelődhet, és erős görcsöket okozhat.</li>
+                                <li>erős idegkimerültség esetén</li>
+                            </ul>
+                        </>
                     ],
                 },
                 {
                     name: 'Méregtelenítő talp masszázs',
                     description: [
-                        `A vizelet és emésztésirendszerre épül.A belső szervek méregtelenítését segíti elő.A lerakódott salakanyagokat segít kiüríteni.`,
-                        `Méregtelenítő masszázs:
+                        <>
+                            <h3>Méregtelenítő masszázs</h3>
+                            <p>
+                                A vizelet és emésztésirendszerre épül.
+                                A belső szervek méregtelenítését segíti elő.
+                                A lerakódott salakanyagokat segít kiüríteni.
+                                A masszázs segíti beindítani az öngyógyítási folyamatokat.
+                                A masszázst célszerű több alkalommal igénybe venni az elején, hogy az öngyógyítási folyamatok elkezdődjenek.
+                                Ha teheted, heti 2x vagy 3x, ahogy az időd engedi és utána havi 1x legalább érdemes megismételni.
+                                Sok betegség megelőzésére, illetve meglévő betegség javulására, szinten tartására, alkalmazhatóak.
+                                Az egész testre jótékony hatással van.
+                            </p>
+                        </>,
+                        <>
+                            <h3>A masszázs célja:</h3>
+                            <ul>
+                                <li>frissítés céllal</li>
+                                <li>megelőzésképpen</li>
+                                <li>állapot felmérés céljából</li>
+                                <li>méregtelenítésre, salaktalanításra</li>
+                                <li>hatásmechanizmusát tekintve számos betegség esetén terápiás eljárásként</li>
+                                <li>feszültségoldó hatású, depresszió esetén is jól alkalmazható a szorongás és félelem oldására</li>
+                                <li>fájdalom csillapító</li>
+                            </ul>
 
-                A masszázs segíti beindítani az öngyógyítási folyamatokat.
-                        A masszázst célszerű több alkalommal igénybe venni az elején, hogy az öngyógyítási folyamatok elkezdődjenek.Ha teheted, heti 2x vagy 3x, ahogy az időd engedi és utána havi 1x legalább érdemes megismételni.
-                        Sok betegség megelőzésére, illetve meglévő betegség javulására, – szinten tartására, alkalmazhatóak.Az egész testre jótékony hatással van.`,
-                        `Talpmasszázs általános tudnivalók:
-
-                -frissítés céllal
-                - megelőzésképpen
-                - állapot felmérés céljából
-                - méregtelenítésre, salaktalanításra
-                - hatásmechanizmusát tekintve számos betegség esetén terápiás eljárásként
-                - feszültségoldó hatású, depresszió esetén is jól alkalmazható a szorongás és félelem oldására
-                - fájdalom csillapító`,
-                        `Alkalmazását tekintve: 1, 5 - 2 éves kortól az egészen idős emberekig, figyelembe véve a tiltó körülményeket.`,
-                        `Ellenjavallatok - tilos a talpreflexológia az alábbi esetekben:
-
-                Kérlek vedd ezeket figyelembe a magad egészséged érdekében.
-                        Bármi kérdés merül fel benned, bizonytalan vagy hívj nyugodtan.
-                        
-                        - várandóság időszakában(kivéve néhány zónában)
-                - veszélyeztetett terhesség esetén tilos
-                - nagyfokú érelmeszesedés, trombózis esetén
-                - kezeletlen magas vérnyomás(ha kezelt lehet)
-                - súlyos szív és keringési problémával küzdő, pacemakert használóknak
-                - súlyos cukorbetegség fennállásakor
-                - erősen visszeres, gyulladt, ödémás láb esetén
-                - magas láz esetén
-                - fertőző betegségeknél
-                - nyílt seb, gombásodás a lábon
-                - sérülések, törés, ficam, üszkösödés a lábon
-                - vérzéses betegségek, beleértve a menstruációt is. (tekintettel a masszázs keringést fokozó voltára előidézhet egy erős menzeszt, mely kapcsán a kezelt személy sok vért veszíthet)
-                - nem javaslom epe -, illetve vesekövesség esetén sem - mivel a távolhatás kapcsán a mozgások fokozódnak – a kő elmozdulhat a helyéről, majd szűkebb szakaszba kerülve beékelődhet, és erős görcsöket okozhat.
-                        - erős idegkimerültség esetén`,
+                        </>,
                     ],
                 },
                 {
                     name: 'Bathi Thai olajos talp masszázs',
                     description: [
-                        'A thai masszázs egy speciális masszázs fajta, amely a relaxáció és helyreállító kezeléseket ötvözi. A módszer a test speciális pontjainak aktiválásán alapul, amely a belső energiákért felelős. Helyre állítja az ember fizikai erejét, nem feledkezve meg a spiritualitásról.',
-                        `Talpmasszázs általános tudnivalók:
-
-                -lazító
-                - feszültségoldó
-                - fájdalom csillapító hatású
-                - testileg és lelkileg frissebbé, aktívabbá, kiegyensúlyozottabbá tesz
-                - az energia vonalak, meridiánok kezelésének hatására javul a vérkeringés, és a nyirokkeringés, ezáltal erősíti a szervezet méregtelenítését, a salakanyagok eltávolítását
-                - stimulálja a vegetatív idegrendszert, a belső szerveket, serkenti azok működését, egyensúlyba hozza a test energiarendszerét
-                - a nyújtások, „kihúzások” mobilizációk oldják az izmok és az ízületek merevségét, feszültségét, növelik a test rugalmasságát
-                - masszázs után frissnek, rugalmasnak érzi magát a vendég, könnyebben mozog, megszűnik izmainak merevsége
-                - depresszió, szorongás oldására, pánikbetegségekre, lelki betegségek oldására`,
-
-                        `Tilos alkalmazni a következő esetekben:
-
-                -lázas állapot esetén
-                - ha a vendég betegnek, gyengének érzi magát, akkor is, ha nincsenek egyértelmű tünetek
-                - nyirokrendszer betegségeiben, ödémás láb esetén, súlyos visszértágulatnál
-                - sebek, fekély esetén
-                - bőrbetegségek a lábon
-                - alsó végtagokat érintő rándulás, ficam, csonttörés esetében a gyógyulásig
-                - daganatos betegség esetén - csak orvosi javaslatra
-                        
-                        Egyedi elbírálást igényelnek:
-                -magas vérnyomás, szívbetegség esetén - ha a vendég orvosi kezelés alatt áll, és a kezelés eredményeként jól érzi magát, kaphat talpmasszázst
-                - protézist viselőknek pl.: térd -, vagy csípőprotézis
-                - epilepsziás betegeknek – ha a vendég orvosi kezelés alatt áll, és a kezelés eredményeként jól érzi magát, kaphat talpmasszázst
-                - terhesség idején – ha a kismama terhessége zavartalan, frissítő, relaxáló célzattal - néhány fogás kihagyásával – kaphat talpmasszázst`,
+                        <>
+                            <p>
+                                A thai masszázs egy speciális masszázs fajta, amely a relaxáció és helyreállító kezeléseket ötvözi. A módszer a test speciális pontjainak aktiválásán alapul, amely a belső energiákért felelős. Helyre állítja az ember fizikai erejét, nem feledkezve meg a spiritualitásról.
+                            </p>
+                        </>,
+                        <>
+                            <h3>Talpmasszázs általános tudnivalók:</h3>
+                            <ul>
+                                <li>lazító</li>
+                                <li>feszültségoldó</li>
+                                <li>fájdalomcsillapító hatású</li>
+                                <li>testileg és lelkileg frissebbé, aktívabbá, kiegyensúlyozottabbá tesz</li>
+                                <li>az energia vonalak, meridiánok kezelésének hatására javul a vérkeringés, és a nyirokkeringés, ezáltal erősíti a szervezet méregtelenítését, a salakanyagok eltávolítását</li>
+                                <li>stimulálja a vegetatív idegrendszert, a belső szerveket, serkenti azok működését, egyensúlyba hozza a test energiarendszerét</li>
+                                <li>a nyújtások, „kihúzások” mobilizációk oldják az izmok és az ízületek merevségét, feszültségét, növelik a test rugalmasságát</li>
+                                <li>masszázs után frissnek, rugalmasnak érzi magát a vendég, könnyebben mozog, megszűnik izmainak merevsége</li>
+                                <li>depresszió, szorongás oldására, pánikbetegségekre, lelki betegségek oldására</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>Tilos alkalmazni a következő esetekben:</h3>
+                            <ul>
+                                <li>lázas állapot esetén</li>
+                                <li>ha a vendég betegnek, gyengének érzi magát, akkor is, ha nincsenek egyértelmű tünetek</li>
+                                <li>nyirokrendszer betegségeiben, ödémás láb esetén, súlyos visszértágulatnál</li>
+                                <li>sebek, fekély esetén</li>
+                                <li>bőrbetegségek a lábon</li>
+                                <li>alsó végtagokat érintő rándulás, ficam, csonttörés esetében a gyógyulásig</li>
+                                <li>daganatos betegség esetén - csak orvosi javaslatra</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>Egyedi elbírálást igényelnek:</h3>
+                            <ul>
+                                <li>magas vérnyomás, szívbetegség esetén - ha a vendég orvosi kezelés alatt áll, és a kezelés eredményeként jól érzi magát, kaphat talpmasszázst</li>
+                                <li>protézist viselőknek pl.: térd-, vagy csípőprotézis</li>
+                                <li>epilepsziás betegeknek – ha a vendég orvosi kezelés alatt áll, és a kezelés eredményeként jól érzi magát, kaphat talpmasszázst</li>
+                                <li>terhesség idején – ha a kismama terhessége zavartalan, frissítő, relaxáló célzattal - néhány fogás kihagyásával – kaphat talpmasszázst</li>
+                            </ul>
+                        </>,
                     ],
                 },
                 {
                     name: 'Talpcsakra masszázs',
                     description: [
-                        `A talpcsakra masszázs kezelési módszer képes a csakraenergiákat befolyásolni, ezáltal harmóniát teremteni.
-
-                        A csakra energia területek harmónizálása által pozitív tudatállapot - változás áll be.Az új és harmonikus rezgésterület nyomán mentesülünk a betegségektől, lelki összhangra teszünk szert`,
-
-                        `Talpmasszázs általános tudnivalók:
-
-                -frissítés céllal
-                - megelőzésképpen
-                - állapot felmérés céljából
-                - méregtelenítésre, salaktalanításra
-                - hatásmechanizmusát tekintve számos betegség esetén terápiás eljárásként
-                - feszültségoldó hatású, depresszió esetén is jól alkalmazható a szorongás és félelem oldására
-                - fájdalom csillapító`,
-
-                        `Alkalmazását tekintve: 1, 5 - 2 éves kortól az egészen idős emberekig, figyelembe véve a tiltó körülményeket.`,
-
-                        `Ellenjavallatok - tilos az alábbi esetekben:
-
-                Kérlek vedd ezeket figyelembe a magad egészséged érdekében.Bármi kérdés merül fel benned, bizonytalan vagy hívj nyugodtan.
-                        - várandóság időszakában(kivéve néhány zónában)
-                - veszélyeztetett terhesség esetén tilos
-                - nagyfokú érelmeszesedés, trombózis esetén
-                - kezeletlen magas vérnyomás(ha kezelt lehet)
-                - súlyos szív és keringési problémával küzdő, pacemakert használóknak
-                - súlyos cukorbetegség fennállásakor
-                - erősen visszeres, gyulladt, ödémás láb esetén
-                - magas láz esetén
-                - fertőző betegségeknél
-                - nyílt seb, gombásodás a lábon
-                - sérülések, törés, ficam, üszkösödés a lábon
-                - vérzéses betegségek, beleértve a menstruációt is. (tekintettel a masszázs keringést fokozó voltára előidézhet egy erős menzeszt, mely kapcsán a kezelt személy sok vért veszíthet)
-                - nem javaslom epe -, illetve vesekövesség esetén sem - mivel a távolhatás kapcsán a mozgások fokozódnak – a kő elmozdulhat a helyéről, majd szűkebb szakaszba kerülve beékelődhet, és erős görcsöket okozhat.
-                        - erős idegkimerültség esetén`,
-
-                        `A csakrák: `,
-
-                        `1. Alap csakra(gyökér csakra): energia
-                        A hátgerinc alsó végénél helyezkedik el.Felelős a fizikai erőlétért és vitalitásunkért.A munka, a hivatás, az energia, az aktivitás elsődleges mozgató rugója.
-                    Szervei: mellékvese, vesék, és a hátgerinc.
-                    Színe: vörös
-                        Eleme: föld
-                        Betegségek: Aranyér, bélgyulladás, fogínygyulladás, gerincpanaszok, hasmenés, székrekedés, hideg végtagok.
-                        Gyógyító színe: vörös`,
-
-                        `2. Szakrális, vagy szex – csakra: hit
-                        Nemi szervek magasságában helyezkedik el, a kreativitás csakrája.Irányítja viselkedésünket kapcsolatainkban, a nemi életben, és ez által a szaporodásban.A gyökér csakrával együtt felelős az emberi szexualitás örömeiért és problémáiért.
-                    Színe: narancssárga
-                        Eleme: víz
-                        Betegségek: Bélgörcs, felfúvódás, gombás fertőzés, hajhullás, hereproblémák, méhproblémák, petefészek - ciszta, impotencia, a prosztata megbetegedései, mellbetegségek, étkezési zavarok, kóros elhízás, orgazmusproblémák.
-                        Gyógyító színe: narancssárga
-                        Gyógyító köve: a karneol
-                        Gyógyító hangja: a naphang
-                        Gyógyító olaja: a narancsvirágolaj`,
-
-                        `3. Köldök csakra vagy Napfonat(plexus Solaris): tudás
-                        A gyomorszáj alatt helyezkedik el.
-                    Szervei: hasnyálmirigy, epehólyag, távolról szabályozza az idegrendszert is, hozzá tartozik még a szem, vagyis a látás és a gyomor, máj is.
-                    Felelős: Az érzelmi érzékenység és személyes erő központja.A köldök csakra szenvedélyeink és saját énünk irányítója.
-                    Színe: sárga
-                        Eleme: tűz
-                        Betegségek: Cukorbetegség, epepanaszok, emésztési problémák, gyomorfekély, epe és májbetegség.
-                        Gyógyító színe: a sárga
-                        Gyógyító köve: a citrin
-                        Gyógyító hangja: a naphang
-                        Gyógyító olaja: a citromolaj`,
-
-                        `4. Szív csakra: szeretet
-                        A szív magasságában található.
-                    Szervei: szív, csecsemőmirigy
-                        Felelős: A szívet, a vér minőségét, és a vérkeringést irányítja, valamit az immunrendszert szabályozza.A szeretet központja.
-                    Színe: zöld
-                        Eleme: levegő
-                        Betegségek: az immunrendszerrel és a vérkeringéssel kapcsolatos betegségek, az antitestképzés, a fehérvérsejtek képzése, és végül a szív, mint szerv.
-                        Gyógyító színe: a rózsaszín
-                        Gyógyító köve: a rózsakvarc
-                        Gyógyító hangja: a föld hanga
-                        Gyógyító olaja: a rózsaolaj`,
-
-                        `5. Torok csakra: felvevő állomás
-                        A toroknál található.
-                    Szervei: pajzsmirigy, nyak és száj
-                        irányítja: a tüdőt, a hangszállakat, a hörgőket és az anyagcserét.Elsősorban a légzéssel, a beszéddel és az önkifejezéssel kapcsolatos.
-                    Színe: kék
-                        Eleme: éter
-                        Betegségek: beszédproblémák, köhögés, torokfájdalom, rekedtség.Az elnyomott érzelmek elzárhatják a totok csakra energiáját.
-                        Gyógyító színe: kék
-                        Gyógyító köve: a kék türkiz
-                        Gyógyító hangja: a holdhang
-                        Gyógyító olaja: a levendulaolaj`,
-
-                        `6. Homlok csakra = harmadik szem: leadó állomás
-                        A homlok közepén, a két szemöldök között található.
-                    Szervei: agyalapi mirigy, agy alsó része, idegrendszer, a fül, az orr, és a bal szem irányítását végzi.
-                    Felelős: A lélek színhelye.Ez vezérli a meditációt, az elmélkedés irányát, az intuíciót.
-                    Színe: indigókék(alkalmanként vörös és kék kominációjaként is megjelenik)
-                        Eleme: nem tartozik hozzá elem
-                        Betegségek: folyamatosan visszaköszönő fejfájás, látászavarok(rövid és távollátás, kancsalság, kötőhártya gyulladás)
-                        Gyógyító színe: ibolyalila - ibolyakék
-                        Gyógyító köve: a hegyi kristály
-                        Gyógyító hangja: a Jupiter hang
-                        Gyógyító olaj: a levendula`,
-
-                        `7. Korona csakra: bölcsesség
-                        A fejtetőn a kutacsnál található.
-                    Felelős: A korona csakra a legmagasabb tudati szintet szimbolizálja.E csakrán keresztül lehet felvenni Teremtőkkel a kapcsolatot.
-                    Színe: ibolyaszín, fehér fény
-                        Eleme: nincs
-                        Betegségek: Általában lelki, pszichés eredetű betegségek, esetleg személyiségváltozások(Parkinson - kór, Alzheimer - kór, depresszió, epilepszia) fordulhatnak elő.
-                        Gyógyító színe: az arany
-                        Gyógyító köve: az ametiszt
-                        Gyógyító hangja: a Karuna - hang
-                        Gyógyító olaja: illatkeverék`,
-
-                        `Az egész test gyógyító színe: zöld`,
+                        <>
+                            <p>
+                                A talpcsakra masszázs kezelési módszer képes a csakraenergiákat befolyásolni, ezáltal harmóniát teremteni.
+                            </p>
+                            <p>
+                                A csakra energia területek harmónizálása által pozitív tudatállapot-változás áll be. Az új és harmonikus rezgésterület nyomán mentesülünk a betegségektől, lelki összhangra teszünk szert.
+                            </p>
+                        </>,
+                        <>
+                            <h3>Talpmasszázs általános tudnivalók:</h3>
+                            <ul>
+                                <li>frissítés céllal</li>
+                                <li>megelőzésképpen</li>
+                                <li>állapot felmérés céljából</li>
+                                <li>méregtelenítésre, salaktalanításra</li>
+                                <li>hatásmechanizmusát tekintve számos betegség esetén terápiás eljárásként</li>
+                                <li>feszültségoldó hatású, depresszió esetén is jól alkalmazható a szorongás és félelem oldására</li>
+                                <li>fájdalom csillapító</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>Alkalmazható:</h3>
+                            <p>
+                                1,5 - 2 éves kortól az egészen idős emberekig, figyelembe véve a tiltó körülményeket.
+                            </p>
+                        </>,
+                        <>
+                            <h3>Ellenjavallatok - tilos az alábbi esetekben:</h3>
+                            <ul>
+                                <li>várandóság időszakában (kivéve néhány zónában)</li>
+                                <li>veszélyeztetett terhesség esetén tilos</li>
+                                <li>nagyfokú érelmeszesedés, trombózis esetén</li>
+                                <li>kezeletlen magas vérnyomás (ha kezelt lehet)</li>
+                                <li>súlyos szív és keringési problémával küzdő, pacemakert használóknak</li>
+                                <li>súlyos cukorbetegség fennállásakor</li>
+                                <li>erősen visszeres, gyulladt, ödémás láb esetén</li>
+                                <li>magas láz esetén</li>
+                                <li>fertőző betegségeknél</li>
+                                <li>nyílt seb, gombásodás a lábon</li>
+                                <li>sérülések, törés, ficam, üszkösödés a lábon</li>
+                                <li>vérzéses betegségek, beleértve a menstruációt is. (tekintettel a masszázs keringést fokozó voltára előidézhet egy erős menzeszt, mely kapcsán a kezelt személy sok vért veszíthet)</li>
+                                <li>nem javaslom epe -, illetve vesekövesség esetén sem - mivel a távolhatás kapcsán a mozgások fokozódnak – a kő elmozdulhat a helyéről, majd szűkebb szakaszba kerülve beékelődhet, és erős görcsöket okozhat.</li>
+                                <li>erős idegkimerültség esetén</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>1. Alap csakra (gyökér csakra): energia</h3>
+                            <ul>
+                                <li>A hátgerinc alsó végénél helyezkedik el.</li>
+                                <li>Felelős a fizikai erőlétért és vitalitásunkért.</li>
+                                <li>A munka, a hivatás, az energia, az aktivitás elsődleges mozgató rugója.</li>
+                                <li>Szervei: mellékvese, vesék, és a hátgerinc.</li>
+                                <li>Színe: vörös.</li>
+                                <li>Eleme: föld.</li>
+                                <li>Betegségek: Aranyér, bélgyulladás, fogínygyulladás, gerincpanaszok, hasmenés, székrekedés, hideg végtagok.</li>
+                                <li>Gyógyító színe: vörös.</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>2. Szakrális, vagy szex csakra: hit</h3>
+                            <ul>
+                                <li>Nemi szervek magasságában helyezkedik el, a kreativitás csakrája. Irányítja viselkedésünket kapcsolatainkban, a nemi életben, és ez által a szaporodásban. A gyökér csakrával együtt felelős az emberi szexualitás örömeiért és problémáiért.</li>
+                                <li>Színe: narancssárga</li>
+                                <li>Eleme: víz</li>
+                                <li>Betegségek: Bélgörcs, felfúvódás, gombás fertőzés, hajhullás, hereproblémák, méhproblémák, petefészek - ciszta, impotencia, a prosztata megbetegedései, mellbetegségek, étkezési zavarok, kóros elhízás, orgazmusproblémák.</li>
+                                <li>Gyógyító színe: narancssárga</li>
+                                <li>Gyógyító köve: a karneol</li>
+                                <li>Gyógyító hangja: a naphang</li>
+                                <li>Gyógyító olaja: a narancsvirágolaj</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>3. Köldök csakra vagy Napfonat (plexus Solaris): tudás</h3>
+                            <ul>
+                                <li>A gyomorszáj alatt helyezkedik el.</li>
+                                <li>Szervei: hasnyálmirigy, epehólyag, távolról szabályozza az idegrendszert is, hozzá tartozik még a szem, vagyis a látás és a gyomor, máj is.</li>
+                                <li>Felelős: Az érzelmi érzékenység és személyes erő központja. A köldök csakra szenvedélyeink és saját énünk irányítója.</li>
+                                <li>Színe: sárga</li>
+                                <li>Eleme: tűz</li>
+                                <li>Betegségek: Cukorbetegség, epepanaszok, emésztési problémák, gyomorfekély, epe és májbetegség.</li>
+                                <li>Gyógyító színe: a sárga</li>
+                                <li>Gyógyító köve: a citrin</li>
+                                <li>Gyógyító hangja: a naphang</li>
+                                <li>Gyógyító olaja: a citromolaj</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>4. Szív csakra: szeretet</h3>
+                            <ul>
+                                <li>A szív magasságában található.</li>
+                                <li>Szervei: szív, csecsemőmirigy</li>
+                                <li>Felelős: A szívet, a vér minőségét, és a vérkeringést irányítja, valamit az immunrendszert szabályozza. A szeretet központja.</li>
+                                <li>Színe: zöld</li>
+                                <li>Eleme: levegő</li>
+                                <li>Betegségek: az immunrendszerrel és a vérkeringéssel kapcsolatos betegségek, az antitestképzés, a fehérvérsejtek képzése, és végül a szív, mint szerv.</li>
+                                <li>Gyógyító színe: a rózsaszín</li>
+                                <li>Gyógyító köve: a rózsakvarc</li>
+                                <li>Gyógyító hangja: a föld hanga</li>
+                                <li>Gyógyító olaja: a rózsaolaj</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>5. Torok csakra: felvevő állomás</h3>
+                            <ul>
+                                <li>A toroknál található.</li>
+                                <li>Szervei: pajzsmirigy, nyak és száj irányítja: a tüdőt, a hangszállakat, a hörgőket és az anyagcserét. Elsősorban a légzéssel, a beszéddel és az önkifejezéssel kapcsolatos.</li>
+                                <li>Színe: kék</li>
+                                <li>Eleme: éter</li>
+                                <li>Betegségek: beszédproblémák, köhögés, torokfájdalom, rekedtség. Az elnyomott érzelmek elzárhatják a torok csakra energiáját.</li>
+                                <li>Gyógyító színe: kék</li>
+                                <li>Gyógyító köve: a kék türkiz</li>
+                                <li>Gyógyító hangja: a holdhang</li>
+                                <li>Gyógyító olaja: a levendulaolaj</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>6. Homlok csakra (harmadik szem): leadó állomás</h3>
+                            <ul>
+                                <li>A homlok közepén, a két szemöldök között található.</li>
+                                <li>Szervei: agyalapi mirigy, agy alsó része, idegrendszer, a fül, az orr, és a bal szem irányítását végzi.</li>
+                                <li>Felelős: A lélek színhelye. Ez vezérli a meditációt, az elmélkedés irányát, az intuíciót.</li>
+                                <li>Színe: indigókék (alkalmanként vörös és kék kominációjaként is megjelenik)</li>
+                                <li>Eleme: nem tartozik hozzá elem</li>
+                                <li>Betegségek: folyamatosan visszaköszönő fejfájás, látászavarok (rövid és távollátás, kancsalság, kötőhártya gyulladás)</li>
+                                <li>Gyógyító színe: ibolyalila - ibolyakék</li>
+                                <li>Gyógyító köve: a hegyi kristály</li>
+                                <li>Gyógyító hangja: a Jupiter hang</li>
+                                <li>Gyógyító olaj: a levendula</li>
+                            </ul>
+                        </>,
+                        <>
+                            <h3>7. Korona csakra: bölcsesség</h3>
+                            <ul>
+                                <li>A fejtetőn a kutacsnál található.</li>
+                                <li>Felelős: A korona csakra a legmagasabb tudati szintet szimbolizálja. E csakrán keresztül lehet felvenni Teremtőkkel a kapcsolatot.</li>
+                                <li>Színe: ibolyaszín, fehér fény</li>
+                                <li>Eleme: nincs</li>
+                                <li>Betegségek: Általában lelki, pszichés eredetű betegségek, esetleg személyiségváltozások (Parkinson - kór, Alzheimer - kór, depresszió, epilepszia) fordulhatnak elő.</li>
+                                <li>Gyógyító színe: az arany</li>
+                                <li>Gyógyító köve: az ametiszt</li>
+                                <li>Gyógyító hangja: a Karuna - hang</li>
+                                <li>Gyógyító olaja: illatkeverék</li>
+                            </ul>
+                        </>,
+                        <>
+                            <p>
+                                Az egész test gyógyító szín: zöld.
+                            </p>
+                        </>
                     ],
                 },
                 {
                     name: 'Tigger pont masszázs',
                     description: [
-                        'Description needed!',
+                        <h3>Hamarosan...</h3>,
                     ],
                 },
                 {
@@ -326,57 +381,57 @@ export const services = [
                         `Az alábbi szervrendszereket érinti: Vizelet kiválasztórendszer, emésztésirendszer, légzőrendszer, nyirokrendszer; keringés szervrendszere, agy,- idegrendszer, hormonrendszer, mozgásszervek, nemiszervek. (24 reflexzónás pontot érint)`,
                         `Reflexzónás arcmasszázs:
 
-            A masszázs segíti beindítani az öngyógyítási folyamatokat.A masszázst célszerű több alkalommal igénybe venni az elején, hogy az öngyógyítási folyamatok elkezdődjenek.Ha teheted, heti 2x vagy 3x, ahogy az időd engedi és utána havi 1x legalább érdemes megismételni.Sok betegség megelőzésére, illetve meglévő betegség javulására, – szinten tartására, alkalmazhatóak.Az egész testre jótékony hatással van.
+                A masszázs segíti beindítani az öngyógyítási folyamatokat.A masszázst célszerű több alkalommal igénybe venni az elején, hogy az öngyógyítási folyamatok elkezdődjenek.Ha teheted, heti 2x vagy 3x, ahogy az időd engedi és utána havi 1x legalább érdemes megismételni.Sok betegség megelőzésére, illetve meglévő betegség javulására, – szinten tartására, alkalmazhatóak.Az egész testre jótékony hatással van.
                         
                         Az arcmasszázs, természetes fájdalomcsillapító, gyógyító, frissítő eljárás.Műtéti beavatkozás után a felépülési idő megrövidül, mert felgyorsulnak a természetes gyógyulási folyamatokat.Kevés az ellenjavallata, nincsenek mellékhatásai.`,
                         `Általános tudnivalók:
-            -frissítés céllal
-                        - megelőzésképpen
-    - állapot felmérés céljából
-    - méregtelenítésre, salaktalanításra
-    - hatásmechanizmusát tekintve számos betegség esetén terápiás eljárásként
-    - feszültségoldó hatású, depresszió esetén is jól alkalmazható a szorongás és félelem oldására
-    - fájdalom csillapító
+                -frissítés céllal
+                - megelőzésképpen
+                - állapot felmérés céljából
+                - méregtelenítésre, salaktalanításra
+                - hatásmechanizmusát tekintve számos betegség esetén terápiás eljárásként
+                - feszültségoldó hatású, depresszió esetén is jól alkalmazható a szorongás és félelem oldására
+                - fájdalom csillapító
                         
                         Alkalmazását tekintve: 1, 5 - 2 éves kortól az egészen idős emberekig, figyelembe véve a tiltó körülményeket.`,
                         `Ellenjavallatok:
 
-    Kérlek vedd ezeket figyelembe a magad egészséged érdekében.
+                Kérlek vedd ezeket figyelembe a magad egészséged érdekében.
                         Bármi kérdés merül fel benned, bizonytalan vagy hívj nyugodtan.
                         
                         - lázas állapot
-    - heveny fertőző betegségeknél, pl.: felső léguti fertőzés, nátha…stb.
+                - heveny fertőző betegségeknél, pl.: felső léguti fertőzés, nátha…stb.
                         - súlyos szívbetegség, ingadozó magas vérnyomás
-    - akut gyulladás az arc, nyak, dekoltázs területén
-    - daganatos beteg(csak orvosi engedéllyel)
-    - friss trauma, műtét utáni állapot(4 - 6 - 8 hét műtéttől függően) pl: foghúzás után 2 hétig nem lehet masszírozni.
+                - akut gyulladás az arc, nyak, dekoltázs területén
+                - daganatos beteg(csak orvosi engedéllyel)
+                - friss trauma, műtét utáni állapot(4 - 6 - 8 hét műtéttől függően) pl: foghúzás után 2 hétig nem lehet masszírozni.
                         - hámhiány
-    - Rheumatoid arthritis aktív fázisában – amikor a gyulladás tünetei fennállnak
-    - előrehaladott csontritkulás
-    - be nem állított magas vérnyomás
-    - nem kezelt szív és keringési problémák
-    - visszeresség
-    - alkoholos állapot
-    - trombózis`,
+                - Rheumatoid arthritis aktív fázisában – amikor a gyulladás tünetei fennállnak
+                - előrehaladott csontritkulás
+                - be nem állított magas vérnyomás
+                - nem kezelt szív és keringési problémák
+                - visszeresség
+                - alkoholos állapot
+                - trombózis`,
                         `Arc masszázs esetén nem kizáró ok:
-    -terhesség
-    - menstruáció`,
+                -terhesség
+                - menstruáció`,
                     ],
                 },
                 {
                     name: 'Kismama, baba és gyerekmasszázs',
                     description: [
                         `Baba: (0 - 3 éves korig)
-    A baba masszázs számtalan előnnyel jár.Minden gyengéd érintéssel a csecsemő szeretve fogja érzi magát, megerősítve az anya és a gyermek között fennálló köteléket.Lehetővé teszik a baba számára, hogy nyugodtabbá váljon, ami javítja az alvásukat, étvágyukat, immunrendszerüket, gyorsabban épülnek fel a betegségekből.
-        Gyerek: (3 - 12 éves korig)
-    A gyerekek ebben a korban gyorsan fejlődnek.A növés folyamatában minden gyermek másképpen reagál.Ezért ajánlatos lehet számukra egy talp masszázs, vagy egy hát masszázs.`,
+                A baba masszázs számtalan előnnyel jár.Minden gyengéd érintéssel a csecsemő szeretve fogja érzi magát, megerősítve az anya és a gyermek között fennálló köteléket.Lehetővé teszik a baba számára, hogy nyugodtabbá váljon, ami javítja az alvásukat, étvágyukat, immunrendszerüket, gyorsabban épülnek fel a betegségekből.
+                    Gyerek: (3 - 12 éves korig)
+                A gyerekek ebben a korban gyorsan fejlődnek.A növés folyamatában minden gyermek másképpen reagál.Ezért ajánlatos lehet számukra egy talp masszázs, vagy egy hát masszázs.`,
 
                         `Baba masszázs:
 
-    Ha a gyermekének valamilyen egészségügyi problémája van, akkor először beszéljen orvosával, vagy védőnőjével, hogy eldöntse, fogja - e masszírozni.
+                Ha a gyermekének valamilyen egészségügyi problémája van, akkor először beszéljen orvosával, vagy védőnőjével, hogy eldöntse, fogja - e masszírozni.
                         
                         Alkalmazását tekintve:
-    Javaslat: Ha a baba még nem született meg, érdemes előtte elsajátítani a masszázst, hogy mire a kicsi megérkezik, magabiztosan tudjuk masszírozni.
+                Javaslat: Ha a baba még nem született meg, érdemes előtte elsajátítani a masszázst, hogy mire a kicsi megérkezik, magabiztosan tudjuk masszírozni.
                         - Ha a szülő jártas a babamasszázs technika alkalmazásában, akkor már 2 hetes kortól megkezdheti az alkalmazást.
                         - Csoportos vagy egyéni foglalkozásra, a babát 6 hetes kortól lehet vinni, ha a baba egészséges.
                         
@@ -386,27 +441,27 @@ export const services = [
 
                         `Általános tudnivalók:
 
-    -nyugtat
-    - elősegíti az alvást
-    - a rendszeres azonos időben végzett masszázs, segíti a tájékozódást a napon belül a gyermek számára
-    - jó hatással van a keringésre, légzőszervrendszerre, emésztésre, mozgás és kiválasztó szervrendszerre is
-    - a rendszeres masszázsban részesülő gyermekek jobban kötődnek a szülőkhöz, testvérekhez, családtagokhoz, nyitottabbak
-    - sírás, ijedség után sokkal könnyebb őket megnyugtatni
-    - segíti a napi testtömeg - növekedést
-    - javítja a baba alkalmazkodását az éjszakai alváshoz, és segíti mélyebben aludni
-    - enyhíti az orrdugulást és a fogakkal járó kellemetlenséget
-    - elősegíti a jó izomtónus, koordináció és a rugalmasság kialakulását
-    - javítják a test tudatosságát
-    - erősíti az immunrendszert
-    - javítja a bőr textúráját`,
+                -nyugtat
+                - elősegíti az alvást
+                - a rendszeres azonos időben végzett masszázs, segíti a tájékozódást a napon belül a gyermek számára
+                - jó hatással van a keringésre, légzőszervrendszerre, emésztésre, mozgás és kiválasztó szervrendszerre is
+                - a rendszeres masszázsban részesülő gyermekek jobban kötődnek a szülőkhöz, testvérekhez, családtagokhoz, nyitottabbak
+                - sírás, ijedség után sokkal könnyebb őket megnyugtatni
+                - segíti a napi testtömeg - növekedést
+                - javítja a baba alkalmazkodását az éjszakai alváshoz, és segíti mélyebben aludni
+                - enyhíti az orrdugulást és a fogakkal járó kellemetlenséget
+                - elősegíti a jó izomtónus, koordináció és a rugalmasság kialakulását
+                - javítják a test tudatosságát
+                - erősíti az immunrendszert
+                - javítja a bőr textúráját`,
 
                         `Mire kell odafigyelni:
 
-    -oda kell figyelni a baba hangulatára
-    - a babának nyugodtnak, ébernek és elégedettnek kell lennie, ha készen áll a masszázsra
-    - soha nem végezzünk olyan masszázst, ami kényelmetlen a babának, nem esik jól neki
-    - vannak gyerekek, akiknél több idő kell megszokni a masszázst, nem szabad rájuk erőltetni
-    - ha a gyermek megunja a foglalkozást, éhes lesz, pelust kell cserélni, akkor tegye azt a szülő, ami a babának kényelmét szolgálja`
+                -oda kell figyelni a baba hangulatára
+                - a babának nyugodtnak, ébernek és elégedettnek kell lennie, ha készen áll a masszázsra
+                - soha nem végezzünk olyan masszázst, ami kényelmetlen a babának, nem esik jól neki
+                - vannak gyerekek, akiknél több idő kell megszokni a masszázst, nem szabad rájuk erőltetni
+                - ha a gyermek megunja a foglalkozást, éhes lesz, pelust kell cserélni, akkor tegye azt a szülő, ami a babának kényelmét szolgálja`
                     ],
                 },
             ],
