@@ -14,16 +14,17 @@ $navy: rgb(0, 0, 128);
   background-image: url("../img/arak2a.jpg");
   background-position: center !important;
 }
-.arak #scroll-links {
+.arak .scroll-links {
   display: flex;
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
 }
-.arak #scroll-links a {
+.arak .scroll-links a {
   padding: 0.5rem;
+  text-align: center;
 }
-.arak #scroll-links a:hover {
+.arak .scroll-links a:hover {
   text-decoration: underline;
   cursor: pointer;
 }

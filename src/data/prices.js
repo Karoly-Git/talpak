@@ -1,6 +1,7 @@
 export const prices = [
     {
         name: "Lábápolás és Pedikűr",
+        group: 'foot-care',
         isActive: true,
         details: [
             {
@@ -82,6 +83,7 @@ export const prices = [
     },
     {
         name: "SPA Kezelések",
+        group: 'spa',
         isActive: true,
         details: [
             {
@@ -105,23 +107,8 @@ export const prices = [
         ]
     },
     {
-        name: "Diagnosztika Masszázs",
-        isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Talp diagnosztika",
-                price: 14000
-            },
-            {
-                isActive: true,
-                servName: "Arc diagnosztika",
-                price: 8000
-            },
-        ]
-    },
-    {
         name: "Masszázsok",
+        group: 'massage',
         isActive: true,
         details: [
             {
@@ -189,7 +176,25 @@ export const prices = [
         ]
     },
     {
+        name: "Diagnosztika Masszázs",
+        group: 'massage',
+        isActive: true,
+        details: [
+            {
+                isActive: true,
+                servName: "Talp diagnosztika",
+                price: 14000
+            },
+            {
+                isActive: true,
+                servName: "Arc diagnosztika",
+                price: 8000
+            },
+        ]
+    },
+    {
         name: "Trigger Pont Masszázs",
+        group: 'massage',
         isActive: true,
         details: [
             {
@@ -210,6 +215,7 @@ export const prices = [
     },
     {
         name: "Baba Masszázs 0-3 éves korig",
+        group: 'massage',
         isActive: true,
         details: [
             {
@@ -230,6 +236,7 @@ export const prices = [
     },
     {
         name: "Gyermek Masszázs 3-14 éves korig",
+        group: 'massage',
         isActive: true,
         details: [
             {
@@ -264,6 +271,7 @@ export const prices = [
     },
     {
         name: "Felnőtt Kinesio Tape",
+        group: 'kinesio',
         isActive: true,
         details: [
             {
@@ -282,6 +290,7 @@ export const prices = [
     },
     {
         name: "Gyermek Kinesio Tape",
+        group: 'kinesio',
         isActive: true,
         details: [
             {
@@ -300,6 +309,7 @@ export const prices = [
     },
     {
         name: "Masszázs Csomagok",
+        group: 'package',
         isActive: true,
         details: [
             {
@@ -348,6 +358,7 @@ export const prices = [
     },
     {
         name: "Lábápolás és Pedikűr Csomagok",
+        group: 'package',
         isActive: true,
         details: [
             {
@@ -372,6 +383,7 @@ export const prices = [
     },
     {
         name: "Extra Csomagok",
+        group: 'package',
         isActive: true,
         details: [
             {

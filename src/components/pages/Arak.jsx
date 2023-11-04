@@ -47,16 +47,86 @@ export default function Arak() {
                 top
                 content={
                     <div className="box">
-                        <nav id="scroll-links">
+                        <nav className="scroll-links">
                             {
-                                activePrices.map((price, index) =>
-                                    <Link
-                                        key={index}
-                                        onClick={scrolls[index]}
-                                    >
-                                        {prices[index].name}
-                                    </Link>
-                                )
+                                activePrices
+                                    .map((price, index) =>
+                                        price.group === 'massage' &&
+                                        <Link
+                                            key={index}
+                                            onClick={scrolls[index]}
+                                        >
+                                            {prices[index].name}
+                                        </Link>
+                                    )
+                            }
+                        </nav>
+                    </div>
+                }
+            />
+
+            <Section
+                top
+                color
+                content={
+                    <div className="box">
+                        <nav className="scroll-links">
+                            {
+                                activePrices
+                                    .map((price, index) =>
+                                        (price.group === 'foot-care' || price.group === 'spa') &&
+                                        <Link
+                                            key={index}
+                                            onClick={scrolls[index]}
+                                        >
+                                            {prices[index].name}
+                                        </Link>
+                                    )
+                            }
+                        </nav>
+                    </div>
+                }
+            />
+
+            <Section
+                top
+                content={
+                    <div className="box">
+                        <nav className="scroll-links">
+                            {
+                                activePrices
+                                    .map((price, index) =>
+                                        price.group === 'kinesio' &&
+                                        <Link
+                                            key={index}
+                                            onClick={scrolls[index]}
+                                        >
+                                            {prices[index].name}
+                                        </Link>
+                                    )
+                            }
+                        </nav>
+                    </div>
+                }
+            />
+
+            <Section
+                top
+                color
+                content={
+                    <div className="box">
+                        <nav className="scroll-links">
+                            {
+                                activePrices
+                                    .map((price, index) =>
+                                        price.group === 'package' &&
+                                        <Link
+                                            key={index}
+                                            onClick={scrolls[index]}
+                                        >
+                                            {prices[index].name}
+                                        </Link>
+                                    )
                             }
                         </nav>
                     </div>
@@ -67,9 +137,9 @@ export default function Arak() {
                 activePrices.map((price, index) =>
                     <Section
                         key={index}
-                        color={index % 2 === 0}
+                        color={index % 2 !== 0}
                         top={true}
-                        bottom={index === activePrices.length - 1 ? true : false}
+                        /*bottom={index === activePrices.length - 1 ? true : false}*/
                         scrollRef={refs[index]}
                         content={
                             <div className="box">
