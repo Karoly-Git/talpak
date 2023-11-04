@@ -112,7 +112,7 @@ $navy: rgb(0, 0, 128);
   bottom: 8rem;
   padding: 6px 3px;
   border-radius: 25% 0 0 25%;
-  background-color: rgb(117, 189, 128);
+  background-color: rgba(117, 189, 128, 0.7);
   transition: all 150ms ease-in-out;
   cursor: pointer;
   z-index: 10000;
@@ -121,6 +121,10 @@ $navy: rgb(0, 0, 128);
   font-size: 2rem;
   transform: rotate(-90deg);
   color: white;
+}
+
+.up:hover {
+  background-color: rgb(117, 189, 128);
 }
 
 h1 {
