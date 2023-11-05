@@ -1,6 +1,6 @@
 // React and React Router Imports
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Animation Imports
 import { motion as m } from 'framer-motion';
