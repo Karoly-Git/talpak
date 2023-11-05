@@ -31,6 +31,7 @@ import FelhasznalasiFeltetelek from './components/pages/FelhasznalasiFeltetelek'
 
 // Other Component Imports
 import ScrollToTop from './components/ScrollToTop';
+import Developer from './components/Developer';
 
 export default function App() {
   const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
@@ -168,6 +169,7 @@ export default function App() {
             anyFormTriggered={anyFormTriggered}
             setAnyFormTriggered={setAnyFormTriggered}
           />
+          <Developer />
         </footer>
       </div>
     </Router>
