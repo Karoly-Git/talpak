@@ -143,7 +143,6 @@ export default function App() {
             <Route path='/gyik' element={<Gyik />} />
 
             <Route path='/' element={<Kezdolap />} />
-            <Route path='/talpak' element={<Kezdolap />} />
             <Route path='/szolgaltatasok' element={<Szolgaltatasok />} />
             <Route path='/arak' element={<Arak />} />
             <Route path='/magamrol' element={<Magamrol />} />

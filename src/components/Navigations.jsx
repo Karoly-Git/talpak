@@ -23,7 +23,7 @@ import { RxHamburgerMenu as HamburgerIcon } from 'react-icons/rx';
 import { AiOutlineClose as CloseIcon } from 'react-icons/ai';
 
 const mainMenuIitems = [
-    { name: 'Kezdőlap', to: '/talpak', isDisplayed: true },
+    { name: 'Kezdőlap', to: '/', isDisplayed: true },
     { name: 'Szolgáltatások', to: '/szolgaltatasok', isDisplayed: true },
     { name: 'Árak', to: '/arak', isDisplayed: true },
     { name: 'Magamról', to: '/magamrol', isDisplayed: true },
@@ -38,9 +38,6 @@ const secMenuIitems = [
 ]
 
 const bottomMenuIitems = [
-    { name: 'Kezdőlap', to: '/talpak', isDisplayed: false },
-    { name: 'Szolgáltatások', to: '/szolgaltatasok', isDisplayed: false },
-    { name: 'Kapcsolat', to: '/kapcsolat', isDisplayed: false },
     { name: 'Felhasználási feltételek', to: '/felhasznalasi-feltetelek', isDisplayed: true },
     { name: 'Gyakori kérdések', to: '/gyik', isDisplayed: true },
     { name: 'Jó tudni', to: '/jo-tudni', isDisplayed: true },
@@ -78,7 +75,7 @@ export function MobileNavigation() {
     return (
         <nav className='mobile-nav'>
             <div className='icon-box'>
-                <Link to='/talpak' onClick={() => setIsMenuOpen(false)}>
+                <Link to='/' onClick={() => setIsMenuOpen(false)}>
                     <img className='logo' src={logoWhite} alt="Talpak Logó" />
                 </Link>
                 {!isMenuOpen && <HamburgerIcon onClick={toggleMenu} className='icon' />}
