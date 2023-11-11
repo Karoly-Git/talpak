@@ -40,7 +40,7 @@ export const contacts = {
         icon: <InstagramIcon className="icon" aria-label="Instagram ikon" />,
     },
     youtube: {
-        link: "https://www.youtube.com",
+        link: "https://www.youtube.com/@anettkarpati1851",
         icon: <YoutubeIcon className="icon" aria-label="Youtube ikon" />,
     },
 };
