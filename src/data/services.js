@@ -871,7 +871,7 @@ export const services = [
         },
     },
     {
-        name: 'Kinezio Tape',
+        name: 'Kinesio Tape',
         isActive: true,
         id: 'kinesio',
         img: {
@@ -881,17 +881,17 @@ export const services = [
             },
             main: {
                 src: kinesio,
-                alt: "Kinezio image",
+                alt: "Kinesio image",
             },
         },
         description: {
             snippet: "A kinezio tapasz rendkívül hasznos segítség a sérülések és fájdalmak kezelésében. Rugalmas kialakítása lehetővé teszi, hogy könnyen alkalmazható legyen a bőrön anélkül, hogy mozgásunkat korlátozná. A tapasz támogatja az izmokat és szalagokat, javítja a vérkeringést, és enyhíti a fájdalmat. Használata segít az izomfeszültség csökkentésében, sérülések utáni gyorsabb regenerációban, és javítja a sportteljesítményt. A kinezio tapasz egy kiváló eszköz a gyógyuláshoz és a mozgás szabadságának visszaszerzéséhez.",
             main: [
                 {
-                    name: 'Kinezio Tape',
+                    name: 'Kinesio Tape',
                     description: [
                         <p>
-                            A Kinezio szalag a bőrrel együtt mozogva folyamatos mikro masszázs hatást vált ki a kezelt területen.
+                            A Kinesio szalag a bőrrel együtt mozogva folyamatos mikro masszázs hatást vált ki a kezelt területen.
                             Segít az ingerek regenerálódásában, a fájdalom érzet jelentős csökkenésében.
                         </p>,
                         <>
@@ -926,7 +926,7 @@ export const services = [
                                 Innovatív eszközök és technikák segítségével lehet védeni és kezelni az izmokat, inakat és ízületeket.
                                 A túlterhelt, feszült izmok, szalagok, ízületi fájdalmak, sérülések kezelésére több mechanoterápiás eljárás is rendelkezésükre áll: masszázsterápia, mozgásterápia, akupunktúra, stb...
                                 A hagyományos kezelések javítják a vérkeringést, nyújtják az izmokat, segítik a mozgásterjedelem növelését, fájdalmat csökkentenek, vagyis gyorsítják a gyógyulási, rehabilitációs időszakot, az ismételt mozgás alkalmával azonban nem védik, kímélik, tehermentesítik a sérült részt, vagy gátolják a mozgást.
-                                A Kinezio szalag a megfelelő rögzítés mellett lehetővé teszi a teljes mozgást.
+                                A Kinesio szalag a megfelelő rögzítés mellett lehetővé teszi a teljes mozgást.
                                 A szalag kissé megemeli a bőrt és kötőszövetet, biztosítva ezzel a rétegek közötti nyirokáramlást, tisztítva a gyulladt szövetet.
                                 A kinezio szalag a test öngyógyításának felhasználása mellett valójában egy egész nap működő „információs terápia”.
                                 Segítségével a test újra tud működni.
