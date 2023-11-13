@@ -4,6 +4,7 @@ import { nameDays } from '../../data/name-days';
 
 import { motion as m } from 'framer-motion';
 import { animations } from '../../data/framer-animations';
+import { Helmet } from 'react-helmet';
 
 export default function Akciok() {
 
@@ -16,6 +17,9 @@ export default function Akciok() {
 
     return (
         <m.div className='page akciok' {...animations.pageTransition}>
+            <Helmet>
+                <title>Akciók</title>
+            </Helmet>
             <HeadSection
                 content={
                     <div className='box'>

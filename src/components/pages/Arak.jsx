@@ -1,4 +1,6 @@
 import React, { createRef } from "react";
+import { Helmet } from 'react-helmet';
+
 import { Link } from "react-router-dom";
 import { HeadSection, Section } from "../Sections";
 import PriceDetails from "../PriceDetails";
@@ -28,6 +30,10 @@ export default function Arak() {
 
     return (
         <m.div className="page arak" {...animations.pageTransition}>
+            <Helmet>
+                <title>Árak - BEMER, Safe Laser, Lábápolás, SPA, Masszázsok, Kinesio Tape és Csomagajánlatok</title>
+            </Helmet>
+
             <HeadSection
                 content={
                     <m.div className="box" {...animations.page.box}>

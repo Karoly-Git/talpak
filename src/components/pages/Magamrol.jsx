@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { HeadSection, Section } from '../Sections';
 
 import { motion as m } from 'framer-motion';
@@ -12,6 +13,9 @@ export default function Magamrol() {
 
     return (
         <m.div className='page magamrol' {...animations.pageTransition}>
+            <Helmet>
+                <title>Magamról - Masszázs Világa - Az Érintés Erejével az Egészségért és Harmóniáért</title>
+            </Helmet>
             <HeadSection
                 content={
                     <div className='box'>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import { HeadSection, Section } from '../Sections';
 
 import { motion as m } from 'framer-motion';
@@ -7,6 +8,9 @@ import { animations } from '../../data/framer-animations';
 export default function FelhasznalasiFeltetelek() {
     return (
         <div className='page felhasznalasi-feltetelek'>
+            <Helmet>
+                <title>Felhasználási Feltételek</title>
+            </Helmet>
             <HeadSection
                 content={
                     <m.div className='box' {...animations.pageTransition}>

@@ -1,5 +1,6 @@
 // React and React Router Imports
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 // Form Handling Imports
 import { useForm } from 'react-hook-form';
@@ -87,6 +88,9 @@ export default function Kapcsolat(props) {
 
     return (
         <m.div className='page kapcsolat' {...animations.pageTransition}>
+            <Helmet>
+                <title>Elérhetőségeim - Kapcsolatfelvétel Mobil, WhatsApp, Email útján</title>
+            </Helmet>
             {isStatusBoxOpen && sendingInProgress &&
                 <div className='status-box' id='in-progress'>
                     <p>Küldés folyamatban...</p>

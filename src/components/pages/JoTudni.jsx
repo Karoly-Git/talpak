@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { HeadSection, Section } from '../Sections';
 
 import { motion as m } from 'framer-motion';
@@ -10,6 +11,9 @@ import hazhoz from '../../img/hazhoz2.png'
 export default function JoTudni() {
     return (
         <m.div className='page jo-tudni' {...animations.pageTransition}>
+            <Helmet>
+                <title>Jó Tudni - Akadálymentes Szépségápolás és Relaxáció - Speciális Ellátás Kényelmével</title>
+            </Helmet>
             <HeadSection
                 content={
                     <m.div className='box' {...animations.page.box}>

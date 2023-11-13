@@ -1,4 +1,5 @@
 import React, { createRef, useEffect } from 'react'
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { galleries } from '../../data/galleries';
 
@@ -54,6 +55,9 @@ export default function Galeria() {
 
     return (
         <m.div className='page galeria' {...animations.pageTransition}>
+            <Helmet>
+                <title>Fénykép Galéria - Elkapott Pillanatok a Relaxáció Világából</title>
+            </Helmet>
             <HeadSection content={
                 <m.div className='box' {...animations.page.box}>
                     <m.h1 {...animations.page.h1}>Elkapott pillanatok</m.h1>

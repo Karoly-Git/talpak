@@ -1,5 +1,6 @@
 // React Imports
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 // Custom Components and Data Imports
 import { HeadSection, Section } from '../Sections';
@@ -34,6 +35,9 @@ export default function Szolgaltatasok() {
 
     return (
         <m.div className='page szolgaltatasok' {...animations.pageTransition}>
+            <Helmet>
+                <title>Szolgáltatások - Masszázs, Talp- és Arcdiagnosztika, Lábápolás, SPA és Kinesio Tape</title>
+            </Helmet>
             {
                 <div className='detail-container' style={isBoxVisible ? { display: '' } : { display: 'none' }}>
                     <div className="head-box">

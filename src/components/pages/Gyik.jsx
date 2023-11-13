@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 import { faqs } from '../../data/data';
 import { FaPlus as PlusIcon, FaMinus as MinusIcon } from 'react-icons/fa';
 import { HeadSection, Section } from '../Sections';
@@ -39,6 +40,9 @@ export default function Gyik() {
 
     return (
         <m.div className="page gyik" {...animations.pageTransition}>
+            <Helmet>
+                <title>Gyakori Kérdések - Pedikűr, Masszázs, és Szolgáltatások Részletei</title>
+            </Helmet>
             <img id='faq-img' src={faq} alt="Kérdőjelek" />
             <HeadSection
                 content={

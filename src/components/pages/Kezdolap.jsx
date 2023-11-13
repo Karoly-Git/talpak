@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Bejelentkezes, Nyitvatartas, Cim } from "../ShopInfo";
 
 import { motion as m } from 'framer-motion';
@@ -30,6 +31,9 @@ export default function Kezdolap() {
 
     return (
         <m.div className="page kezdolap" {...animations.pageTransition}>
+            <Helmet>
+                <title>Talpak - BEMER, Safe Laser, Diagnosztika, Masszázs, Kinesio Tape, Tekercselés, Lábápolás</title>
+            </Helmet>
             <HeadSection
                 content={
                     <div className="box" id="slogan">
