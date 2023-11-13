@@ -45,13 +45,14 @@ export default function Arak() {
 
             <Section
                 top
+                color
                 content={
                     <div className="box">
                         <nav className="scroll-links">
                             {
                                 activePrices
                                     .map((price, index) =>
-                                        price.group === 'massage' &&
+                                        //price.group === 'massage' &&
                                         <Link
                                             key={index}
                                             onClick={scrolls[index]}
@@ -65,7 +66,7 @@ export default function Arak() {
                 }
             />
 
-            <Section
+            {false && <Section
                 top
                 color
                 content={
@@ -86,9 +87,9 @@ export default function Arak() {
                         </nav>
                     </div>
                 }
-            />
+            />}
 
-            <Section
+            {false && <Section
                 top
                 content={
                     <div className="box">
@@ -108,9 +109,9 @@ export default function Arak() {
                         </nav>
                     </div>
                 }
-            />
+            />}
 
-            <Section
+            {false && <Section
                 top
                 color
                 content={
@@ -131,7 +132,7 @@ export default function Arak() {
                         </nav>
                     </div>
                 }
-            />
+            />}
 
             {
                 activePrices.map((price, index) =>

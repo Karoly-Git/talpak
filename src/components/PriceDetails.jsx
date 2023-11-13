@@ -13,10 +13,12 @@ export default function PriceDetails(props) {
                         <td>
                             <h3>{element.servName}</h3>
                             <p>{element.p}</p>
-                            {element.berlet &&
+                            {
+                                element.berlet &&
                                 <p>
                                     5 alkalmas bérlet: {(element.price * 3).toLocaleString('hu-HU')} Ft
-                                </p>}
+                                </p>
+                            }
                         </td>
                         <td className='price'>{element.price.toLocaleString('hu-HU')} Ft</td>
                     </tr>
