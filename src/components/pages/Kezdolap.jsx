@@ -63,7 +63,7 @@ export default function Kezdolap() {
                 content={
                     < div className="box" id="introduction" >
                         <h1>
-                            Üdvözöllek a Megszépülés és Relaxáció Világában!
+                            Üdvözöllek a Megszépülés, a Relaxáció és a Fájdalom Mentes Élet Világában!
                         </h1>
                         <p>
                             Nálam garantáltan megtalálod a relaxáció, a szépülés és testi-lelki harmónia felé veztő utat.
