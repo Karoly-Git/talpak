@@ -101,7 +101,7 @@ export const prices = [
             {
                 isActive: true,
                 servName: "Alap pedikűr + körömgomba kezelés",
-                p: "Plusz 2 500 Ft ujjanként",
+                p: "Plusz 2 000 Ft ujjanként",
                 price: 7500
             },
             {
