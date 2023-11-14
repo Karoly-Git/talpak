@@ -112,13 +112,13 @@ export const prices = [
             {
                 isActive: true,
                 servName: "Gél-lakk eltávolítás",
-                p: "Lemosóval.",
+                p: "Lemosóval",
                 price: 2000
             },
             {
                 isActive: true,
                 servName: "Baba pedikűr",
-                p: "0-6 éves korig.",
+                p: "0-6 éves korig",
                 price: 2500
             },
         ]
@@ -271,7 +271,7 @@ export const prices = [
                 isActive: true,
                 berlet: false,
                 servName: "Trigger pont terápia",
-                p: "30 perc. Egy adott terület fájdalom csillapítása",
+                p: "30 perc, egy adott terület fájdalom csillapítása",
                 price: 7000
             },
             {
