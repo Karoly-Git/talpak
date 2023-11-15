@@ -7,7 +7,7 @@ $orange: rgb(255, 165, 0);
 $navy: rgb(0, 0, 128);
 */
 .magamrol .head-section {
-  background-image: url("../img/me10.png");
+  background-image: url("../img/magamrol/main.png");
   background-position: left;
   background-position-y: -100px !important;
   background-position-x: -100px !important;

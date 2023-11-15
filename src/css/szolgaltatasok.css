@@ -7,7 +7,7 @@ $orange: rgb(255, 165, 0);
 $navy: rgb(0, 0, 128);
 */
 .szolgaltatasok .head-section {
-  background-image: url("../img/szolgaltatasok.jpg");
+  background-image: url("../img/szolgaltatasok/main.jpg");
   background-position: top !important;
 }
 .szolgaltatasok .detail-container {
