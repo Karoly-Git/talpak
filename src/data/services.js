@@ -3,8 +3,8 @@ import footIco from '../img/ico-pedicure.png'
 import spaIco from '../img/ico-spa.png'
 import kinesioIco from '../img/ico-kinesio.png'
 
-import massage from '../img/szolg_massage.jpg'
-import pedicure from '../img/szolg_lab.jpg'
+import massage from '../img/szolg_massage3.png'
+import pedicure from '../img/szolg_lab3.png'
 import spa from '../img/szolg_spa.jpg'
 import kinesio from '../img/szolg_kinesio.png'
 
