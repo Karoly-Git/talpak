@@ -1,7 +1,21 @@
+import bemerIcon from '../img/arak/bemer.png';
+import safelaserIcon from '../img/arak/safelaser.png';
+import pedicureIcon from '../img/arak/pedicure.png';
+import spaIcon from '../img/arak/spa.png';
+import diagnosisIcon from '../img/arak/diagnosis.png';
+import massageIcon from '../img/arak/massage.png';
+import babyIcon from '../img/arak/baby.png';
+import kinesioIcon from '../img/arak/kinesio.png';
+import childIcon from '../img/arak/child.png';
+
 export const prices = [
     {
         name: "BEMER",
         group: 'important',
+        icon: {
+            src: bemerIcon,
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -34,6 +48,10 @@ export const prices = [
     {
         name: "Safe Laser",
         group: 'important',
+        icon: {
+            src: safelaserIcon,
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -66,6 +84,10 @@ export const prices = [
     {
         name: "Lábápolás és Pedikűr",
         group: 'foot-care',
+        icon: {
+            src: pedicureIcon,
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -127,6 +149,10 @@ export const prices = [
     {
         name: "SPA Kezelések",
         group: 'spa',
+        icon: {
+            src: spaIcon,
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -147,6 +173,10 @@ export const prices = [
     {
         name: "Diagnosztika - Állapotfelmérés",
         group: 'diagnostics',
+        icon: {
+            src: diagnosisIcon,
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -167,6 +197,10 @@ export const prices = [
     {
         name: "Masszázsok",
         group: 'massage',
+        icon: {
+            src: massageIcon,
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -308,6 +342,10 @@ export const prices = [
     {
         name: "Baba Masszázs",
         group: 'massage',
+        icon: {
+            src: babyIcon,
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -330,6 +368,10 @@ export const prices = [
     {
         name: "Gyermek Masszázs",
         group: 'massage',
+        icon: {
+            src: childIcon,
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -359,6 +401,10 @@ export const prices = [
     {
         name: "Tekercselés",
         group: 'roll',
+        icon: {
+            src: '',
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -397,6 +443,10 @@ export const prices = [
     {
         name: "Felnőtt Kinesio Tape",
         group: 'kinesio',
+        icon: {
+            src: kinesioIcon,
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -417,6 +467,10 @@ export const prices = [
     {
         name: "Gyermek Kinesio Tape",
         group: 'kinesio',
+        icon: {
+            src: '',
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -437,6 +491,10 @@ export const prices = [
     {
         name: "Masszázs Csomagok",
         group: 'package',
+        icon: {
+            src: '',
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -480,6 +538,10 @@ export const prices = [
     {
         name: "Pedi és Masszázs Csomagok",
         group: 'package',
+        icon: {
+            src: '',
+            alt: '',
+        },
         isActive: true,
         details: [
             {
@@ -500,6 +562,10 @@ export const prices = [
     {
         name: "Extra Pedi és Masszázs csomagok",
         group: 'package',
+        icon: {
+            src: '',
+            alt: '',
+        },
         isActive: true,
         details: [
             {

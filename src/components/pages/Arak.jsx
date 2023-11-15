@@ -61,9 +61,11 @@ export default function Arak() {
                                         //price.group === 'massage' &&
                                         <Link
                                             key={index}
-                                            onClick={scrolls[index]}
-                                        >
-                                            {prices[index].name}
+                                            onClick={scrolls[index]} >
+                                            <img src={prices[index].icon.src} alt={prices[index].icon.alt} style={{ height: '50px' }} />
+                                            <div>
+                                                {prices[index].name}
+                                            </div>
                                         </Link>
                                     )
                             }
