@@ -1,6 +1,6 @@
 // React and React Router Imports
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 // Animation Imports
 import { motion as m } from 'framer-motion';
@@ -35,6 +35,7 @@ import Developer from './components/Developer';
 
 export default function App() {
   const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
+  const [isDiscountBoxOpen, setIsDiscountBoxOpen] = useState(true);
   const [subscribtionInProgress, setSubscribtionInProgress] = useState(false);
   const [isSubscribtionError, setIsSubscribtionError] = useState(false);
   const [isFormReset, setIsFormReset] = useState(false);
@@ -62,16 +63,40 @@ export default function App() {
   function closeStatusBox() {
     setIsStatusBoxOpen(false);
   }
+  function closeDiscountBox() {
+    setIsDiscountBoxOpen(false);
+  }
 
   return (
-    <Router
-    >
+    <Router>
       <ScrollToTop />
       <div className='App'>
+
+        {isDiscountBoxOpen && <m.div className='status-box' id='discount'
+          initial={{ opacity: 0, top: 200 }}
+          animate={{ opacity: 1, top: 300 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 3 }}
+        >
+          <CloseIcon
+            id='close-icon'
+            onClick={() => {
+              closeDiscountBox();
+            }} />
+          {/*Icon?*/}
+          <h2>Safe Laser Akció!</h2>
+          <h3>December 31-ig!</h3>
+          <p>
+            Karácsonyi akció keretében most hatalmas akció a Safe Laser kezelésekre.
+          </p>
+          <Link to='/kapcsolat' onClick={closeDiscountBox}>
+            <button>Kapcsolat</button>
+          </Link>
+        </m.div>}
+
+
         {isStatusBoxOpen && subscribtionInProgress &&
           <div className='status-box' id='in-progress'>
             <p>Feliratkozás folyamatban...</p>
-
             <svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <circle cx="10" cy="10" r="9" stroke="#000" strokeWidth="2" fill="none" />
               <circle cx="10" cy="10" r="9" stroke="#0073e6" strokeWidth="2" fill="none">
@@ -80,6 +105,7 @@ export default function App() {
             </svg>
           </div>
         }
+
         {isStatusBoxOpen && !subscribtionInProgress && !isSubscribtionError &&
           <div className='status-box' id='is-sent'>
             <CloseIcon
@@ -88,8 +114,7 @@ export default function App() {
                 closeStatusBox();
                 setIsFormReset(true);
                 setAnyFormTriggered(false);
-              }}
-            />
+              }} />
             <PenIcon className='icon' />
             <h2>Feliratkozás sikeres!</h2>
             <h3>Köszönöm az feliratkozást!</h3>

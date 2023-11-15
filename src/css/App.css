@@ -44,15 +44,32 @@ $navy: rgb(0, 0, 128);
   border: 3px solid rgb(150, 150, 150);
   max-width: 500px;
 }
+.App .pop-up-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 3px solid rgb(150, 150, 150);
+  max-width: 500px;
+}
 .App #in-progress p {
   margin-right: 1rem;
 }
 .App #is-sent,
+.App #discount,
 .App #is-error {
   padding-top: 0;
   flex-direction: column;
 }
 .App #is-sent #close-icon,
+.App #discount #close-icon,
 .App #is-error #close-icon {
   display: flex;
   justify-content: center;
@@ -67,11 +84,13 @@ $navy: rgb(0, 0, 128);
   color: rgb(80, 80, 80);
 }
 .App #is-sent #close-icon:hover,
+.App #discount #close-icon:hover,
 .App #is-error #close-icon:hover {
   background-color: red;
   color: white;
 }
 .App #is-sent .icon,
+.App #discount .icon,
 .App #is-error .icon {
   font-size: 4rem;
   color: green;
@@ -82,6 +101,9 @@ $navy: rgb(0, 0, 128);
 .App #is-sent h2,
 .App #is-sent h3,
 .App #is-sent p,
+.App #discount h2,
+.App #discount h3,
+.App #discount p,
 .App #is-error h2,
 .App #is-error h3,
 .App #is-error p {
@@ -89,11 +111,13 @@ $navy: rgb(0, 0, 128);
   text-align: center;
 }
 .App #is-sent h2,
+.App #discount h2,
 .App #is-error h2 {
   color: green;
   font-weight: 600;
 }
 .App #is-sent p,
+.App #discount p,
 .App #is-error p {
   text-align: center;
 }
@@ -105,6 +129,9 @@ $navy: rgb(0, 0, 128);
 .App #is-error h3,
 .App #is-error p {
   color: red;
+}
+.App #discount a {
+  margin-top: 1rem;
 }
 
 .up {
@@ -324,6 +351,7 @@ footer .sec-nav .link-set {
 }
 @media screen and (max-width: 576px) {
   #is-sent,
+#discount,
 #is-error {
     width: 90%;
     padding-left: 1rem;
@@ -331,10 +359,12 @@ footer .sec-nav .link-set {
     flex-direction: column;
   }
   #is-sent p,
+#discount p,
 #is-error p {
     text-align: center;
   }
   #is-sent #close-icon,
+#discount #close-icon,
 #is-error #close-icon {
     right: -50% !important;
   }
