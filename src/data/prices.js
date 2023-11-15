@@ -138,7 +138,7 @@ export const prices = [
             {
                 isActive: true,
                 servName: "Paraffin kezelés",
-                p: "Paraffin kezelés hatóanyagos krémmel, csak pedikűrrel kérhető, őr és/vagy körömgomba esetén nem vehető igénybe! 25 perc",
+                p: "Paraffin kezelés hatóanyagos krémmel, csak pedikűrrel kérhető, bőr és/vagy körömgomba esetén nem vehető igénybe! 25 perc",
                 price: 5000
             },
         ]
