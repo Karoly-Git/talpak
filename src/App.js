@@ -72,7 +72,7 @@ export default function App() {
       <ScrollToTop />
       <div className='App'>
 
-        {!isDiscountBoxOpen && <m.div className='status-box' id='discount'
+        {isDiscountBoxOpen && <m.div className='status-box' id='discount'
           initial={{ opacity: 0, top: 200 }}
           animate={{ opacity: 1, top: 300 }}
           transition={{ duration: 1, ease: "easeOut", delay: 3 }}
@@ -86,7 +86,7 @@ export default function App() {
           <h2>Safe Laser Akció!</h2>
           <h3>December 31-ig!</h3>
           <p>
-            Karácsonyi akció keretében most hatalmas akció a Safe Laser kezelésekre.
+            Karácsonyi akció keretében most hatalmas kedvezmény a Safe Laser kezelésekre.
           </p>
           <Link to='/kapcsolat' onClick={closeDiscountBox}>
             <button>Kapcsolat</button>

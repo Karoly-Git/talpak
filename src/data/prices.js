@@ -6,7 +6,13 @@ import diagnosisIcon from '../img/arak/diagnosis.png';
 import massageIcon from '../img/arak/massage.png';
 import babyIcon from '../img/arak/baby.png';
 import kinesioIcon from '../img/arak/kinesio.png';
+import kinesiochildIcon from '../img/arak/kinesiochild.png';
 import childIcon from '../img/arak/child.png';
+import wrapIcon from '../img/arak/wrap.png';
+import packageIcon from '../img/arak/package.png';
+import pedimassageIcon from '../img/arak/pedimassage.png';
+import extraIcon from '../img/arak/extra.png';
+
 
 export const prices = [
     {
@@ -402,7 +408,7 @@ export const prices = [
         name: "Tekercselés",
         group: 'roll',
         icon: {
-            src: '',
+            src: wrapIcon,
             alt: '',
         },
         isActive: true,
@@ -468,7 +474,7 @@ export const prices = [
         name: "Gyermek Kinesio Tape",
         group: 'kinesio',
         icon: {
-            src: '',
+            src: kinesiochildIcon,
             alt: '',
         },
         isActive: true,
@@ -492,7 +498,7 @@ export const prices = [
         name: "Masszázs Csomagok",
         group: 'package',
         icon: {
-            src: '',
+            src: packageIcon,
             alt: '',
         },
         isActive: true,
@@ -539,7 +545,7 @@ export const prices = [
         name: "Pedi és Masszázs Csomagok",
         group: 'package',
         icon: {
-            src: '',
+            src: pedimassageIcon,
             alt: '',
         },
         isActive: true,
@@ -563,7 +569,7 @@ export const prices = [
         name: "Extra Pedi és Masszázs csomagok",
         group: 'package',
         icon: {
-            src: '',
+            src: extraIcon,
             alt: '',
         },
         isActive: true,
