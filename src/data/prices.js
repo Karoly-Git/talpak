@@ -10,7 +10,7 @@ import kinesiochildIcon from '../img/arak/kinesiochild.png';
 import childIcon from '../img/arak/child.png';
 import wrapIcon from '../img/arak/wrap.png';
 import packageIcon from '../img/arak/package.png';
-import pedimassageIcon from '../img/arak/pedimassage.png';
+import pediandfaceIcon from '../img/arak/pediandface.png';
 import extraIcon from '../img/arak/extra.png';
 
 
@@ -545,7 +545,7 @@ export const prices = [
         name: "Pedi és Masszázs Csomagok",
         group: 'package',
         icon: {
-            src: pedimassageIcon,
+            src: pediandfaceIcon,
             alt: '',
         },
         isActive: true,
