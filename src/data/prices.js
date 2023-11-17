@@ -16,576 +16,156 @@ import extraIcon from '../img/arak/extra.png';
 
 export const prices = [
     {
-        name: "BEMER",
-        group: 'important',
+        group: "BEMER",
+        id: 'important',
         icon: {
             src: bemerIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "BEMER kezelés",
-                p: "1 alkalom",
-                price: 4000
-            },
-            {
-                isActive: true,
-                servName: "BEMER kezelés - 10",
-                p: "10 alkalom vásárlása esetén kezelésenként",
-                price: 3800
-            },
-            {
-                isActive: true,
-                servName: "BEMER kezelés - 20",
-                p: "20 alkalom vásárlása esetén kezelésenként",
-                price: 3700
-            },
-            {
-                isActive: true,
-                servName: "BEMER kezelés - 30",
-                p: "30 alkalom vásárlása esetén kezelésenként",
-                price: 3600
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Safe Laser",
-        group: 'important',
+        group: "Safe Laser",
+        id: 'important',
         icon: {
             src: safelaserIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Safe Laser kezelés",
-                p: "1 alkalom, AKCIÓS ÁR DECEMBER 31-IG!",
-                price: 4000
-            },
-            {
-                isActive: true,
-                servName: "Safe Laser kezelés - 10",
-                p: "10 alkalom vásárlása esetén kezelésenként, AKCIÓS ÁR DECEMBER 31-IG!",
-                price: 3800
-            },
-            {
-                isActive: true,
-                servName: "Safe Laser kezelés - 20",
-                p: "20 alkalom vásárlása esetén kezelésenként, AKCIÓS ÁR DECEMBER 31-IG!",
-                price: 3700
-            },
-            {
-                isActive: true,
-                servName: "Safe Laser kezelés - 30",
-                p: "30 alkalom vásárlása esetén kezelésenként, AKCIÓS ÁR DECEMBER 31-IG!",
-                price: 3600
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Lábápolás és Pedikűr",
-        group: 'foot-care',
+        group: "Lábápolás és Pedikűr",
+        id: 'foot-care',
         icon: {
             src: pedicureIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Alap pedikűr (kézi, illetve gépi pedikűr)",
-                p: "Áztatás, bőrkeményedés eltávolítása, köröm igazítás, krémezés",
-                price: 7500
-            },
-            {
-                isActive: true,
-                servName: "Speciális pedikűr (kézi- illetve gépi pedikűr)",
-                p: "Áztatás, erős bőrkeményedés, megvastagodott köröm, sarokrepedés, diabétesz láb, vérzékenység, peeling, krémezés",
-                price: 8500
-            },
-            {
-                isActive: true,
-                servName: "Mini pedikűr",
-                p: "Áztatás, köröm formázás, köröm kezelés",
-                price: 3500
-            },
-            {
-                isActive: true,
-                servName: "Tyúkszem eltávolítás",
-                p: "Ár darabonként értendő",
-                price: 2500
-            },
-            {
-                isActive: true,
-                servName: "Körömgomba kezelése",
-                p: "Ár ujjanként értendő",
-                price: 2500
-            },
-            {
-                isActive: true,
-                servName: "Alap pedikűr + körömgomba kezelés",
-                p: "Plusz 2 000 Ft ujjanként",
-                price: 7500
-            },
-            {
-                isActive: true,
-                servName: "Japán körömápolás",
-                price: 6000
-            },
-            {
-                isActive: true,
-                servName: "Gél-lakk eltávolítás",
-                p: "Lemosóval",
-                price: 2000
-            },
-            {
-                isActive: true,
-                servName: "Baba pedikűr",
-                p: "0-6 éves korig",
-                price: 2500
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "SPA Kezelések",
-        group: 'spa',
+        group: "SPA Kezelések",
+        id: 'spa',
         icon: {
             src: spaIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Vizes talpmasszázs",
-                p: "20 perc",
-                price: 4000
-            },
-            {
-                isActive: true,
-                servName: "Paraffin kezelés",
-                p: "Paraffin kezelés hatóanyagos krémmel, csak pedikűrrel kérhető, bőr és/vagy körömgomba esetén nem vehető igénybe! 25 perc",
-                price: 5000
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Diagnosztika - Állapotfelmérés",
-        group: 'diagnostics',
+        group: "Diagnosztika - Állapotfelmérés",
+        id: 'diagnostics',
         icon: {
             src: diagnosisIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Talp diagnosztika",
-                p: 'Állapotfelmérés',
-                price: 28000
-            },
-            {
-                isActive: true,
-                servName: "Arc diagnosztika",
-                p: 'Állapotfelmérés',
-                price: 28000
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Masszázsok",
-        group: 'massage',
+        group: "Masszázsok",
+        id: 'massage',
         icon: {
             src: massageIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Reflexológiai talpmasszázs",
-                p: "60 perc",
-                price: 10000
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Reflexológiai talpmasszázs",
-                p: "30 perc",
-                price: 6500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Méregtelenítő talpmasszázs",
-                p: "30 perc",
-                price: 6500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Bathi thai olajos talpmasszázs",
-                p: "30 perc",
-                price: 6500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Talpcsakra masszázs",
-                p: "20 perc",
-                price: 5500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Reflexzónás arcmasszázs",
-                p: "30 perc",
-                price: 6500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Herbalance arcmasszázs",
-                p: "30 perc",
-                price: 7500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Szervzónás kézmasszázs",
-                p: "30 perc",
-                price: 6500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Svéd masszázs",
-                p: "30 perc",
-                price: 6500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Svéd masszázs + köpöly igény szerint",
-                p: "60 perc, ",
-                price: 10500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Svéd masszázs + köpöly igény szerint",
-                p: "90 perc, ",
-                price: 16500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Kismama masszázs",
-                p: "30 perc",
-                price: 6500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Thermo masszázs",
-                p: "30 perc",
-                price: 7000
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Thermo masszázs - vibrációs labdával",
-                p: "30 perc, VIP",
-                price: 10000
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Trigger pont terápia",
-                p: "30 perc, egy adott terület fájdalom csillapítása",
-                price: 7000
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Svéd masszázs, trigger pont terápia, IM Kor. Tech.",
-                p: "60 perc",
-                price: 12000
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Svéd masszázs, trigger pont terápia, IM Kor. Tech.",
-                p: "90 perc",
-                price: 18500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Svéd masszázs, trigger pont terápia, köpöly,  IM Kor. Tech.",
-                p: "60 perc",
-                price: 13500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Svéd masszázs, trigger pont terápia, köpöly,  IM Kor. Tech.",
-                p: "90 perc",
-                price: 19500
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Baba Masszázs",
-        group: 'massage',
+        group: "Baba Masszázs",
+        id: 'massage',
         icon: {
             src: babyIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Baba masszázs - Nyugati olajos",
-                p: "0-3 éves kori, 30 perc",
-                price: 5500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Baba masszázs - Thai",
-                p: "0-3 éves kori, 30 perc",
-                price: 5500
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Gyermek Masszázs",
-        group: 'massage',
+        group: "Gyermek Masszázs",
+        id: 'massage',
         icon: {
             src: childIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Reflexológiai talpmasszázs",
-                p: "3-14 éves kori, 30 perc",
-                price: 5500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Svéd masszázs",
-                p: "3-14 éves kori, 30 perc",
-                price: 5500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Svéd masszázs",
-                p: "3-14 éves kori, 60 perc",
-                price: 9500
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Tekercselés",
-        group: 'roll',
+        group: "Tekercselés",
+        id: 'roll',
         icon: {
             src: wrapIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Fóliás",
-                p: "5 alkalom felett 10% kedvezmény!",
-                price: 10000
-            },
-            {
-                isActive: true,
-                servName: "Vizes",
-                p: "5 alkalom felett 10% kedvezmény!",
-                price: 14000
-            },
-            {
-                isActive: true,
-                servName: "Köpöly",
-                p: "30 perc",
-                price: 3000
-            },
-            {
-                isActive: true,
-                servName: "Masszázs (hatóanyagos krémekkel, olajokka, zselékkel egyénhez igazítva)",
-                p: "30 perc, tekercselés nélkül is kérhető",
-                price: 6500
-            },
-            {
-                isActive: true,
-                servName: "Masszázs (hatóanyagos krémekkel, olajokka, zselékkel egyénhez igazítva)",
-                p: "45 perc, tekercselés nélkül is kérhető",
-                price: 8000
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Felnőtt Kinesio Tape",
-        group: 'kinesio',
+        group: "Felnőtt Kinesio Tape",
+        id: 'kinesio',
         icon: {
             src: kinesioIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Kinesio Tape - ragasztás felnőtteknek",
-                p: "Kis felületen",
-                price: 5000
-            },
-            {
-                isActive: true,
-                servName: "Kinesio Tape - ragasztás felnőtteknek",
-                p: "Nagy felületen",
-                price: 8000
-            }
-        ]
+        details: [],
     },
 
     {
-        name: "Gyermek Kinesio Tape",
-        group: 'kinesio',
+        group: "Gyermek Kinesio Tape",
+        id: 'kinesio',
         icon: {
             src: kinesiochildIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Kinesio Tape - ragasztás gyermekeknek 14 éves korig",
-                p: "Kis felületen",
-                price: 4000
-            },
-            {
-                isActive: true,
-                servName: "Kinesio Tape - ragasztás gyermekeknek 14 éves korig",
-                p: "Nagy felületen",
-                price: 6000
-            }
-        ]
+        details: [],
     },
 
     {
-        name: "Masszázs Csomagok",
-        group: 'package',
+        group: "Masszázs Csomagok",
+        id: 'package',
         icon: {
             src: packageIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Masszázs Csomag 1",
-                p: "Vizes talpmasszázs + méregtelenítő talpmasszázs (50 perc)",
-                price: 8500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Masszázs Csomag 2",
-                p: "Vizes talpmasszázs + talpcsakra masszázs (40 perc)",
-                price: 7400
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Masszázs Csomag 3",
-                p: "Vizes talpmasszázs + reflexzónás arcmasszázs (30 perc)",
-                price: 8500
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Masszázs Csomag 4",
-                p: "Vizes talpmasszázs + méregtelenítő talpmasszázs + arcmasszázs (60 perc)",
-                price: 15000
-            },
-            {
-                isActive: true,
-                berlet: false,
-                servName: "Masszázs Csomag 5",
-                p: "Vizes talpmasszázs + talpcsakra masszázs + arcmasszázs (50 perc)",
-                price: 14500
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Pedi és Masszázs Csomagok",
-        group: 'package',
+        group: "Pedi és Masszázs Csomagok",
+        id: 'package',
         icon: {
             src: pediandfaceIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Csomag 1",
-                p: "Alap pedikűr + talpmasszázs + paraffinos kezelés ható anyagos krémmel (1,5-2 óra egyéntől függően)",
-                price: 17000
-            },
-            {
-                isActive: true,
-                servName: "Csomag 2",
-                p: "Alap pedikűr + japán körömápolás + vizes masszázs (1,5-2 óra egyéntől függően)",
-                price: 15500
-            },
-        ]
+        details: [],
     },
 
     {
-        name: "Extra Pedi és Masszázs csomagok",
-        group: 'package',
+        group: "Extra Pedi és Masszázs csomagok",
+        id: 'package',
         icon: {
             src: extraIcon,
             alt: '',
         },
         isActive: true,
-        details: [
-            {
-                isActive: true,
-                servName: "Manager csomag férfiaknak",
-                p: "Alap pedikűr + japán körömápolás +  talpmasszázs + paraffinos kezelés hatóanyagos krémmel (2-2,5 óra egyéntől függően)",
-                price: 15800
-            },
-            {
-                isActive: true,
-                servName: "Kényeztető csomag nőknek",
-                p: "Alap pedikűr + japán körömápolás +  arcmasszázs + paraffinos kezelés hatóanyagos krémekkel vagy olajokkal (2-2,5 óra egyéntől függően)",
-                price: 14800
-            },
-        ]
+        details: [],
     },
 ];

@@ -1,17 +1,46 @@
-import React, { createRef } from "react";
+import React, { createRef, useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
 
 import { Link } from "react-router-dom";
 import { HeadSection, Section } from "../Sections";
 import PriceDetails from "../PriceDetails";
-import { prices } from "../../data/prices";
+import { prices as priceGroups } from "../../data/prices";
 
 import { motion as m } from 'framer-motion';
 import { animations } from '../../data/framer-animations';
 
 export default function Arak() {
+    const [data, setData] = useState([]);
 
-    const activePrices = prices.filter(price => price.isActive);
+    //console.log(priceGroups);
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:8000/data');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const jsonData = await response.json();
+                setData(jsonData);
+                //console.log(jsonData);
+
+                priceGroups.forEach(group => {
+                    group.details = jsonData.filter(e => e.group === group.group);
+                    console.log(group);
+                });
+
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+
+    const activePrices = priceGroups.filter(price => price.isActive);
 
     const refs = [];
     const scrolls = [];
@@ -62,9 +91,9 @@ export default function Arak() {
                                         <Link
                                             key={index}
                                             onClick={scrolls[index]} >
-                                            <img src={prices[index].icon.src} alt={prices[index].icon.alt} style={{ height: '50px' }} />
+                                            <img src={priceGroups[index].icon.src} alt={priceGroups[index].icon.alt} style={{ height: '50px' }} />
                                             <div>
-                                                {prices[index].name}
+                                                {priceGroups[index].group}
                                             </div>
                                         </Link>
                                     )
@@ -88,7 +117,7 @@ export default function Arak() {
                                             key={index}
                                             onClick={scrolls[index]}
                                         >
-                                            {prices[index].name}
+                                            {priceGroups[index].group}
                                         </Link>
                                     )
                             }
@@ -110,7 +139,7 @@ export default function Arak() {
                                             key={index}
                                             onClick={scrolls[index]}
                                         >
-                                            {prices[index].name}
+                                            {priceGroups[index].group}
                                         </Link>
                                     )
                             }
@@ -133,7 +162,7 @@ export default function Arak() {
                                             key={index}
                                             onClick={scrolls[index]}
                                         >
-                                            {prices[index].name}
+                                            {priceGroups[index].group}
                                         </Link>
                                     )
                             }
@@ -153,8 +182,8 @@ export default function Arak() {
                         content={
                             <div className="box">
                                 <PriceDetails
-                                    name={prices[index].name}
-                                    prices={prices[index].details}
+                                    group={priceGroups[index].group}
+                                    services={priceGroups[index].details}
                                 />
                             </div>
                         }
