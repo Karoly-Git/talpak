@@ -74,10 +74,8 @@ export default function Admin() {
     }
 
     function handleChange(event) {
-        //console.log('File added');
         let fileName = event.target.files[0].name;
         let extension = fileName.split('.').at(-1);
-        //console.log(extension);
         setFileInfo(extension === 'xlsx' ? fileName : 'Rossz fájl!');
         setIsExcelFile(extension === 'xlsx' ? true : false);
         setIsFileAdded(true);
