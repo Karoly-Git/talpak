@@ -13,15 +13,24 @@ import { HeadSection, Section } from '../Sections';
 // Data Imports
 import config from '../../config.json';
 
+// Icon Imports
+import { MdAttachFile as AttachIcon } from "react-icons/md";
+import { SiMicrosoftexcel as ExcelIcon } from "react-icons/si";
+import { FaUpload as UploadIcon } from "react-icons/fa6";
+import { CiWarning as WarningIcon } from "react-icons/ci";
+
 export default function Admin() {
 
-    const URL = config.settings.isLocalServer ? config.urls.local + '/admin' : config.urls.heroku + '/admin';
+    const [isFileAdded, setIsFileAdded] = useState(false);
+    const [isExcelFile, setIsExcelFile] = useState(true);
+    const [fileInfo, setFileInfo] = useState('');
+
+    const URL = config.settings.isLocalServer ? `${config.urls.local}/admin` : `${config.urls.heroku}/admin`;
 
     const schema = yup.object().shape({
-        pin: yup.string(),
+        pin: yup.string().required('PIN szükséges!'),
         myFile: yup.mixed(),
     });
-
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(schema),
@@ -44,14 +53,16 @@ export default function Admin() {
 
 
             if (!result.ok) {
-                throw new Error('Network response was not ok');
+                console.log('Network response was not ok');
             }
 
         } catch (err) {
-            console.error('Error fetching data:', err);
+            console.log('Error fetching data:', err);
         } finally {
-            console.error('Fetching finished.');
+            console.log('Fetching finished.');
             resetForm();
+            setIsFileAdded(false);
+            setFileInfo('');
         }
     };
 
@@ -60,6 +71,16 @@ export default function Admin() {
             pin: '',
             myFile: ''
         });
+    }
+
+    function handleChange(event) {
+        //console.log('File added');
+        let fileName = event.target.files[0].name;
+        let extension = fileName.split('.').at(-1);
+        //console.log(extension);
+        setFileInfo(extension === 'xlsx' ? fileName : 'Rossz fájl!');
+        setIsExcelFile(extension === 'xlsx' ? true : false);
+        setIsFileAdded(true);
     }
 
     return (
@@ -77,16 +98,31 @@ export default function Admin() {
                 content={
                     <div className='box'>
 
-                        <form onSubmit={handleSubmit(onSubmit)} encType="multipart/form-data" style={{ maxWidth: '400px', margin: 'auto', paddingTop: '20px' }}>
+                        <form onSubmit={handleSubmit(onSubmit)} encType="multipart/form-data">
+                            <div>
+                                <h3>Árak frissítése</h3>
+                            </div>
 
-                            {errors.pin && <span><p className='error'>{errors.pin?.message}</p></span>}
-                            <input placeholder="PIN" {...register('pin')} style={{ width: '100%', padding: '10px', marginBottom: '10px', boxSizing: 'border-box' }} />
+                            <div>
+                                {errors.pin ? <span><p className='error'>{errors.pin?.message}</p></span> : <span><p className='error'></p></span>}
+                                <input className='pin' type='password' placeholder="PIN" {...register('pin')} />
+                            </div>
 
+                            <div>
+                                {errors.myFile && <span><p className='error'>{errors.myFile?.message}</p></span>}
+                                {!errors.myFile && <span className='file-name'>{fileInfo}</span>}
+                                <label htmlFor="price-update">
+                                    {isFileAdded ? isExcelFile ? <ExcelIcon className='icon' /> : <WarningIcon className='icon' /> : <AttachIcon className='icon' />}
+                                </label>
+                                <input onInput={handleChange} id='price-update' className='upload-input' type='file' {...register('myFile')} />
+                            </div>
 
-                            {errors.myFile && <span><p className='error'>{errors.myFile?.message}</p></span>}
-                            <input type='file' {...register('myFile')} style={{ width: '100%', padding: '10px', marginBottom: '10px', boxSizing: 'border-box' }} />
+                            <div>
+                                <button style={!isFileAdded || !isExcelFile ? { visibility: 'hidden' } : { visibility: 'unset' }}>
+                                    <UploadIcon className='icon' />
+                                </button>
+                            </div>
 
-                            <button style={{ background: '#4CAF50', color: 'white', padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>Küld</button>
 
                         </form>
                     </div>

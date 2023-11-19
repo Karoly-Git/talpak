@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=EB+Garamond:wght@400;500&family=Ubuntu:wght@300;400&display=swap");
+/*
+font-family: 'Cardo', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Ubuntu', sans-serif;
+$orange: rgb(255, 165, 0);
+$navy: rgb(0, 0, 128);
+*/
+.admin {
+  background-color: gray;
+}
+.admin .head-section {
+  min-height: 200px !important;
+}
+.admin form {
+  display: flex;
+  align-items: center;
+}
+.admin form h3 {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
+.admin form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5rem;
+  margin-left: 1rem;
+}
+.admin form div .error {
+  font-size: 1rem;
+  position: relative;
+  min-height: 1rem;
+  align-self: flex-start;
+  margin-bottom: 0.25rem;
+}
+.admin form div .pin {
+  width: 8rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.admin form div .file-name {
+  min-height: 1rem;
+}
+.admin form div .upload-input {
+  display: none;
+}
+.admin form div label .icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.admin form div button {
+  margin-top: 1.25rem;
+  padding: 0;
+  background-color: transparent;
+  transition: none;
+}
+.admin form div button .icon {
+  font-size: 2rem;
+  color: black;
+}
+.admin form div button:hover .icon {
+  color: green;
+}
+.admin form div:nth-child(3) {
+  align-items: center;
+}
+.admin form div:nth-child(3) .file-name {
+  margin-bottom: 0.25rem;
+}/*# sourceMappingURL=admin.css.map */

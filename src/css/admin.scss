@@ -1,0 +1,82 @@
+@import './fonts-and-colors.scss';
+
+.admin {
+    background-color: gray;
+
+    .head-section {
+        min-height: 200px !important;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.25rem;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 5rem;
+            margin-left: 1rem;
+
+            .error {
+                font-size: 1rem;
+                position: relative;
+                min-height: 1rem;
+                align-self: flex-start;
+                margin-bottom: 0.25rem;
+            }
+
+            .pin {
+                width: 8rem;
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+
+            .file-name {
+                min-height: 1rem;
+            }
+
+            .upload-input {
+                display: none;
+            }
+
+            label {
+                .icon {
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                margin-top: 1.25rem;
+                padding: 0;
+                background-color: transparent;
+                transition: none;
+
+                .icon {
+                    font-size: 2rem;
+                    color: black;
+                }
+
+                &:hover {
+                    .icon {
+                        color: green;
+                    }
+                }
+            }
+        }
+
+        div:nth-child(3) {
+            align-items: center;
+
+            .file-name {
+                margin-bottom: 0.25rem;
+            }
+        }
+    }
+}
