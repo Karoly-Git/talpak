@@ -14,7 +14,7 @@ import pediandfaceIcon from '../img/arak/pediandface.png';
 import extraIcon from '../img/arak/extra.png';
 
 
-export const prices = [
+export const priceGroups = [
     {
         group: "BEMER",
         id: 'important',

@@ -4,12 +4,18 @@ import { Helmet } from 'react-helmet';
 import { Link } from "react-router-dom";
 import { HeadSection, Section } from "../Sections";
 import PriceDetails from "../PriceDetails";
-import { prices as priceGroups } from "../../data/prices";
+import { priceGroups } from "../../data/price-groups";
 
 import { motion as m } from 'framer-motion';
 import { animations } from '../../data/framer-animations';
 
+// Data Imports
+import config from '../../config.json';
+
 export default function Arak() {
+
+    const URL = config.settings.isLocalServer ? config.urls.local + '/prices-data' : config.urls.heroku + '/prices-data';
+
     const [data, setData] = useState([]);
 
     //console.log(priceGroups);
@@ -18,21 +24,23 @@ export default function Arak() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:8000/data');
+                const response = await fetch(URL);
+
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
                 const jsonData = await response.json();
                 setData(jsonData);
-                //console.log(jsonData);
 
                 priceGroups.forEach(group => {
-                    group.details = jsonData.filter(e => e.group === group.group);
+                    group.details = jsonData.filter(service => service.group === group.group);
                     console.log(group);
                 });
 
             } catch (error) {
                 console.error('Error fetching data:', error);
+            } finally {
+                console.error('Fetching finished.');
             }
         };
 

@@ -18,6 +18,7 @@ import { MdOutlineNavigateNext as ArrowIcon } from 'react-icons/md';
 import { MainNavigation, MobileNavigation, SecondaryNavigation, BottomNavigation } from '../src/components/Navigations';
 
 // Page Component Imports
+import Admin from './components/pages/Admin';
 import JoTudni from './components/pages/JoTudni';
 import Akciok from './components/pages/Akciok';
 import Gyik from './components/pages/Gyik';
@@ -162,6 +163,7 @@ export default function App() {
         <main>
           <Routes>
             <Route path='*' element={<h1>Oldal nem található</h1>} />
+            <Route path='/admin' element={<Admin />} />
 
             <Route path='/jo-tudni' element={<JoTudni />} />
             <Route path='/akciok' element={<Akciok />} />
