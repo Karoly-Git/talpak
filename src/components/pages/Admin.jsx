@@ -17,13 +17,22 @@ import config from '../../config.json';
 import { MdAttachFile as AttachIcon } from "react-icons/md";
 import { SiMicrosoftexcel as ExcelIcon } from "react-icons/si";
 import { FaUpload as UploadIcon } from "react-icons/fa6";
-import { CiWarning as WarningIcon } from "react-icons/ci";
+
+const loadingWheel =
+    <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+        <circle cx="50" cy="50" r="45" fill="none" stroke="#007bff" strokeWidth="5">
+            <animate attributeName="stroke-dasharray" attributeType="XML" from="0 314.159" to="314.159 0" begin="0s" dur="1.5s" repeatCount="indefinite" />
+            <animate attributeName="stroke-dashoffset" attributeType="XML" from="0" to="-628.318" begin="0s" dur="1.5s" repeatCount="indefinite" />
+        </circle>
+    </svg>
+
 
 export default function Admin() {
 
-    const [isFileAdded, setIsFileAdded] = useState(false);
-    const [isExcelFile, setIsExcelFile] = useState(true);
+    const [isExcelFile, setIsExcelFile] = useState(false);
+    const [isSending, setIsSending] = useState(false);
     const [fileInfo, setFileInfo] = useState('');
+    const [uploadInfo, setUploadInfo] = useState('');
 
     const URL = config.settings.isLocalServer ? `${config.urls.local}/admin` : `${config.urls.heroku}/admin`;
 
@@ -38,6 +47,8 @@ export default function Admin() {
 
     const onSubmit = async (data, event) => {
         event.preventDefault();
+        setIsSending(true);
+        setUploadInfo('Frissítés...');
         try {
             const formData = new FormData();
             formData.append('pin', data.pin);
@@ -53,16 +64,32 @@ export default function Admin() {
 
 
             if (!result.ok) {
-                console.log('Network response was not ok');
+                setTimeout(() => {
+                    //console.log('Not OK', result.ok);
+                    setIsSending(false);
+                    setUploadInfo('Sikertelen frissítés! Próbáld újra!');
+                }, 1000);
             }
+
+            if (result.ok) {
+                setTimeout(() => {
+                    //console.log('OK', result.ok)
+                    setIsExcelFile(false);
+                    resetForm();
+                    setFileInfo('');
+                    setIsSending(false);
+                    setUploadInfo('Árak sikeresen frissítve!');
+                }, 1000);
+                setTimeout(() => {
+                    setUploadInfo('');
+                }, 5000);
+            }
+
 
         } catch (err) {
             console.log('Error fetching data:', err);
         } finally {
-            console.log('Fetching finished.');
-            resetForm();
-            setIsFileAdded(false);
-            setFileInfo('');
+            //console.log('Fetching finished.');
         }
     };
 
@@ -78,7 +105,6 @@ export default function Admin() {
         let extension = fileName.split('.').at(-1);
         setFileInfo(extension === 'xlsx' ? fileName : 'Rossz fájl!');
         setIsExcelFile(extension === 'xlsx' ? true : false);
-        setIsFileAdded(true);
     }
 
     return (
@@ -110,18 +136,21 @@ export default function Admin() {
                                 {errors.myFile && <span><p className='error'>{errors.myFile?.message}</p></span>}
                                 {!errors.myFile && <span className='file-name'>{fileInfo}</span>}
                                 <label htmlFor="price-update">
-                                    {isFileAdded ? isExcelFile ? <ExcelIcon className='icon' /> : <WarningIcon className='icon' /> : <AttachIcon className='icon' />}
+                                    {isExcelFile ? <ExcelIcon className='icon' /> : <AttachIcon className='icon' />}
                                 </label>
                                 <input onInput={handleChange} id='price-update' className='upload-input' type='file' {...register('myFile')} />
                             </div>
 
                             <div>
-                                <button style={!isFileAdded || !isExcelFile ? { visibility: 'hidden' } : { visibility: 'unset' }}>
+                                {!isSending && <button style={isExcelFile ? { display: 'unset' } : { display: 'none' }}>
                                     <UploadIcon className='icon' />
-                                </button>
+                                </button>}
+                                {isSending && loadingWheel}
                             </div>
 
-
+                            <div>
+                                <h4>{uploadInfo}</h4>
+                            </div>
                         </form>
                     </div>
                 }

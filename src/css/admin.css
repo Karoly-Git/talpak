@@ -50,12 +50,12 @@ $navy: rgb(0, 0, 128);
   cursor: pointer;
 }
 .admin form div button {
-  margin-top: 1.25rem;
   padding: 0;
   background-color: transparent;
   transition: none;
 }
-.admin form div button .icon {
+.admin form div button svg {
+  margin-top: 1.25rem;
   font-size: 2rem;
   color: black;
 }
@@ -67,4 +67,11 @@ $navy: rgb(0, 0, 128);
 }
 .admin form div:nth-child(3) .file-name {
   margin-bottom: 0.25rem;
+}
+.admin form div:nth-child(4) svg {
+  margin-top: 1rem;
+}
+.admin form h4 {
+  margin-top: 1rem;
+  font-size: 1.15rem;
 }/*# sourceMappingURL=admin.css.map */
