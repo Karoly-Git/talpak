@@ -163,6 +163,9 @@ $navy: rgb(0, 0, 128);
 .kezdolap .section #info .shop-info h2 {
   margin-bottom: 1rem;
 }
+.kezdolap .section #info .shop-info h3 {
+  margin-top: 1rem;
+}
 .kezdolap .section #info #make-appointment a:not(a:last-child) {
   margin-bottom: 0.5rem;
 }

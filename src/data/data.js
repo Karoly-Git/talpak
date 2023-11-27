@@ -48,12 +48,12 @@ export const contacts = {
 // Business opening hours
 export const openingHours = [
     {
-        day: "Hétfő - Péntek:",
-        hours: "9:00 - 21:00"
+        day: "Napközben:",
+        hours: "9:00 - 15:00"
     },
     {
-        day: "Szombat - Vasárnap:",
-        hours: "9:00 - 15:00"
+        day: "Este:",
+        hours: "18:00 - 21:00"
     },
 ];
 

@@ -73,7 +73,7 @@ export default function App() {
       <ScrollToTop />
       <div className='App'>
 
-        {!isDiscountBoxOpen && <m.div className='status-box' id='discount'
+        {isDiscountBoxOpen && <m.div className='status-box' id='discount'
           initial={{ opacity: 0, top: 200 }}
           animate={{ opacity: 1, top: 300 }}
           transition={{ duration: 1, ease: "easeOut", delay: 3 }}

@@ -31,6 +31,7 @@ export function Nyitvatartas() {
                     </li>
                 ))}
             </ul>
+            <h3>Hétvégén zárva!</h3>
         </div>
     )
 }
