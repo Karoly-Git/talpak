@@ -47,6 +47,13 @@ export default function Kapcsolat(props) {
         setIsStatusBoxOpen(true);
         setSendingInProgress(true);
         props.setAnyFormTriggered(true);
+
+        let newDate = new Date();
+        let date = newDate.toLocaleDateString();
+        let time = newDate.toLocaleTimeString();
+        data.date = date;
+        data.time = time;
+
         try {
             const result = await fetch(messageURL,
                 {
