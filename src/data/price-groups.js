@@ -12,6 +12,7 @@ import wrapIcon from '../img/arak/wrap.png';
 import packageIcon from '../img/arak/package.png';
 import pediandfaceIcon from '../img/arak/pediandface.png';
 import extraIcon from '../img/arak/extra.png';
+import relaxIcon from '../img/arak/relax.png';
 
 
 export const priceGroups = [
@@ -163,6 +164,16 @@ export const priceGroups = [
         id: 'package',
         icon: {
             src: extraIcon,
+            alt: '',
+        },
+        isActive: true,
+        details: [],
+    },
+    {
+        group: "Relax idő",
+        id: 'relax',
+        icon: {
+            src: relaxIcon,
             alt: '',
         },
         isActive: true,
