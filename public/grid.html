@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Disk Layout</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .circle {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            border-radius: 50%;
+        }
+
+        .disk {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #3498db;
+            border-radius: 50%;
+            transition: all 250ms ease-in;
+        }
+
+        .disk:hover {
+            transform: scale(1.5);
+        }
+
+        .disk.top {
+            top: 0;
+            left: calc(50% - 20px);
+        }
+
+        .disk.bottom {
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+
+        .disk.left {
+            top: calc(50% - 20px);
+            left: 0;
+        }
+
+        .disk.right {
+            top: calc(50% - 20px);
+            right: 0;
+        }
+
+        .disk.top-left {
+            top: 20px;
+            left: 20px;
+        }
+
+        .disk.top-right {
+            top: 20px;
+            right: 20px;
+        }
+
+        .disk.bottom-left {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .disk.bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+        <div class="disk top"></div>
+        <div class="disk top-left"></div>
+        <div class="disk left"></div>
+        <div class="disk bottom-left"></div>
+        <div class="disk bottom"></div>
+        <div class="disk bottom-right"></div>
+        <div class="disk right"></div>
+        <div class="disk top-right"></div>
+    </div>
+</body>
+
+</html>

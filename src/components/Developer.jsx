@@ -24,7 +24,7 @@ export default function Developer() {
                         event.target.style.color = '#AAAAAA'; // Restore the original text color when not hovering
                     }}
                 >
-                    webdevme.co.uk
+                    WebDevMe
                 </a>
             </p>
         </div>

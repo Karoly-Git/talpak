@@ -36,7 +36,7 @@ import Developer from './components/Developer';
 
 export default function App() {
   const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
-  const [isDiscountBoxOpen, setIsDiscountBoxOpen] = useState(true);
+  const [isDiscountBoxOpen, setIsDiscountBoxOpen] = useState(false);  // This to be set true for pop-up add
   const [subscribtionInProgress, setSubscribtionInProgress] = useState(false);
   const [isSubscribtionError, setIsSubscribtionError] = useState(false);
   const [isFormReset, setIsFormReset] = useState(false);
