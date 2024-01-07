@@ -51,8 +51,7 @@ $navy: rgb(0, 0, 128);
 .sec-nav .other-links li .active {
   text-decoration: underline;
   text-underline-offset: 3px;
-  -webkit-text-decoration-color: rgb(80, 80, 80);
-          text-decoration-color: rgb(80, 80, 80);
+  text-decoration-color: rgb(80, 80, 80);
 }
 .sec-nav .other-links li:not(:last-child) {
   margin-right: 1rem;
@@ -236,8 +235,7 @@ $navy: rgb(0, 0, 128);
 .bottom-nav .item-list .links-item .link-set li .active {
   text-decoration: underline;
   text-underline-offset: 3px;
-  -webkit-text-decoration-color: rgb(80, 80, 80);
-          text-decoration-color: rgb(80, 80, 80);
+  text-decoration-color: rgb(80, 80, 80);
   text-decoration-thickness: 1px;
 }
 .bottom-nav .item-list .links-item .link-set li:not(:last-child) {
@@ -283,7 +281,7 @@ $navy: rgb(0, 0, 128);
 }
 @media screen and (max-width: 768px) {
   .main-nav,
-.sec-nav {
+  .sec-nav {
     display: none;
   }
   .mobile-nav {

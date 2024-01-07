@@ -65,23 +65,23 @@ $navy: rgb(0, 0, 128);
     width: 100% !important;
   }
   .jo-tudni .content-container .box #disabled-info p,
-.jo-tudni .content-container .box #disabled-info img,
-.jo-tudni .content-container .box #outcall-info p,
-.jo-tudni .content-container .box #outcall-info img {
+  .jo-tudni .content-container .box #disabled-info img,
+  .jo-tudni .content-container .box #outcall-info p,
+  .jo-tudni .content-container .box #outcall-info img {
     padding: 0;
   }
   .jo-tudni .content-container .box #disabled-info #img-disabled,
-.jo-tudni .content-container .box #outcall-info #img-disabled {
+  .jo-tudni .content-container .box #outcall-info #img-disabled {
     margin-right: 1rem;
   }
   .jo-tudni .content-container .box #disabled-info #img-outcall,
-.jo-tudni .content-container .box #outcall-info #img-outcall {
+  .jo-tudni .content-container .box #outcall-info #img-outcall {
     margin-left: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
   .jo-tudni .content-container #disabled-info img,
-.jo-tudni .content-container #outcall-info img {
+  .jo-tudni .content-container #outcall-info img {
     display: none;
   }
 }/*# sourceMappingURL=jo_tudni.css.map */

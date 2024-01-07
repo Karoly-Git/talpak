@@ -93,7 +93,6 @@ $navy: rgb(0, 0, 128);
   width: 25%;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   position: relative;
   left: -150px;
@@ -118,8 +117,7 @@ $navy: rgb(0, 0, 128);
 .kezdolap .section #services .services-list li .active {
   text-decoration: underline;
   text-underline-offset: 3px;
-  -webkit-text-decoration-color: rgb(80, 80, 80);
-          text-decoration-color: rgb(80, 80, 80);
+  text-decoration-color: rgb(80, 80, 80);
   text-decoration-thickness: 1px;
 }
 .kezdolap .section #services .services-list li:hover h3 {

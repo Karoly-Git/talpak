@@ -109,7 +109,7 @@ $navy: rgb(0, 0, 128);
     background-position-x: -200px !important;
   }
   .magamrol .section .content-container .box article p,
-.magamrol .section .content-container .box article h2 {
+  .magamrol .section .content-container .box article h2 {
     text-align: unset;
   }
 }

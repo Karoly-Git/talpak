@@ -1,161 +1,132 @@
-import talpDiagnosztika from '../img/certificates/cert_001.jpg'
-import triggerPoint from '../img/certificates/cert_002.jpg'
-import kinezioTape from '../img/certificates/cert_003.jpg'
-import talpcsakra from '../img/certificates/cert_004.jpg'
-import olajosTalp from '../img/certificates/cert_005.jpg'
-import reflexTalp from '../img/certificates/cert_006.jpg'
-import herbalance from '../img/certificates/cert_007.jpg'
-import gyermekPedikur1 from '../img/certificates/cert_008.jpg'
-import gyermekPedikur2 from '../img/certificates/cert_009.jpg'
-import testTekercs from '../img/certificates/cert_010.jpg'
-import thermoMasszazs from '../img/certificates/cert_011.jpg'
-import dermatoVakuum from '../img/certificates/cert_012.jpg'
-import kismamaMasszazs from '../img/certificates/cert_013.jpg'
-import kezMasszazs from '../img/certificates/cert_014.jpg'
-import integraltTechnika from '../img/certificates/cert_015.jpg'
-import gombasKorom from '../img/certificates/cert_016.jpg'
-import babaMasszazs from '../img/certificates/cert_017.jpg'
-import svedMasszazs from '../img/certificates/cert_018.jpg'
+import szervzonaskezmasszazs from '../img/certificates/new_files/tanusitvany-15.png';
+import kismamaMasszazs from '../img/certificates/new_files/tanusitvany-17.png';
+import anatomiaKozerthetoenMasszoroknek from '../img/certificates/new_files/tanusitvany-18.png';
+import thermoMasszazs from '../img/certificates/new_files/tanusitvany-19.png';
+import testtekercseles from '../img/certificates/new_files/tanusitvany-20.png';
+import dermatoVakuumReflexologia from '../img/certificates/new_files/tanusitvany-22.png';
+import herbalance from '../img/certificates/new_files/tanusitvany-23.png';
+import triggerPontTerapia from '../img/certificates/new_files/tanusitvany-24.png';
+import kinesioTapeTerapeuta from '../img/certificates/new_files/tanusitvany-25.png';
+import frissitoSvedMasszor from '../img/certificates/new_files/tanusitvany-26.png';
+import babaMasszazs from '../img/certificates/new_files/tanusitvany-27.png';
+import talpcsakraMasszazs from '../img/certificates/new_files/tanusitvany-28.png';
+import arcdiagnosztikaEsreflexzonasArcmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-arcdiagnosztika.png';
+import integraltManualisKorrekciostechnika from '../img/certificates/new_files/uj-minicrm-oklevel-integral-manualis.png';
+import reflexzonasTalpmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-reflexzonas-talpmasszazs.png';
+import talpDiagnosztikaEsmeregtelenitoTalpmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-talp-diag-meregtelenito.png';
+
 
 export const certs = [
     {
         isActive: true,
-        name: 'Herbalance',
+        name: 'Szervzónás kézmasszázs',
         grade: 'tanúsítvány',
-        src: herbalance,
-        alt: "",
+        src: szervzonaskezmasszazs,
+        alt: "Szervzónás kézmasszázs technika illusztráció"
     },
     {
         isActive: true,
-        name: 'Szervzónás kézmasszazs',
-        grade: 'tanúsítvány',
-        src: kezMasszazs,
-        alt: "",
-    },
-    {
-        isActive: true,
-        name: 'Kismama Masszázs',
+        name: 'Kismama masszázs',
         grade: 'tanúsítvány',
         src: kismamaMasszazs,
-        alt: "",
+        alt: "Kismama masszázs technika illusztráció"
     },
     {
         isActive: true,
-        name: 'Dermato-Vákuum Reflexológia',
+        name: 'Anatómia közérthetően masszőröknek',
         grade: 'tanúsítvány',
-        src: dermatoVakuum,
-        alt: "",
+        src: anatomiaKozerthetoenMasszoroknek,
+        alt: "Anatómia közérthetően masszőröknek technika illusztráció"
     },
     {
         isActive: true,
-        name: 'Thermo Masszázs',
+        name: 'Thermo-masszázs',
         grade: 'tanúsítvány',
         src: thermoMasszazs,
-        alt: "",
+        alt: "Thermo-masszázs technika illusztráció"
     },
     {
         isActive: true,
         name: 'Testtekercselés',
         grade: 'tanúsítvány',
-        src: testTekercs,
-        alt: "",
+        src: testtekercseles,
+        alt: "Testtekercselés technika illusztráció"
     },
     {
         isActive: true,
-        name: 'Gyermekláb pedikűr',
+        name: 'Dermato-vákuum reflexológia',
         grade: 'tanúsítvány',
-        src: gyermekPedikur2,
-        alt: "",
+        src: dermatoVakuumReflexologia,
+        alt: "Dermato-vákuum reflexológia technika illusztráció"
     },
     {
         isActive: true,
-        name: 'Talp-diagnosztikai és méregtelenítő talpmasszás',
+        name: 'Herbalance',
         grade: 'tanúsítvány',
-        src: talpDiagnosztika,
-        alt: "",
-    },
-    {
-        isActive: true,
-        name: 'Reflexzónás talpmasszázs',
-        grade: 'tanúsítvány',
-        src: reflexTalp,
-        alt: "",
-    },
-    {
-        isActive: true,
-        name: 'Bodhi tahi olajos talpmasszázs',
-        grade: 'tanúsítvány',
-        src: olajosTalp,
-        alt: "",
-    },
-    {
-        isActive: true,
-        name: 'Talpcsakra masszázs',
-        grade: 'tanúsítvány',
-        src: talpcsakra,
-        alt: "",
+        src: herbalance,
+        alt: "Herbalance technika illusztráció"
     },
     {
         isActive: true,
         name: 'Trigger pont terápia',
         grade: 'tanúsítvány',
-        src: triggerPoint,
-        alt: "",
+        src: triggerPontTerapia,
+        alt: "Trigger pont terápia technika illusztráció"
     },
     {
         isActive: true,
         name: 'Kinesio tape terapeuta',
         grade: 'tanúsítvány',
-        src: kinezioTape,
-        alt: "",
+        src: kinesioTapeTerapeuta,
+        alt: "Kinesio tape terapeuta technika illusztráció"
     },
     {
         isActive: true,
-        name: 'Integrált manuális korrekciós technika',
+        name: 'Frissítő /Svéd/ masszőr',
         grade: 'tanúsítvány',
-        src: integraltTechnika,
-        alt: "",
-    },
-    {
-        isActive: true,
-        name: 'Frissítő /SVÉD/ masszőr',
-        grade: 'tanúsítvány',
-        src: svedMasszazs,
-        alt: "",
+        src: frissitoSvedMasszor,
+        alt: "Frissítő /Svéd/ masszőr technika illusztráció"
     },
     {
         isActive: true,
         name: 'Baba masszázs',
         grade: 'tanúsítvány',
         src: babaMasszazs,
-        alt: "",
+        alt: "Baba masszázs technika illusztráció"
     },
     {
         isActive: true,
-        name: 'Gombás köröm kezelés',
+        name: 'Talpcsakra masszázs',
         grade: 'tanúsítvány',
-        src: gombasKorom,
-        alt: "",
-    },
-    {
-        isActive: true,
-        name: 'Lábápoló',
-        grade: 'OKJ',
-        src: {},
-        alt: "",
-    },
-    {
-        isActive: true,
-        name: 'Orosz gépi pedikűr & gél lakk',
-        grade: 'tanúsítvány',
-        src: {},
-        alt: "",
+        src: talpcsakraMasszazs,
+        alt: "Talpcsakra masszázs technika illusztráció"
     },
     {
         isActive: true,
         name: 'Arcdiagnosztika és reflexzónás arcmasszázs',
         grade: 'tanúsítvány',
-        src: {},
-        alt: "",
+        src: arcdiagnosztikaEsreflexzonasArcmasszazs,
+        alt: "Arcdiagnosztika és reflexzónás arcmasszázs technika illusztráció"
     },
+    {
+        isActive: true,
+        name: 'Integrált manuális korrekciós technika',
+        grade: 'tanúsítvány',
+        src: integraltManualisKorrekciostechnika,
+        alt: "Integrált manuális korrekciós technika illusztráció"
+    },
+    {
+        isActive: true,
+        name: 'Reflexzónás talpmasszázs',
+        grade: 'tanúsítvány',
+        src: reflexzonasTalpmasszazs,
+        alt: "Reflexzónás talpmasszázs technika illusztráció"
+    },
+    {
+        isActive: true,
+        name: 'Talp-diagnosztika és méregtelenítő talpmasszázs',
+        grade: 'tanúsítvány',
+        src: talpDiagnosztikaEsmeregtelenitoTalpmasszazs,
+        alt: "Talp-diagnosztika és méregtelenítő talpmasszázs technika illusztráció"
+    }
 ];

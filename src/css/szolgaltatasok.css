@@ -137,7 +137,7 @@ $navy: rgb(0, 0, 128);
     width: 100% !important;
   }
   .szolgaltatasok .content-container .box .div1 img,
-.szolgaltatasok .content-container .box .div1 .div2 {
+  .szolgaltatasok .content-container .box .div1 .div2 {
     margin: 0 !important;
   }
   .szolgaltatasok .section:nth-child(2n) .div1 img {

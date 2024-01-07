@@ -126,9 +126,6 @@ $navy: rgb(0, 0, 128);
 .kapcsolat .section .box form input::-moz-placeholder, .kapcsolat .section .box form textarea::-moz-placeholder {
   color: white;
 }
-.kapcsolat .section .box form input:-ms-input-placeholder, .kapcsolat .section .box form textarea:-ms-input-placeholder {
-  color: white;
-}
 .kapcsolat .section .box form input::placeholder,
 .kapcsolat .section .box form textarea::placeholder {
   color: white;
