@@ -36,7 +36,7 @@ import Developer from './components/Developer';
 
 export default function App() {
   const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
-  const [isDiscountBoxOpen, setIsDiscountBoxOpen] = useState(false);  // This to be set true for pop-up add
+  const [isDiscountBoxOpen, setIsDiscountBoxOpen] = useState(true);  // This to be set true for pop-up add
   const [subscribtionInProgress, setSubscribtionInProgress] = useState(false);
   const [isSubscribtionError, setIsSubscribtionError] = useState(false);
   const [isFormReset, setIsFormReset] = useState(false);
@@ -84,11 +84,23 @@ export default function App() {
               closeDiscountBox();
             }} />
           {/*Icon?*/}
-          <h2>Safe Laser Akció!</h2>
-          <h3>December 31-ig!</h3>
-          <p>
-            Karácsonyi akció keretében most hatalmas kedvezmény a Safe Laser kezelésekre.
-          </p>
+
+          {false && <>
+            <h2>Safe Laser Akció</h2>
+            <h3>December 31-ig!</h3>
+            <p>
+              Karácsonyi akció keretében most hatalmas kedvezmény a Safe Laser kezelésekre.
+            </p>
+          </>}
+
+          {true && <>
+            <h2>Vizes Lábmasszázs Akció</h2>
+            <h3>Februárban</h3>
+            <p>
+              50%-os kedvezmény a vizes lábmasszázsra egész februárban.
+            </p>
+          </>}
+
           <Link to='/kapcsolat' onClick={closeDiscountBox}>
             <button>Kapcsolat</button>
           </Link>

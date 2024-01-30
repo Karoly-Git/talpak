@@ -15,6 +15,8 @@ import integraltManualisKorrekciostechnika from '../img/certificates/new_files/u
 import reflexzonasTalpmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-reflexzonas-talpmasszazs.png';
 import talpDiagnosztikaEsmeregtelenitoTalpmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-talp-diag-meregtelenito.png';
 
+import bodhiThaiOlajosTalpmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-bodhi-thai.png';
+
 
 export const certs = [
     {
@@ -128,5 +130,12 @@ export const certs = [
         grade: 'tanúsítvány',
         src: talpDiagnosztikaEsmeregtelenitoTalpmasszazs,
         alt: "Talp-diagnosztika és méregtelenítő talpmasszázs technika illusztráció"
+    },
+    {
+        isActive: true,
+        name: 'Bodhi Thai olajos talpmasszázs',
+        grade: 'tanúsítvány',
+        src: bodhiThaiOlajosTalpmasszazs,
+        alt: "Bodhi Thai olajos talpmasszázs technika illusztráció"
     }
 ];
