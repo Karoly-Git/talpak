@@ -93,11 +93,19 @@ export default function App() {
             </p>
           </>}
 
-          {true && <>
+          {false && <>
             <h2>Vizes Lábmasszázs Akció</h2>
             <h3>Februárban</h3>
             <p>
               50%-os kedvezmény a vizes lábmasszázsra egész februárban.
+            </p>
+          </>}
+
+          {true && <>
+            <h2>Kinesio Tape Akció</h2>
+            <h3>Márciusban</h3>
+            <p>
+              50%-os kedvezmény a kinesio tape-re egész márciusban.
             </p>
           </>}
 
