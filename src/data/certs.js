@@ -10,6 +10,7 @@ import kinesioTapeTerapeuta from '../img/certificates/new_files/tanusitvany-25.p
 import frissitoSvedMasszor from '../img/certificates/new_files/tanusitvany-26.png';
 import babaMasszazs from '../img/certificates/new_files/tanusitvany-27.png';
 import talpcsakraMasszazs from '../img/certificates/new_files/tanusitvany-28.png';
+import japanArcmasszazs from '../img/certificates/new_files/tanusitvany-29.png';
 import arcdiagnosztikaEsreflexzonasArcmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-arcdiagnosztika.png';
 import integraltManualisKorrekciostechnika from '../img/certificates/new_files/uj-minicrm-oklevel-integral-manualis.png';
 import reflexzonasTalpmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-reflexzonas-talpmasszazs.png';
@@ -137,5 +138,12 @@ export const certs = [
         grade: 'tanúsítvány',
         src: bodhiThaiOlajosTalpmasszazs,
         alt: "Bodhi Thai olajos talpmasszázs technika illusztráció"
+    },
+    {
+        isActive: true,
+        name: 'Japán Arcmasszázs',
+        grade: 'tanúsítvány',
+        src: japanArcmasszazs,
+        alt: "Japán Arcmasszázs"
     }
 ];
