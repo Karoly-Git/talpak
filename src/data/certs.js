@@ -11,6 +11,7 @@ import frissitoSvedMasszor from '../img/certificates/new_files/tanusitvany-26.pn
 import babaMasszazs from '../img/certificates/new_files/tanusitvany-27.png';
 import talpcsakraMasszazs from '../img/certificates/new_files/tanusitvany-28.png';
 import japanArcmasszazs from '../img/certificates/new_files/tanusitvany-29.png';
+import lavakovesMasszazs from '../img/certificates/new_files/tanusitvany-30.png';
 import arcdiagnosztikaEsreflexzonasArcmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-arcdiagnosztika.png';
 import integraltManualisKorrekciostechnika from '../img/certificates/new_files/uj-minicrm-oklevel-integral-manualis.png';
 import reflexzonasTalpmasszazs from '../img/certificates/new_files/uj-minicrm-oklevel-reflexzonas-talpmasszazs.png';
@@ -145,5 +146,12 @@ export const certs = [
         grade: 'tanúsítvány',
         src: japanArcmasszazs,
         alt: "Japán Arcmasszázs"
+    },
+    {
+        isActive: true,
+        name: 'Lávaköves masszázs',
+        grade: 'tanúsítvány',
+        src: lavakovesMasszazs,
+        alt: "Lávaköves masszázs"
     }
 ];
