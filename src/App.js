@@ -117,11 +117,19 @@ export default function App() {
             </p>
           </>}
 
-          {true && <>
+          {false && <>
             <h2>Pedikűr Akció</h2>
             <h3>Májusban</h3>
             <p>
               10%-os kedvezmény a pedikűrre egész májusban.
+            </p>
+          </>}
+
+          {true && <>
+            <h2>Talpmasszázs Akció</h2>
+            <h3>Júniusban</h3>
+            <p>
+              10%-os kedvezmény a talpmasszázsra egész júniusban.
             </p>
           </>}
 
